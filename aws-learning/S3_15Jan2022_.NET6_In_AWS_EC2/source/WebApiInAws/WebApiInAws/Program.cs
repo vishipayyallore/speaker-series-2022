@@ -12,15 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//var awsOptions = builder.Configuration.GetAWSOptions();
-//builder.Services.AddDefaultAWSOptions(awsOptions);
-//var dynamoDbConfig = new AmazonDynamoDBConfig()
-//{
-//    RegionEndpoint = RegionEndpoint.USEast2
-//};
-//var client = new AmazonDynamoDBClient(dynamoDbConfig);
-
-var credentials = new BasicAWSCredentials("YourKey", "YourSecretKey");
+var credentials = new BasicAWSCredentials(builder.Configuration["AWS:AccessKey"]
+    , builder.Configuration["AWS:SecretKey"]);
 var config = new AmazonDynamoDBConfig()
 {
     RegionEndpoint = RegionEndpoint.USEast2
