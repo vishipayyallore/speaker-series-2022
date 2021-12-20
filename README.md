@@ -5,5 +5,5 @@ This Repository contains the Demos for the Speaking Sessions conducted during ye
 
 ## Dot Net Leaners House
 
-## AZ-204 Series from Microsoft Reactor
+## AZ-204 Series from `Microsoft Reactor`
 
