@@ -1,8 +1,8 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
 
-namespace WebApiInAws
+namespace WebApiInAws.Data
 {
-    
+
     [DynamoDBTable("products")]
     public class ProductDbModel
     {
@@ -16,7 +16,10 @@ namespace WebApiInAws
         public string Description { get; set; } = string.Empty;
 
         [DynamoDBProperty]
-        public DateTime CreationDateTime { get; set; }
+        public DateTime CreationDateTime { get; set; } = DateTime.Now;
+
+        [DynamoDBProperty]
+        public DateTime ModifiedDateTime { get; set; } = DateTime.Now;
     }
 
 }
