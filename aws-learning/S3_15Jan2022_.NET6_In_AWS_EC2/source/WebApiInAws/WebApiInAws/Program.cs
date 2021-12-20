@@ -12,15 +12,21 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var credentials = new BasicAWSCredentials(builder.Configuration["AWS:AccessKey"]
-    , builder.Configuration["AWS:SecretKey"]);
-var config = new AmazonDynamoDBConfig()
-{
-    RegionEndpoint = RegionEndpoint.USEast2
-};
-var client = new AmazonDynamoDBClient(credentials, config);
+// Default Profile from C:\Users\Swamy\.aws file
+var client = new AmazonDynamoDBClient();
 builder.Services.AddSingleton<IAmazonDynamoDB>(client);
 builder.Services.AddSingleton<IDynamoDBContext, DynamoDBContext>();
+
+
+//var credentials = new BasicAWSCredentials(builder.Configuration["AWS:AccessKey"]
+//    , builder.Configuration["AWS:SecretKey"]);
+//var config = new AmazonDynamoDBConfig()
+//{
+//    RegionEndpoint = RegionEndpoint.USEast2
+//};
+//var client = new AmazonDynamoDBClient(credentials, config);
+//builder.Services.AddSingleton<IAmazonDynamoDB>(client);
+//builder.Services.AddSingleton<IDynamoDBContext, DynamoDBContext>();
 
 var app = builder.Build();
 
