@@ -1,8 +1,8 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
 using Amazon.DynamoDBv2.DocumentModel;
 using Microsoft.AspNetCore.Mvc;
+using Products.Data;
 using System.Net;
-using Products.Api.Data;
 
 namespace Products.Api.Controllers
 {

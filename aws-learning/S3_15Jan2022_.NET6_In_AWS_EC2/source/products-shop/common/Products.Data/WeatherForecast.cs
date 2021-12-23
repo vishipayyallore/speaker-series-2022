@@ -1,5 +1,6 @@
-namespace Products.Api.Data
+﻿namespace Products.Data
 {
+
     public class WeatherForecast
     {
         public DateTime Date { get; set; }
@@ -10,4 +11,5 @@ namespace Products.Api.Data
 
         public string? Summary { get; set; }
     }
+
 }

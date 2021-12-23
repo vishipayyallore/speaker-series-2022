@@ -1,8 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Products.Api.Data;
+using Products.Data;
 
 namespace Products.Api.Controllers
 {
+
     [ApiController]
     [Route("api/v1/[controller]")]
     public class WeatherForecastController : ControllerBase
