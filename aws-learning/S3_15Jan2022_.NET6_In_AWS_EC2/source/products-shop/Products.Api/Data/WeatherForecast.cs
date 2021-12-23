@@ -1,4 +1,4 @@
-namespace WebApiInAws.Data
+namespace Products.Api.Data
 {
     public class WeatherForecast
     {

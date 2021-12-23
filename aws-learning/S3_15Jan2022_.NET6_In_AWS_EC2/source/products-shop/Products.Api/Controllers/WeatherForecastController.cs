@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using WebApiInAws.Data;
+using Products.Api.Data;
 
-namespace WebApiInAws.Controllers
+namespace Products.Api.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]

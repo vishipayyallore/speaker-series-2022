@@ -1,6 +1,6 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
 
-namespace WebApiInAws.Data
+namespace Products.Api.Data
 {
 
     [DynamoDBTable("products")]

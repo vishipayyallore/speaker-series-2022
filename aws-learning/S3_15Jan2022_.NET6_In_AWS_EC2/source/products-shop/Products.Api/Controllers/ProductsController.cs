@@ -2,9 +2,9 @@
 using Amazon.DynamoDBv2.DocumentModel;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
-using WebApiInAws.Data;
+using Products.Api.Data;
 
-namespace WebApiInAws.Controllers
+namespace Products.Api.Controllers
 {
 
     [Route("api/v1/[controller]")]
