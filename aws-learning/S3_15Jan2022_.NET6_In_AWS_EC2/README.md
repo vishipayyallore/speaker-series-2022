@@ -2,7 +2,7 @@
 
 ## Date Time: 15-Jan-2022 at 09:00 AM IST
 
-## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/ToBeDone](https://www.meetup.com/dot-net-learners-house-hyderabad/events/ToBeDone)
+## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/282817403](https://www.meetup.com/dot-net-learners-house-hyderabad/events/282817403)
 
 ## Youtube URL: [https://www.youtube.com/watch?v=ToBeDone](https://www.youtube.com/watch?v=ToBeDone)
 
@@ -22,9 +22,9 @@
 
 ## What are we doing today?
 
-> 1. Deploying .NET 6 Web App into Amazon EC2 (Windows)
 > 1. Modify the .NET 6 Web API to work with DynamoDB
-> 1. Deploying .NET 6 updated Web API into Amazon EC2 (Ubuntu)
+> 1. Deploying .NET 6 Blazor WASM App into Amazon EC2 (IIS in Windows)
+> 1. Deploying .NET 6 updated Web API into Amazon EC2 (Ubuntu) **Stretch Goal**
 > 1. SUMMARY / RECAP / Q&A
 
 ![Seat Belt | 100x100](./documentation/images/SeatBelt.PNG)
@@ -32,9 +32,20 @@
 ---
 
 
-## 1. Deploying .NET 6 Web App into Amazon EC2 (Windows)
-## 2. Modify the .NET 6 Web API to work with DynamoDB
-## 3. Deploying .NET 6 updated Web API into Amazon EC2 (Ubuntu)
+## 1. Modify the .NET 6 Web API to work with DynamoDB
+
+![VS 2022 .NET 6 Web API with DynamoDB | 100x100](./documentation/images/.NET6WebAPIwithDynamoDB.PNG)
+
+![Verify .NET 6 Web Api with DynamoDb Locally | 100x100](./documentation/images/Verify.NET6WebApiDynamoDbLocally.PNG)
+
+## 2. Deploying .NET 6 Blazor WASM App into Amazon EC2 (IIS in Windows)
+
+![EC2 IIS Web Deploy .NET 6 WebApp | 100x100](./documentation/images/EC2_IIS_WebDeploy_.NET6_WebApp.PNG)
+
+![Blazor WASM Running inside IIS with Windows EC2 | 100x100](./documentation/images/BlazorWASMIntoEC2.PNG)
+
+## 3. Deploying .NET 6 updated Web API into Amazon EC2 (Ubuntu) **Stretch Goal**
+
 ## 4. SUMMARY / RECAP / Q&A
 
 ## 1. Deploying .NET 6 Web API into Amazon EC2 (Ubuntu)
