@@ -1,7 +1,26 @@
-﻿namespace Products.DataServices
+﻿using Products.Data;
+using System.Net.Http.Json;
+
+namespace Products.DataServices
 {
-    public class ProductsDataServices
+
+    public class ProductsDataServices : IProductsDataServices
     {
+        private readonly HttpClient _httpClient;
+        const string productsEndPoint = "api/v1/products";
+
+        public ProductsDataServices(HttpClient httpClient)
+        {
+            _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+        }
+
+        public async Task<IEnumerable<ProductDbModel>> GetAllBooks()
+        {
+#pragma warning disable CS8603 // Possible null reference return.
+            return await _httpClient.GetFromJsonAsync<IEnumerable<ProductDbModel>>($"{productsEndPoint}");
+#pragma warning restore CS8603 // Possible null reference return.
+        }
 
     }
+
 }
