@@ -9,15 +9,14 @@
 else
 {
     <div class="card shadow mt-2 mb-2">
-        <div class="card-header">
+        <div class="card-header d-flex justify-content-between">
             <h1 class="PageTitle">Product List</h1>
+            <a href="/addproduct" class="float">
+                <span class="oi oi-plus float-margintop" aria-hidden="true"></span>
+            </a>
         </div>
         <div class="card-body">
-            <div>
-                <a href="/addproduct" class="float">
-                    <span class="oi oi-plus float-margintop" aria-hidden="true"></span>
-                </a>
-            </div>
+
             <table class="table table-striped table-bordered table-hover shadow" aria-labelledby="tableLabel">
                 <thead class="table-header-dark">
                     <tr>
@@ -37,8 +36,7 @@ else
                         <tr>
                             <td>@product.Id</td>
                             <td>
-                                @*<img class="rounded-circle image-styles" src="@product.PictureUrl" title="product.title" />*@
-                                To be done
+                                <img class="rounded-circle image-styles" src="@product.PictureUrl" title="@product.Name" />
                             </td>
                             <td>
                                 @product.Name
@@ -47,17 +45,16 @@ else
                                 @product.Description
                             </td>
                             <td>
-                                @*@if (@product.IsActive)
+                                @if (@product.IsActive)
                                 {
-                                    <span class="oi oi-thumb-up span-styles"></span>
+                                    <span class="oi oi-thumb-up span-styles-true"></span>
                                 }
                                 else
                                 {
-                                    <span class="oi oi-thumb-down span-styles"></span>
-                                }*@
-                                Yes
+                                    <span class="oi oi-thumb-down span-styles-false"></span>
+                                }
                             </td>
-                            <td>10.89</td>
+                            <td>@product.Price</td>
                             <td>
                                 <a href="editproduct/@product.Id" class="td-a-edit">
                                     <span class="oi oi-pencil icon span-styles" aria-hidden="true"></span>
@@ -74,4 +71,18 @@ else
             </table>
         </div>
     </div>
+
+    <div class="p-5">
+        <br>
+        <br>
+    </div>
+    <div class="p-5">
+        <br>
+        <br>
+    </div>
+    <div class="p-5">
+        <br>
+        <br>
+    </div>
+
 }
