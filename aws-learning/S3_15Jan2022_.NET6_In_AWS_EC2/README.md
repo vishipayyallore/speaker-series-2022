@@ -1,4 +1,4 @@
-# Deploying .NET 6 Apps into Amazon EC2 and working with DynamoDB
+# .NET 6 Web API with DynamoDB, and Deploying .NET 6 Blazor WASM to Windows EC2
 
 ## Date Time: 15-Jan-2022 at 09:00 AM IST
 
