@@ -21,6 +21,13 @@ namespace Products.DataServices
 #pragma warning restore CS8603 // Possible null reference return.
         }
 
+
+        public async Task<IEnumerable<WeatherForecast>> VerifyApi()
+        {
+#pragma warning disable CS8603 // Possible null reference return.
+            return await _httpClient.GetFromJsonAsync<IEnumerable<WeatherForecast>>("/api/v1/WeatherForecast");
+#pragma warning restore CS8603 // Possible null reference return.
+        }
     }
 
 }
