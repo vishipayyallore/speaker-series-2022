@@ -36,6 +36,16 @@
 
 > 1. Discussion and Demo
 
+### Trust the dev-certs locally
+
+Reference:
+[https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-6.0&tabs=visual-studio](https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-6.0&tabs=visual-studio)
+
+![Trust Dev Certs | 100x100](./documentation/images/Trust_Dev_Certs.PNG)
+
+#### Verify locally using https
+
+
 ### .NET 6 Web API to work with DynamoDB inside VS 2022
 ![VS 2022 .NET 6 Web API with DynamoDB | 100x100](./documentation/images/.NET6WebAPIwithDynamoDB.PNG)
 
