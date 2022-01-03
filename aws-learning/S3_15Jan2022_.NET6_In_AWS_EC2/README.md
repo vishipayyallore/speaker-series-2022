@@ -35,14 +35,36 @@
 
 > 1. Discussion and Demo
 
+Install these Pre-Requisites on EC2 Ubuntu:
+
+> 1. `sudo apt install net-tools`
+> 1. `sudo apt install unzip`
+> 1. https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
+
 ### Trust the dev-certs locally
+
+```
+dotnet dev-certs https
+sudo -E dotnet dev-certs https -ep /usr/local/share/ca-certificates/aspnet/https.crt --format PEM
+sudo update-ca-certificates
+```
 
 Reference:
 [https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-6.0&tabs=visual-studio](https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-6.0&tabs=visual-studio)
 
 ![Trust Dev Certs | 100x100](./documentation/images/Trust_Dev_Certs.PNG)
 
-#### Verify locally using https
+#### Verify existing Web API locally using https
+
+![Access Web Api Locally | 100x100](./documentation/images/AccessWebApiLocally_1.PNG)
+
+![Access Web Api Locally | 100x100](./documentation/images/AccessWebApiLocally_2.PNG)
 
 ### .NET 6 Web API to work with DynamoDB inside VS 2022
 
@@ -55,6 +77,99 @@ Reference:
 ## 2. Deploying .NET 6 updated Web API into Amazon EC2 (Ubuntu)
 
 > 1. Discussion and Demo
+
+### Update the webapiinaws.service file
+
+```
+[Unit]
+Description=.NET 6 Web API on Ubuntu
+
+[Service]
+WorkingDirectory=/home/ubuntu/webapiinaws
+ExecStart=/usr/bin/dotnet /home/ubuntu/webapiinaws/Products.Api.dll
+Restart=always
+KillSignal=SIGINT
+# Restart service after 10 seconds if dotnet service crashes
+RestartSec=10
+SyslogIdentifier=products-webapi
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target
+```
+
+### Create the aws files
+
+> 1. `credentials` file
+> 1. `config` file
+
+```
+[default]
+aws_access_key_id=Your_AWS_Access_Key_Id
+aws_secret_access_key=Your_AWS_Secret_Access_Key
+toolkit_artifact_guid=b87e1bae-59bd-41fa-8ca5-75169336f173
+```
+
+```
+[default]
+region = us-east-2
+output = json
+```
+
+### Deploy the latest changes to the EC2 instance
+
+> 1. Demo and Discussion
+
+### Update the Nginx files
+
+> 1. /etc/nginx/sites-available/default
+
+```
+server {
+    listen 80;
+
+    location / {
+        proxy_pass http://localhost:5000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection keep-alive;
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+```
+
+```
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+
+    include snippets/self-signed.conf;
+
+
+    location / {
+        proxy_pass https://localhost:5001;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection keep-alive;
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+```
+sudo service nginx start
+sudo service nginx restart
+sudo systemctl status nginx.service
+sudo journalctl -xe
+```
 
 ### Verifying .NET 6 Web API to work with DynamoDB Hosted in Amazon EC2
 
