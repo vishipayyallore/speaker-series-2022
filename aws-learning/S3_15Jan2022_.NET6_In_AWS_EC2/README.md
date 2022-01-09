@@ -39,7 +39,7 @@ Install these Pre-Requisites on EC2 Ubuntu:
 
 > 1. `sudo apt install net-tools`
 > 1. `sudo apt install unzip`
-> 1. https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+> 1. `aws cli` https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 ```
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -78,7 +78,15 @@ Reference:
 
 > 1. Discussion and Demo
 
-### Update the webapiinaws.service file
+
+### Deploy the latest version of the Web API to the EC2 Ubuntu instance
+
+#### Configure Credentials using `aws configure`
+
+![Configure AWS Credentials | 100x100](./documentation/images/ConfigureAWSCredentials.PNG)
+
+#### Verify the Web API is working on EC2 Ubuntu instance
+![Verifying Products Api Inside EC2 | 100x100](./documentation/images/Verifying_Products_Api_Inside_EC2.PNG)
 
 ```
 [Unit]
