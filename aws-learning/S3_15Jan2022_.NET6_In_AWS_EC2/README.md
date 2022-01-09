@@ -88,6 +88,18 @@ Reference:
 #### Verify the Web API is working on EC2 Ubuntu instance
 ![Verifying Products Api Inside EC2 | 100x100](./documentation/images/Verifying_Products_Api_Inside_EC2.PNG)
 
+#### Create a service file for our Web API
+
+```
+sudo nano /etc/systemd/system/webapiinaws.service
+```
+
+**Note:**
+
+> 1. The service file is created in the `/etc/systemd/system` folder
+> 1. Update the webapiinaws.service file with the content given below
+> 1. Update the permissions of the service file to `0744`
+
 ```
 [Unit]
 Description=.NET 6 Web API on Ubuntu
