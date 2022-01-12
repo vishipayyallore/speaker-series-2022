@@ -348,3 +348,10 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+microsoft-reactor/S9_2022Jan12_WebAppsDeploymentSlots/Source/College.Web/College.App/Properties/ServiceDependencies/app-college-web-blazor - Web Deploy/profile.arm.json
+microsoft-reactor/S9_2022Jan12_WebAppsDeploymentSlots/Source/College.Web/College.App/Properties/ServiceDependencies/app-college-web-blazor-darkprod - Web Deploy/profile.arm.json
+microsoft-reactor/S9_2022Jan12_WebAppsDeploymentSlots/Source/College.Web/College.RazorApp/Properties/ServiceDependencies/local/appInsights1.arm.json
+microsoft-reactor/S9_2022Jan12_WebAppsDeploymentSlots/Source/College.Web/College.RazorApp/Properties/ServiceDependencies/app-college-web-razor - Web Deploy/profile.arm.json
+microsoft-reactor/S9_2022Jan12_WebAppsDeploymentSlots/Source/College.Web/College.RazorApp/Properties/serviceDependencies.local.json
+microsoft-reactor/S9_2022Jan12_WebAppsDeploymentSlots/Source/College.Web/College.RazorApp/Properties/serviceDependencies.json
+microsoft-reactor/S9_2022Jan12_WebAppsDeploymentSlots/Source/College.Web/WebJob1/Properties/ServiceDependencies/app-college-web-razor - Web Deploy/profile.arm.json
