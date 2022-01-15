@@ -33,6 +33,12 @@
 
 ## 1. Modify the .NET 6 Web API to work with DynamoDB
 
+Note:
+```
+dotnet run --project ./api/Products.Api/Products.Api.csproj 
+dotnet run --project ./web/Products.Web/Products.Web.csproj 
+```
+
 > 1. Discussion and Demo
 
 Install these Pre-Requisites on EC2 Ubuntu:
