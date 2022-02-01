@@ -1,8 +1,8 @@
 # AZ-204 | Azure Web Apps Scaling
 
-## Date Time: 12-Jan-2022 at 09:00 AM IST
+## Date Time: 02-Feb-2022 at 09:00 AM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/282116856](https://www.meetup.com/microsoft-reactor-bengaluru/events/282116856)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/282135512](https://www.meetup.com/microsoft-reactor-bengaluru/events/282135512)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
@@ -41,11 +41,12 @@
 
 ## What are we doing today?
 
-> 1. Deployment Slots
-> 1. Creating Web Jobs
-> 1. Web Application Backup
-> 1. Working with Application Insights for Web Apps
-> 1. Working with Application Insights for Azure Functions
+> 1. Scaling Web App [Up and Out]
+> 1. Scaling out Web App
+> 1. Scaling In/Out manually
+> 1. Scaling In/Out automatically based on Schedule
+> 1. Scaling In/Out automatically based on Specific Dates
+> 1. Scaling In/Out automatically based on Metrics
 
 ---
 
@@ -53,29 +54,34 @@
 
 ---
 
-## 1. Deployment Slots
+![Database Deployment | 100x100](./Documentation/Images/1DatabaseDeployment.PNG)
+
+## 1. Scaling Web App [Up and Out]
 
 > 1. Discussion and Demo
 
-## 2. Creating Web Jobs
+## 2. Scaling out Web App
 
 > 1. Discussion and Demo
 
-## 3. Web Application Backup
-
-> 1. Discussion and Demo
-
-
-## 4. Working with Application Insights for Web Apps
-
-> 1. Discussion and Demo
-
-## 5. Working with Application Insights for Azure Functions
+## 3. Scaling In/Out manually
 
 > 1. Discussion and Demo
 
 
- ##  (**Stretch Goal** if time permits) - GitCodeChangeTracker - Http Trigger
+## 4. Scaling In/Out automatically based on Schedule
+
+> 1. Discussion and Demo
+
+## 5. Scaling In/Out automatically based on Specific Dates
+
+> 1. Discussion and Demo
+
+## 6. Scaling In/Out automatically based on Metrics
+
+> 1. Discussion and Demo
+
+## 7. GitCodeChangeTracker - Http Trigger - (**Stretch Goal** if time permits)
 
 When code is commited to the repository, GitHub Webhook will invoke **GitCodeChangeTracker** function. This function has two (Table, and Blob) Output  bindings. We will store information into the Table, and Blob. It will trigger the `textfile-creation` function when the blob is created (`Function Chaining`).
 
@@ -127,7 +133,7 @@ func azure functionapp publish func-azcoretools-demo-dev-001
 
 ---
 
-## 6. SUMMARY / RECAP / Q&A
+## 8. SUMMARY / RECAP / Q&A
 
 ---
 
@@ -136,12 +142,14 @@ func azure functionapp publish func-azcoretools-demo-dev-001
 
 ---
 
-## What is Next? (`Session 10` of `20 Sessions` on 19-Jan-2022)
+## What is Next? (`Session 11` of `20 Sessions` on 09-Feb-2022)
 
 ### Azure Web Apps Scaling
 
-> 1. Scaling Web App [Up and Out]
-> 1. Scaling out Web App
-> 1. Scaling In/Out manually
-> 1. Scaling In/Out automatically [Schedule, Specific Dates, Metrics]
+> 1. Deploying Node JS Web API
+> 1. Deploying .NET Web API
+> 1. Deploying Angular 13 Web App
+> 1. Deploying ReactJS 17.x
+> 1. Deploying Blazor WASM to Web App and integrating with existing Web API
+> 1. Deploying ASP.NET Razor to Web App and integrating with existing Web API
 
