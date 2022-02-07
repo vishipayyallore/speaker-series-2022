@@ -1,8 +1,8 @@
-# AZ-204 | Azure Web Apps Scaling
+# AZ-204 | .NET 6 Web API, Razor, Blazor WASM, NodeJS, Angular, and ReactJS
 
-## Date Time: 02-Feb-2022 at 09:00 AM IST
+## Date Time: 09-Feb-2022 at 09:00 AM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/282135512](https://www.meetup.com/microsoft-reactor-bengaluru/events/282135512)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/283315441](https://www.meetup.com/microsoft-reactor-bengaluru/events/283315441)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
