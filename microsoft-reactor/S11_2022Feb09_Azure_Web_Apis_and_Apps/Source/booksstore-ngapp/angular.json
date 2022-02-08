@@ -78,7 +78,8 @@
               "browserTarget": "booksstore-ngapp:build:production"
             },
             "development": {
-              "browserTarget": "booksstore-ngapp:build:development"
+              "browserTarget": "booksstore-ngapp:build:development",
+              "port": 4007
             }
           },
           "defaultConfiguration": "development"
