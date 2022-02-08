@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+```
+npx create-react-app .
+npm i babel-plugin-emotion
+npm run build
+
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

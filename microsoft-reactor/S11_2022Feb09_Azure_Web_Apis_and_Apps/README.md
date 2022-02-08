@@ -42,8 +42,8 @@
 ## What are we doing today?
 
 > 1. Deploy Node JS Web API to Azure. It connects to Mongo Atlas.
-> 1. Deploy Angular 13 App to Azure
 > 1. Deploy ReactJS Web App to Azure. It retrieves the data from Node JS Web API. (MERN Stack)
+> 1. Deploy Angular 13 App to Azure. It retrieves the data from Node JS Web API. (MEAN Stack)
 > 1. Deploy .NET 6 Razor Web App to Azure Container Registry, and Azure Container Instances.
 > 1. Deploy .sqlproj to SQL Azure.
 > 1. Deploy .NET 6 Web API to Azure.
@@ -55,17 +55,17 @@
 
 ---
 
-## 1. Deploy Angular 13 App to Azure
-
-> 1. Discussion and Demo
-
-## 2. Deploy Node JS Web API to Azure. It connects to Mongo Atlas.
+## 1. Deploy Node JS Web API to Azure. It connects to Mongo Atlas.
 
 > 1. Discussion and Demo
 
 ![NodeJS Linux Docker Container | 100x100](./Documentation/Images/NodeJS_Linux_Docker_Container.PNG)
 
-## 3. Deploy ReactJS Web App to Azure. It retrieves the data from Node JS Web API. (MERN Stack)
+## 2. Deploy ReactJS Web App to Azure. It retrieves the data from Node JS Web API. (MERN Stack)
+
+> 1. Discussion and Demo
+
+## 3. Deploy Angular 13 App to Azure. It retrieves the data from Node JS Web API. (MEAN Stack)
 
 > 1. Discussion and Demo
 

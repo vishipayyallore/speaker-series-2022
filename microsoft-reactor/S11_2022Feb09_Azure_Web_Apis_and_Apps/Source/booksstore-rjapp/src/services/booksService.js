@@ -1,4 +1,5 @@
-const baseUrl = 'http://localhost:4000/api/books';
+// const baseUrl = 'http://localhost:4000/api/books';
+const baseUrl = 'https://app-books-api-dev.azurewebsites.net/api/books';
 
 export async function getAllBooks() {
 

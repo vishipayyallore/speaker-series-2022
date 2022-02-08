@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -29,21 +29,18 @@ function App() {
                         </div>
                     </div>
                     <div className="col-md-10 ml-sm-auto col-lg-10 px-4">
-                        <Router>
-                            <Routes>
-                                <Route path="/" exact component={HomePage} />
-                                <Route path="/about" component={AboutPage} />
-                                <Route path="/list-books" component={ListBooksPage} />
-                                <Route path="/add-book" component={AddBookPage} />
-                                <Route path="/edit-book/:id" component={EditBookPage} />
-                                <Route path="/delete-book/:id" component={DeleteBookPage} />
-                                <Route component={PageNotFound} />
-                            </Routes>
-                        </Router>
+                        <Routes>
+                            <Route path="/" exact element={< HomePage />} />
+                            <Route path="/about" element={<AboutPage />} />
+                            <Route path="/list-books" element={<ListBooksPage />} />
+                            <Route path="/add-book" element={<AddBookPage />} />
+                            <Route path="/edit-book/:id" element={<EditBookPage />} />
+                            <Route path="/delete-book/:id" element={<DeleteBookPage />} />
+                            <Route element={<PageNotFound />} />
+                        </Routes>
                     </div>
                 </div>
             </div>
-
 
             <Footer />
         </>
