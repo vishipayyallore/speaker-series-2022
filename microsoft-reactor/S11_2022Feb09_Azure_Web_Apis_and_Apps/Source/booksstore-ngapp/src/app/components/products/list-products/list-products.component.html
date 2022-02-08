@@ -1,0 +1,105 @@
+<!-- <div *ngIf='errorMessage' class='alert alert-danger shadow'>
+    Error: {{ errorMessage }}
+</div> -->
+
+<sv-error-alert [errorMessage]="errorMessage"></sv-error-alert>
+
+<div class='card shadow'>
+
+    <div class='card-header d-flex justify-content-between'>
+        <h1>{{pageTitle}}</h1>
+        <div class="align-self-center d-flex justify-content-between px-2">
+            <button type="button" class="btn btn-secondary btn-sm ml-2 shadow" title="Refresh Products"
+                (click)="refreshProducts()">
+                <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
+            </button>
+            <div class="px-2">&nbsp;</div>
+            <button type="button" class="btn btn-primary btn-sm ml-2 shadow" title="Add Product">
+                <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class='card-body'>
+
+        <!-- <div class="container py-2 d-flex" *ngIf="showSpinner">
+            <h1 class="spinner">Loading ... Please wait.</h1>
+            <span class="spinner">
+                <i class="fa fa-spinner fa-spin fa-4x"></i>
+            </span>
+        </div> -->
+
+        <sv-loader [showSpinner]="showSpinner"></sv-loader>
+
+        <ng-container *ngIf="!showSpinner">
+            <div class='row py-3' *ngIf="hasProducts">
+                <div class='col-md-2'>Filter by:</div>
+                <div class='col-md-4'>
+                    <input type='text' [(ngModel)]='listFilter' />
+                </div>
+                <div class='col-md-6' *ngIf='listFilter'>
+                    <h6>Filtered by: {{listFilter}}</h6>
+                </div>
+            </div>
+
+            <div class='table-responsive table-striped table-bordered table-hover shadow'>
+
+                <table class='table px-0 py-0' *ngIf="hasProducts">
+                    <thead>
+                        <tr>
+                            <th>
+                                <button class='btn btn-primary shadow' (click)='toggleImage()'
+                                    title="{{showImage ? 'Hide' : 'Show'}} Image">
+                                    <i class="fa {{showImage ? 'fa-eye-slash' : 'fa-eye'}} fa-2x"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </th>
+                            <th class="product-name-td-styles">Product</th>
+                            <th>Code</th>
+                            <th>Available</th>
+                            <th>Price</th>
+                            <th>5 Star Rating</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let product of products'>
+                            <td class="image-display-column-styles">
+                                <img *ngIf='showImage' class="rounded-circle" [src]='product.imageUrl'
+                                    [title]='product.productName' [style.width.px]='imageWidth'
+                                    [style.margin.px]='imageMargin' />
+                            </td>
+                            <td class="product-name-td-styles">
+                                {{product.productName}}
+                            </td>
+                            <td>{{product.productCode | convertToSpaces:'-' | lowercase}}</td>
+                            <td>{{product.releaseDate | date}}</td>
+                            <td class="currency-column-styles">{{product.price | currency: 'INR' : 'symbol' : '1.2-2'}}
+                            </td>
+                            <td>
+                                <sv-star-raiting class="star-rating-styles" [currentRating]="product.starRating">
+                                </sv-star-raiting>
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-between px-2">
+                                    <button type="button" class="btn btn-warning btn-sm ml-2 shadow text-white mx-2"
+                                        [routerLink]="['/edit-product', product.productId]" title="Edit Product">
+                                        <i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i>
+                                    </button>
+                                    <!-- <div class="mx-1">&nbsp;</div> -->
+                                    <button type="button" class="btn btn-danger btn-sm ml-2 shadow"
+                                        [routerLink]="['/delete-product', product.productId]" title="Delete Product">
+                                        <i class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </ng-container>
+
+    </div>
+
+</div>

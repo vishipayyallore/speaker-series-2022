@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'booksstore-ngapp';
+  title = 'ng12-products';
+  notificationsCount = 5;
 }

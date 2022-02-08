@@ -1,0 +1,65 @@
+thead {
+  color: navy;
+}
+
+th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+tr {
+  height: 69px;
+}
+
+td {
+  color: navy;
+  text-align: center;
+  vertical-align: middle;
+}
+
+div {
+  color: Navy;
+}
+
+.rounded-circle {
+  border: 1px solid;
+  /* border-color: blue; */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+img {
+  top: 0;
+  left: 0;
+  width: 50px !important;
+  height: 50px !important;
+  box-shadow: 3px 3px 3px rgb(5, 43, 126) !important;
+}
+
+.show-image-header-styles {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.currency-column-styles {
+  text-align: right;
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+.star-rating-styles {
+  float: left;
+  padding-left: 50px;
+}
+
+.image-display-column-styles {
+  width: 150px;
+}
+
+.product-name-td-styles {
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 100px;
+  padding-right: 0px;
+}
