@@ -41,12 +41,13 @@
 
 ## What are we doing today?
 
-> 1. Scaling Web App [Up and Out]
-> 1. Scaling out Web App
-> 1. Scaling In/Out manually
-> 1. Scaling In/Out automatically based on Schedule
-> 1. Scaling In/Out automatically based on Specific Dates
-> 1. Scaling In/Out automatically based on Metrics
+> 1. Deploy Node JS Web API to Azure. It connects to Mongo Atlas.
+> 1. Deploy Angular 13 App to Azure
+> 1. Deploy ReactJS Web App to Azure. It retrieves the data from Node JS Web API. (MERN Stack)
+> 1. Deploy .NET 6 Razor Web App to Azure Container Registry, and Azure Container Instances.
+> 1. Deploy .sqlproj to SQL Azure.
+> 1. Deploy .NET 6 Web API to Azure.
+> 1. Deploy .NET 6 Blazor Web App to Azure. It retrieves the data from .NET 6 Web API.
 
 ---
 
@@ -54,82 +55,37 @@
 
 ---
 
+## 1. Deploy Angular 13 App to Azure
+
+> 1. Discussion and Demo
+
+## 2. Deploy Node JS Web API to Azure. It connects to Mongo Atlas.
+
+> 1. Discussion and Demo
+
+![NodeJS Linux Docker Container | 100x100](./Documentation/Images/NodeJS_Linux_Docker_Container.PNG)
+
+## 3. Deploy ReactJS Web App to Azure. It retrieves the data from Node JS Web API. (MERN Stack)
+
+> 1. Discussion and Demo
+
+## 4. Deploy .NET 6 Razor Web App to Azure Container Registry, and Azure Container Instances.
+
+> 1. Discussion and Demo
+
+## 5. Deploy .sqlproj to SQL Azure.
+
+> 1. Discussion and Demo
+
 ![Database Deployment | 100x100](./Documentation/Images/1DatabaseDeployment.PNG)
 
-## 1. Scaling Web App [Up and Out]
+## 6. Deploy .NET 6 Web API to Azure.
 
 > 1. Discussion and Demo
 
-## 2. Scaling out Web App
+## 7. Deploy .NET 6 Blazor Web App to Azure. It retrieves the data from .NET 6 Web API.
 
 > 1. Discussion and Demo
-
-## 3. Scaling In/Out manually
-
-> 1. Discussion and Demo
-
-
-## 4. Scaling In/Out automatically based on Schedule
-
-> 1. Discussion and Demo
-
-## 5. Scaling In/Out automatically based on Specific Dates
-
-> 1. Discussion and Demo
-
-## 6. Scaling In/Out automatically based on Metrics
-
-> 1. Discussion and Demo
-
-## 7. GitCodeChangeTracker - Http Trigger - (**Stretch Goal** if time permits)
-
-When code is commited to the repository, GitHub Webhook will invoke **GitCodeChangeTracker** function. This function has two (Table, and Blob) Output  bindings. We will store information into the Table, and Blob. It will trigger the `textfile-creation` function when the blob is created (`Function Chaining`).
-
-### textfile-creation - Blob Trigger
-On Blob creation this function we be invoked. It has `Table` output binding and will log the blob creation. It will also store the content of the blob inside `FileContents` column of the Table.
-
-### Steps:
-
-1. Verify the Azure Functions Core Tools on local Laptop.
-1. Create the Azure Function project using **func init**
-1. Create two (`GitCodeChangeTracker`, and `textfile-creation`) new functions with **func new**
-1. Modify the code of both (`GitCodeChangeTracker`, and `textfile-creation`) azure functions. Please refer **StarterFiles** folder.
-1. Verify functions locally **func start**. We use **Postman** for testing it locally.
-1. **Debug** using Visual Studio Code.
-1. Function App is already create using **az functionapp create** command
-1. Publish the Function app to Azure using **func azure functionapp publish func-azcoretools-demo-dev-001**
-1. Ensure to update the Function App with Table Storage Connection String
-
-```
-func version
-func
-func init
-func new
-func start
-func azure functionapp publish func-azcoretools-demo-dev-001
-```
-
-### Images for Reference
-
-### Publishing Azure Functions using _func azure functionapp publish_ command
-
-![UI Look and Feel | 100x100](./Documentation/Images/Github-Func-WebHook-Img1.PNG)
-
-### GitHub Webhook invoking Http Trigger Azure Function
-
-![UI Look and Feel | 100x100](./Documentation/Images/Github-Func-WebHook-Img2.PNG)
-
-### Http Trigger Function Storing the record in Table using Output binding
-
-![UI Look and Feel | 100x100](./Documentation/Images/Github-Func-WebHook-Img3.PNG)
-
-### Http Trigger Function Storing the JSON file in blob using Output binding
-
-![UI Look and Feel | 100x100](./Documentation/Images/Github-Func-WebHook-Img4.PNG)
-
-### Blob Trigger Function Storing the record in Table using Output binding
-
-![UI Look and Feel | 100x100](./Documentation/Images/Github-Func-WebHook-Img5.PNG)
 
 ---
 
@@ -142,14 +98,8 @@ func azure functionapp publish func-azcoretools-demo-dev-001
 
 ---
 
-## What is Next? (`Session 11` of `20 Sessions` on 09-Feb-2022)
+## What is Next? (`Session 12` of `20 Sessions` on 23-Feb-2022)
 
-### Azure Web Apps Scaling
+### Mini Project with Azure Durable Functions
 
-> 1. Deploying Node JS Web API
-> 1. Deploying .NET Web API
-> 1. Deploying Angular 13 Web App
-> 1. Deploying ReactJS 17.x
-> 1. Deploying Blazor WASM to Web App and integrating with existing Web API
-> 1. Deploying ASP.NET Razor to Web App and integrating with existing Web API
-
+> 1. Creating Mini Project with Azure Durable Functions

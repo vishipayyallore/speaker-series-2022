@@ -1,0 +1,25 @@
+{
+  "name": "booksstore-api",
+  "version": "1.0.1",
+  "description": "Simple NodeJS + Express + Mongo Db Web API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/server.js"
+  },
+  "author": "Viswanatha Swamy P K",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-async-handler": "^1.2.0",
+    "joi": "^17.6.0",
+    "mongoose": "^6.2.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
