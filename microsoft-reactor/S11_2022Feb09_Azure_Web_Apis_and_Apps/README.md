@@ -42,12 +42,13 @@
 ## What are we doing today?
 
 > 1. Deploy Node JS Web API to Azure. It connects to Mongo Atlas.
-> 1. **MERN Stack** - Deploy ReactJS Web App to Azure. It retrieves the data from Node JS Web API.
-> 1. **MEAN Stack** - Deploy Angular 13 App to Azure. It retrieves the data from Node JS Web API.
-> 1. Deploy .NET 6 Razor Web App to Azure Container Registry, and Azure Container Instances.
-> 1. Deploy .sqlproj to SQL Azure.
-> 1. Deploy .NET 6 Web API to Azure.
-> 1. Deploy .NET 6 Blazor Web App to Azure. It retrieves the data from .NET 6 Web API.
+> 1. **MERN Stack** - Deploy ReactJS Web App to Azure. It retrieves the data from Node JS Web API
+> 1. **MEAN Stack** - Deploy Angular 13 App to Azure. It retrieves the data from Node JS Web API
+> 1. Deploy .NET 6 Razor Web App to Azure Container Registry, and Azure Container Instances
+> 1. Deploy .NET 6 Razor Web App to Docker Registry, and Azure App Server (Docker Container)
+> 1. Deploy .sqlproj to SQL Azure
+> 1. Deploy .NET 6 Web API to Azure
+> 1. Deploy .NET 6 Blazor Web App to Azure. It retrieves the data from .NET 6 Web API
 
 ---
 
@@ -77,23 +78,37 @@
 
 > 1. Discussion and Demo
 
-## 5. Deploy .sqlproj to SQL Azure.
+![Azure Container Registry | 100x100](./Documentation/Images/AzureContainerRegistry.PNG)
+
+![Azure Container Instance | 100x100](./Documentation/Images/AzureContainerInstance.PNG)
+
+## 5. Deploy .NET 6 Razor Web App to Docker Registry, and Azure App Server (Docker Container)
+
+![Pushing To Docker | 100x100](./Documentation/Images/PushingToDocker.PNG)
+
+![Inside Docker Registry | 100x100](./Documentation/Images/InsideDockerRegistry.PNG)
+
+![App Service Docker Container | 100x100](./Documentation/Images/AppServiceDockerContainer.PNG)
+
+![Web App from Docker Registry | 100x100](./Documentation/Images/WebAppFromDocker.PNG)
+
+## 6. Deploy .sqlproj to SQL Azure.
 
 > 1. Discussion and Demo
 
 ![Database Deployment | 100x100](./Documentation/Images/1DatabaseDeployment.PNG)
 
-## 6. Deploy .NET 6 Web API to Azure.
+## 7. Deploy .NET 6 Web API to Azure.
 
 > 1. Discussion and Demo
 
-## 7. Deploy .NET 6 Blazor Web App to Azure. It retrieves the data from .NET 6 Web API.
+## 8. Deploy .NET 6 Blazor Web App to Azure. It retrieves the data from .NET 6 Web API.
 
 > 1. Discussion and Demo
 
 ---
 
-## 8. SUMMARY / RECAP / Q&A
+## 9. SUMMARY / RECAP / Q&A
 
 ---
 
