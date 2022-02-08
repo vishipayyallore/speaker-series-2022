@@ -1,0 +1,88 @@
+.top-navbar-color {
+	background: #154360;
+	color: white;
+}
+
+.button-primary {
+	background-color: #154360;
+	color: azure;
+}
+
+.sidenav {
+	height: inherit;
+	width: 15%;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	transition: 0.5s;
+}
+
+.bg-sidebar {
+	background: #d4e6f1;
+	color: white;
+}
+
+.navbar ul {
+	display: flex;
+}
+
+.navbar a {
+	color: #fff;
+	padding: 0.45rem;
+	margin: 0 0.25rem;
+}
+
+.navbar a:hover {
+	color: yellow;
+}
+
+.navbar .welcome span {
+	margin-right: 0.6rem;
+}
+
+.PageTitle {
+	color: royalblue;
+}
+
+footer {
+	background: #154360;
+	color: white;
+	padding: 1px;
+	bottom: 0;
+	vertical-align: middle;
+}
+
+.float {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	right: 40px;
+	top: 74px;
+	background-color: #154360;
+	color: #d4e6f1;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 2px 2px 3px royalblue;
+}
+
+.float-margintop {
+	margin-top: 22px;
+}
+
+a:hover {
+	color: white;
+}
+
+.labelAndTextbox {
+	display: flex;
+}
+
+.btn-maincolor {
+	background-color: #154360;
+	color: white;
+}
+
+.btn-maincolor a:hover {
+	background-color: #154360;
+	color: yellow;
+}
