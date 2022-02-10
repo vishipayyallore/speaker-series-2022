@@ -11,8 +11,6 @@ namespace FuncApp.HealthCheckDemo
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            builder?.Services.AddTransient<SampleHealthCheck>();
-
             builder.Services.AddHealthChecks()
                 .AddCheck<SampleHealthCheck>("SQLDatabase1Check",
                 HealthStatus.Unhealthy,

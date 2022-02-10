@@ -15,13 +15,10 @@ namespace FuncApp.HealthCheckDemo
     public class SQLDb1HealthCheck
     {
 
-        private readonly SampleHealthCheck _sampleHealthCheck;
         private readonly HealthCheckService _healthCheckService;
 
-        public SQLDb1HealthCheck(SampleHealthCheck sampleHealthCheck, HealthCheckService healthCheckService)
+        public SQLDb1HealthCheck(HealthCheckService healthCheckService)
         {
-            _sampleHealthCheck = sampleHealthCheck ?? throw new ArgumentNullException(nameof(sampleHealthCheck));
-
             _healthCheckService = healthCheckService ?? throw new ArgumentNullException(nameof(healthCheckService));
         }
 
@@ -37,19 +34,16 @@ namespace FuncApp.HealthCheckDemo
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
-            name = name ?? data?.name;
+            name ??= data?.name;
 
             string responseMessage = string.IsNullOrEmpty(name)
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
                 : $"Hello, {name}. This HTTP triggered function executed successfully.";
 
-            //var result = await _sampleHealthCheck.CheckHealthAsync(new HealthCheckContext(), cancellationToken);
-            //return new OkObjectResult(result);
-
             var result = await _healthCheckService.CheckHealthAsync((check) => check.Tags.Contains("SQLDatabase1Check"), cancellationToken);
             return new OkObjectResult(result);
-
-            // return new OkObjectResult(responseMessage);
         }
+
     }
+
 }
