@@ -49,6 +49,7 @@
 > 1. Deploy .NET 6 Web API on Azure App Service
 > 1. Modify the Web API's Configuration to use secrets from Azure Key Vault
 > 1. Verify the Web API using Postman
+> 1. Adding APIs to API Management
 > 1. Integrate .NET 6 Blazor WASM based Single Page Application with Web API
 > 1. Deploy .NET 6 Blazor WASM based Single Page Application on Azure App Service
 > 1. Containerzing the Blazor WASM based Single Page Application
@@ -61,12 +62,13 @@
 ---
 
 **Note:** [Click here for Source Code on GitHub](https://github.com/vishipayyallore/cloudnative-dot-net6-azure)
+
 ## 1. Some security practices
 
 > 1. Discussion on security practices. This is will be as part of all sections
 
-
 ## 2. Deploy .sqlproj Azure SQL Server
+
 > 1. Discussion
 > 1. Adding Virtual Network to Azure SQL Server Firewall Rule
 > 1. Deploy .sqlproj Azure SQL Server using VS 2022
@@ -94,11 +96,13 @@
 > 1. We will store the Azure SQL Server and Redis Cache secrets in Azure Key Vault.
 
 **SqlServerConnectionString**
+
 ```
 Server=tcp:YourServer.database.windows.net,1433;Initial Catalog=sqldb-booksstore;Persist Security Info=False;User ID=demouser;Password=YourPassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 ```
 
 **RedisConnectionString**
+
 ```
 YourRedis.redis.cache.windows.net:6380,password=YourPassword=,ssl=True,abortConnect=False
 ```
@@ -106,10 +110,13 @@ YourRedis.redis.cache.windows.net:6380,password=YourPassword=,ssl=True,abortConn
 ## ![Secrets In Azure Key Vault | 100x100](./Documentation/Images/SecretsInAzureKeyVault.PNG)
 
 ## 6. Deploy .NET 6 Web API on Azure App Service
+
 > 1. Discussion
 > 1. Secrets.json
 > 1. Dependency Injection
 > 1. Deploy .NET 6 Web API on Azure App Service using Visual Studio 2022
+
+## ![Publish Web API To Azure | 100x100](./Documentation/Images/PublishWebAPIToAzure.PNG)
 
 ## 7. Modify the Web API's Configuration to use secrets from Azure Key Vault
 
@@ -132,22 +139,58 @@ DataStoreSettings__RedisConnectionString
 
 ```
 
+## ![AppSettings Azure Key Vault Reference | 100x100](./Documentation/Images/AppSettings_AzureKeyVaultReference.PNG)
+
+## ![Permission To Azure Key Vault | 100x100](./Documentation/Images/PermissionToAzureKeyVault.PNG)
+
 ## 8. Verify the Web API using Postman
 
 > 1. Discussion
 > 1. Verify the Web API using Postman
 
-## 9. Integrate .NET 6 Blazor WASM based Single Page Application with Web API
+## 9. Adding APIs to API Management
+
+> 1. Discussion and Demo
+
+```
+<cors>
+    <allowed-origins>
+        <origin>https://localhost:7223/</origin>
+        <origin>https://app-booksstoreweb-12feb-dev.azurewebsites.net/</origin>
+    </allowed-origins>
+    <allowed-methods preflight-result-max-age="300">
+        <method>*</method>
+    </allowed-methods>
+    <allowed-headers>
+        <header>*</header>
+    </allowed-headers>
+</cors>
+
+```
+
+## 10. Integrate .NET 6 Blazor WASM based Single Page Application with Web API
 
 > 1. Discussion
 > 1. Integrate .NET 6 Blazor WASM based Single Page Application with Web API
 
-## 10. Deploy .NET 6 Blazor WASM based Single Page Application on Azure App Service
+**appsettings.json**
+
+```
+"WebApis": {
+    "Books_API": "https://app-booksstoreapi-12feb-dev.azurewebsites.net",
+    "Books": "https://apimdnlh12febprod.azure-api.net/devapim/",
+    "ApimSubscriptionKey": "YourSubscriptionKey"
+  },
+```
+
+## 11. Deploy .NET 6 Blazor WASM based Single Page Application on Azure App Service
 
 > 1. Discussion
 > 1. Deploy .NET 6 Blazor WASM based Single Page Application on Azure App Service
 
-## 11. Containerzing the Blazor WASM based Single Page Application
+## ![Blazor WASM In Azure | 100x100](./Documentation/Images/BlazorWASMInAzure.PNG)
+
+## 12. Containerzing the Blazor WASM based Single Page Application
 
 > 1. Dockerfile Discussion
 > 1. Change the directory to D:\LordKrishna\GitHub\cloudnative-dot-net6-azure\source\web
@@ -155,13 +198,13 @@ DataStoreSettings__RedisConnectionString
 > 1. Execute the below mentioned command to run the container
 
 ```
-docker build -f "D:\LordKrishna\GitHub\cloudnative-dot-net6-azure\source\web\Books.Web\Dockerfile" --force-rm -t booksdemo-image "D:\LordKrishna\GitHub\cloudnative-dot-net6-azure"  
+docker build -f "D:\LordKrishna\GitHub\cloudnative-dot-net6-azure\source\web\Books.Web\Dockerfile" --force-rm -t booksdemo-image "D:\LordKrishna\GitHub\cloudnative-dot-net6-azure"
 ```
 
 ![Create Blazor Wasm Docker Image | 100x100](./Documentation/Images/BlazorWasmCreateDocker.PNG)
 
 ```
-docker run -d -p 8091:80 --name demo-container1 booksdemo-image   
+docker run -d -p 8091:80 --name demo-container1 booksdemo-image
 ```
 
 ![Running The Books Blazor WASM Container | 100x100](./Documentation/Images/RunningTheBooksContainer.PNG)
