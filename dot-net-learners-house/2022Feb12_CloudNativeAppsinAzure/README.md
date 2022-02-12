@@ -10,7 +10,7 @@
 
 ## Pre-Requisites
 
-> 1. .NET 3.1/6 SDK
+> 1. .NET 6
 > 1. Azure CLI
 
 ### Software/Tools
@@ -18,7 +18,7 @@
 > 1. OS: win32 x64
 > 1. Node: **v14.17.5**
 > 1. Visual Studio Code
-> 1. Visual Studio 2019/2022
+> 1. Visual Studio 2022
 
 ### Prior Knowledge
 
@@ -41,14 +41,18 @@
 
 ## What are we doing today?
 
-> 1. Deploy Node JS Web API to Azure. It connects to Mongo Atlas.
-> 1. **MERN Stack** - Deploy ReactJS Web App to Azure. It retrieves the data from Node JS Web API
-> 1. **MEAN Stack** - Deploy Angular 13 App to Azure. It retrieves the data from Node JS Web API
-> 1. Deploy .NET 6 Razor Web App to Azure Container Registry, and Azure Container Instances
-> 1. Deploy .NET 6 Razor Web App to Docker Registry, and Azure App Server (Docker Container)
-> 1. Deploy .sqlproj to SQL Azure
-> 1. Deploy .NET 6 Web API to Azure
-> 1. Deploy .NET 6 Blazor Web App to Azure. It retrieves the data from .NET 6 Web API
+> 1. Some security practices
+> 1. Deploy .sqlproj Azure SQL Server
+> 1. Redis cache to store data in memory
+> 1. Cache Aside Pattern
+> 1. Azure Key Vault to store secrets of Azure SQL Server and Redis Cache
+> 1. Deploy .NET 6 Web API on Azure App Service
+> 1. Modify the Web API's Configuration to use secrets from Azure Key Vault
+> 1. Verify the Web API using Postman
+> 1. Integrate .NET 6 Blazor WASM based Single Page Application with Web API
+> 1. Deploy .NET 6 Blazor WASM based Single Page Application on Azure App Service
+> 1. Containerzing the Blazor WASM based Single Page Application
+> 1. SUMMARY / RECAP / Q&A
 
 ---
 
@@ -56,59 +60,115 @@
 
 ---
 
-## 1. Deploy Node JS Web API to Azure. It connects to Mongo Atlas.
+**Note:** [Click here for Source Code on GitHub](https://github.com/vishipayyallore/cloudnative-dot-net6-azure)
+## 1. Some security practices
+
+> 1. Discussion on security practices. This is will be as part of all sections
+
+
+## 2. Deploy .sqlproj Azure SQL Server
+> 1. Discussion
+> 1. Adding Virtual Network to Azure SQL Server Firewall Rule
+> 1. Deploy .sqlproj Azure SQL Server using VS 2022
+
+## ![Connecting To SQL Azure | 100x100](./Documentation/Images/ConnectingToSQLAzure.PNG)
+
+## ![Deploying To SQL Azure | 100x100](./Documentation/Images/DeployingToSQLAzure.PNG)
+
+## 3. Redis cache to store data in memory
+
+> 1. Discussion
+
+## ![Data In Azure Redis Cache | 100x100](./Documentation/Images/DataInAzureRedisCache.PNG)
+
+## 4. Cache Aside Pattern
 
 > 1. Discussion and Demo
 
-![NodeJS Linux Docker Container | 100x100](./Documentation/Images/NodeJS_Linux_Docker_Container.PNG)
+## ![Simple Cache Aside Pattern | 100x100](./Documentation/Images/SimpleCacheAsidePattern.PNG)
 
-## 2. **MERN Stack** - Deploy ReactJS Web App to Azure. It retrieves the data from Node JS Web API.
+## 5. Azure Key Vault to store secrets of Azure SQL Server and Redis Cache
 
-> 1. Discussion and Demo
+> 1. Discussion
+> 1. Show casing the Purge protection of Redis Cache
+> 1. We will store the Azure SQL Server and Redis Cache secrets in Azure Key Vault.
 
-![React JS MERN | 100x100](./Documentation/Images/ReactJS_MERN.PNG)
+**SqlServerConnectionString**
+```
+Server=tcp:YourServer.database.windows.net,1433;Initial Catalog=sqldb-booksstore;Persist Security Info=False;User ID=demouser;Password=YourPassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+```
 
-## 3. **MEAN Stack** - Deploy Angular 13 App to Azure. It retrieves the data from Node JS Web API.
+**RedisConnectionString**
+```
+YourRedis.redis.cache.windows.net:6380,password=YourPassword=,ssl=True,abortConnect=False
+```
 
-> 1. Discussion and Demo
+## ![Secrets In Azure Key Vault | 100x100](./Documentation/Images/SecretsInAzureKeyVault.PNG)
 
-![Angular 13 MEAN | 100x100](./Documentation/Images/Angular13_MEAN.PNG)
+## 6. Deploy .NET 6 Web API on Azure App Service
+> 1. Discussion
+> 1. Secrets.json
+> 1. Dependency Injection
+> 1. Deploy .NET 6 Web API on Azure App Service using Visual Studio 2022
 
-## 4. Deploy .NET 6 Razor Web App to Azure Container Registry, and Azure Container Instances.
+## 7. Modify the Web API's Configuration to use secrets from Azure Key Vault
 
-> 1. Discussion and Demo
+> 1. Discussion
+> 1. Modify the Web API's Configuration to use secrets from Azure Key Vault
+> 1. Verify the Web API endpoint using Chrome. It will NOT work.
+> 1. Enable the IP address of the Web API inside the SQL Server Fire Wall Rule.
+> 1. Verify the Web API endpoint using Chrome. It will work.
 
-![Azure Container Registry | 100x100](./Documentation/Images/AzureContainerRegistry.PNG)
+```
+https://YourKeyVault.vault.azure.net/secrets/SqlServerConnectionString/5038a0ac6f2c4dc6adb0098517c09253
+DataStoreSettings__SqlServerConnectionString
+@Microsoft.KeyVault(SecretUri=https://YourKeyVault.vault.azure.net/secrets/SqlServerConnectionString/5038a0ac6f2c4dc6adb0098517c09253)
+```
 
-![Azure Container Instance | 100x100](./Documentation/Images/AzureContainerInstance.PNG)
+```
+https://YourKeyVault.vault.azure.net/secrets/RedisConnectionString/80a3cc12fb74470ca7812951bebadb6c
+DataStoreSettings__RedisConnectionString
+@Microsoft.KeyVault(SecretUri=https://YourKeyVault.vault.azure.net/secrets/RedisConnectionString/80a3cc12fb74470ca7812951bebadb6c)
 
-## 5. Deploy .NET 6 Razor Web App to Docker Registry, and Azure App Server (Docker Container)
+```
 
-![Pushing To Docker | 100x100](./Documentation/Images/PushingToDocker.PNG)
+## 8. Verify the Web API using Postman
 
-![Inside Docker Registry | 100x100](./Documentation/Images/InsideDockerRegistry.PNG)
+> 1. Discussion
+> 1. Verify the Web API using Postman
 
-![App Service Docker Container | 100x100](./Documentation/Images/AppServiceDockerContainer.PNG)
+## 9. Integrate .NET 6 Blazor WASM based Single Page Application with Web API
 
-![Web App from Docker Registry | 100x100](./Documentation/Images/WebAppFromDocker.PNG)
+> 1. Discussion
+> 1. Integrate .NET 6 Blazor WASM based Single Page Application with Web API
 
-## 6. Deploy .sqlproj to SQL Azure.
+## 10. Deploy .NET 6 Blazor WASM based Single Page Application on Azure App Service
 
-> 1. Discussion and Demo
+> 1. Discussion
+> 1. Deploy .NET 6 Blazor WASM based Single Page Application on Azure App Service
 
-![Database Deployment | 100x100](./Documentation/Images/1DatabaseDeployment.PNG)
+## 11. Containerzing the Blazor WASM based Single Page Application
 
-## 7. Deploy .NET 6 Web API to Azure.
+> 1. Dockerfile Discussion
+> 1. Change the directory to D:\LordKrishna\GitHub\cloudnative-dot-net6-azure\source\web
+> 1. Execute below mentioned command to build the container
+> 1. Execute the below mentioned command to run the container
 
-> 1. Discussion and Demo
+```
+docker build -f "D:\LordKrishna\GitHub\cloudnative-dot-net6-azure\source\web\Books.Web\Dockerfile" --force-rm -t booksdemo-image "D:\LordKrishna\GitHub\cloudnative-dot-net6-azure"  
+```
 
-## 8. Deploy .NET 6 Blazor Web App to Azure. It retrieves the data from .NET 6 Web API.
+![Create Blazor Wasm Docker Image | 100x100](./Documentation/Images/BlazorWasmCreateDocker.PNG)
 
-> 1. Discussion and Demo
+```
+docker run -d -p 8091:80 --name demo-container1 booksdemo-image   
+```
+
+![Running The Books Blazor WASM Container | 100x100](./Documentation/Images/RunningTheBooksContainer.PNG)
 
 ---
 
-## 9. SUMMARY / RECAP / Q&A
+## 12. SUMMARY / RECAP / Q&A
 
 ---
 
@@ -116,9 +176,3 @@
 > 2. Any open queries, I will get back through meetup chat/twitter.
 
 ---
-
-## What is Next? (`Session 12` of `20 Sessions` on 23-Feb-2022)
-
-### Mini Project with Azure Durable Functions
-
-> 1. Creating Mini Project with Azure Durable Functions
