@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
+using System;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Threading;
@@ -10,34 +11,32 @@ namespace FuncApp.HealthCheckDemo
     public class SampleHealthCheck : IHealthCheck
     {
 
-        const string ConnectionString = "YourSQLConnectionString";
+        string ConnectionString = Environment.GetEnvironmentVariable("ConnectionStrings:ConnectionString");
 
         public async Task<HealthCheckResult> CheckHealthAsync(
             HealthCheckContext context, CancellationToken cancellationToken = default)
         {
             var isHealthy = true;
-            string errorMessage = string.Empty;
+            // string errorMessage = string.Empty;
 
-            using (var connection = new SqlConnection(ConnectionString))
+            try
             {
-                try
+                using (var connection = new SqlConnection(ConnectionString))
                 {
+
                     await connection.OpenAsync(cancellationToken);
-                }
-                catch (DbException ex)
-                {
-                    isHealthy = false;
-                    errorMessage = ex.Message;
-                    // return new HealthCheckResult(status: context.Registration.FailureStatus, exception: ex);
+
                 }
             }
-
-            if (isHealthy)
+            catch (DbException ex)
             {
-                return HealthCheckResult.Healthy("Connected to SQL Server.");
+                isHealthy = false;
+                // errorMessage = ex.Message;
+                // return new HealthCheckResult(status: context.Registration.FailureStatus, exception: ex);
             }
 
-            return HealthCheckResult.Unhealthy(errorMessage);
+            return (isHealthy) ? HealthCheckResult.Healthy("Connected to SQL Server.")
+             : HealthCheckResult.Unhealthy("Could Not be Connected to SQL Server.");
         }
     }
 }
