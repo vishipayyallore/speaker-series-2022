@@ -5,7 +5,13 @@ VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncApp.HealthCheckDemo", "FuncApp.HealthCheckDemo\FuncApp.HealthCheckDemo.csproj", "{39726D9A-BE7F-4F07-BD22-2C3B162855FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheckUIDemo", "HealthCheckUIDemo\HealthCheckUIDemo.csproj", "{AD59E0E0-7133-4B0B-A174-E675013CA362}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCheckUIDemo", "HealthCheckUIDemo\HealthCheckUIDemo.csproj", "{AD59E0E0-7133-4B0B-A174-E675013CA362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.BlazorWASMUI.Server", "HealthCheck.BlazorWASMUI\Server\HealthCheck.BlazorWASMUI.Server.csproj", "{35727E96-D0EB-46E5-A297-143B6518C775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.BlazorWASMUI.Client", "HealthCheck.BlazorWASMUI\Client\HealthCheck.BlazorWASMUI.Client.csproj", "{5E58917D-DE3F-4897-AB2B-17A01385DBEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.BlazorWASMUI.Shared", "HealthCheck.BlazorWASMUI\Shared\HealthCheck.BlazorWASMUI.Shared.csproj", "{DED3A571-CE99-4BCF-8798-6F6E830A087D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{AD59E0E0-7133-4B0B-A174-E675013CA362}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD59E0E0-7133-4B0B-A174-E675013CA362}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD59E0E0-7133-4B0B-A174-E675013CA362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35727E96-D0EB-46E5-A297-143B6518C775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35727E96-D0EB-46E5-A297-143B6518C775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35727E96-D0EB-46E5-A297-143B6518C775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35727E96-D0EB-46E5-A297-143B6518C775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E58917D-DE3F-4897-AB2B-17A01385DBEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E58917D-DE3F-4897-AB2B-17A01385DBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E58917D-DE3F-4897-AB2B-17A01385DBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E58917D-DE3F-4897-AB2B-17A01385DBEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DED3A571-CE99-4BCF-8798-6F6E830A087D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED3A571-CE99-4BCF-8798-6F6E830A087D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED3A571-CE99-4BCF-8798-6F6E830A087D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED3A571-CE99-4BCF-8798-6F6E830A087D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
