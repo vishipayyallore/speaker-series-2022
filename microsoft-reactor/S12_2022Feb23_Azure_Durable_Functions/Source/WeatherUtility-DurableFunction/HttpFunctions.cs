@@ -4,6 +4,8 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.DurableTask;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace WeatherUtility_DurableFunction
@@ -19,12 +21,11 @@ namespace WeatherUtility_DurableFunction
         {
 
             // Retrieve the DTO from Request
-            //string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            //dynamic data = JsonConvert.DeserializeObject(requestBody);
-            //name = name ?? data?.name;
+            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+            dynamic data = JsonConvert.DeserializeObject(requestBody);
 
             // Function input comes from the request content.
-            string instanceId = await starter.StartNewAsync("Function1", null);
+            string instanceId = await starter.StartNewAsync("WeatherUtilityOrchestrator", null);
 
             log.LogInformation($"Started orchestration with ID = '{instanceId}'.");
 
