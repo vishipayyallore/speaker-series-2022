@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherUtility-DurableFunction", "WeatherUtility-DurableFunction.csproj", "{A2D24711-4EB7-41B6-9AC6-6376957F9700}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionApp1", "FunctionApp1\FunctionApp1.csproj", "{101077FF-95E7-48DB-BC85-95B9477E9F80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2D24711-4EB7-41B6-9AC6-6376957F9700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D24711-4EB7-41B6-9AC6-6376957F9700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D24711-4EB7-41B6-9AC6-6376957F9700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D24711-4EB7-41B6-9AC6-6376957F9700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101077FF-95E7-48DB-BC85-95B9477E9F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101077FF-95E7-48DB-BC85-95B9477E9F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101077FF-95E7-48DB-BC85-95B9477E9F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101077FF-95E7-48DB-BC85-95B9477E9F80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {331D7CD1-440F-4748-B868-6B853C8A15D4}
+	EndGlobalSection
+EndGlobal
