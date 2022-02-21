@@ -17,4 +17,10 @@
 			<CopyToPublishDirectory>Never</CopyToPublishDirectory>
 		</None>
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Dtos\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\WeatherUtility.Core\WeatherUtility.Core.csproj" />
+	</ItemGroup>
 </Project>
