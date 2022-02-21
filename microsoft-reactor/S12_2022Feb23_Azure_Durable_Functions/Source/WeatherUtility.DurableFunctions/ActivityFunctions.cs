@@ -13,11 +13,17 @@ namespace WeatherUtility.DurableFunction
     public class ActivityFunctions
     {
 
+        private readonly IWeatherDataService _weatherDataService;
         private readonly ITemperatureConvertor _temperatureConvertor;
+        private readonly ITemperatureUtility _temperatureUtility;
 
-        public ActivityFunctions(ITemperatureConvertor temperatureConvertor)
+        public ActivityFunctions(ITemperatureConvertor temperatureConvertor, IWeatherDataService weatherDataService, ITemperatureUtility temperatureUtility)
         {
-            _temperatureConvertor = temperatureConvertor ?? throw new ArgumentNullException(nameof(temperatureConvertor)); ;
+            _weatherDataService = weatherDataService ?? throw new ArgumentNullException(nameof(weatherDataService));
+
+            _temperatureConvertor = temperatureConvertor ?? throw new ArgumentNullException(nameof(temperatureConvertor));
+
+            _temperatureUtility = temperatureUtility ?? throw new ArgumentNullException(nameof(temperatureUtility));
         }
 
         [FunctionName(nameof(GetWeatherData))]
@@ -25,7 +31,7 @@ namespace WeatherUtility.DurableFunction
         {
             log.LogInformation($"Request received at ActivityFunctions::GetWeatherData() {DateTime.UtcNow} for user {name}.");
 
-            return await Task.FromResult(GetWeatherDataFromDatabase());
+            return await Task.FromResult(_weatherDataService.GetWeatherDataFromDatabase());
         }
 
         [FunctionName(nameof(GetCelsiusToFahrenheit))]
@@ -41,16 +47,19 @@ namespace WeatherUtility.DurableFunction
             return await Task.FromResult(weatherDatas);
         }
 
-        // 
+        [FunctionName(nameof(GetComfortIndex))]
+        public async Task<IList<WeatherData>> GetComfortIndex([ActivityTrigger] IList<WeatherData> weatherDatas, ILogger log)
+        {
+            log.LogInformation($"Request received at ActivityFunctions::GetComfortIndex() {DateTime.UtcNow} for user.");
 
-        // TODO: Get this data from SQLite/SQL Server/Cosmos etc.
-        private static IList<WeatherData> GetWeatherDataFromDatabase() => new List<WeatherData>
+            foreach (WeatherData weatherData in weatherDatas)
             {
-                new WeatherData { Location= "San Francisco", TemperatureCelsius = 19, Humidity = 73 },
-                new WeatherData { Location = "Denver", TemperatureCelsius = 21, Humidity = 55},
-                new WeatherData { Location = "Bologna", TemperatureCelsius = 23, Humidity= 65 },
-                new WeatherData { Location = "Hyderabad", TemperatureCelsius = 35, Humidity= 65 }
-            };
+                weatherData.ComfortIndex = _temperatureUtility.GetComfortIndex(weatherData.TemperatureFahrenheit, weatherData.Humidity);
+            }
+
+            return await Task.FromResult(weatherDatas);
+        }
+
     }
 
 }

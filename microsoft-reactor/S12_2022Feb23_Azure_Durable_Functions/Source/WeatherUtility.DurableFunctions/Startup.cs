@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using WeatherUtility.Core.Interfaces;
 using WeatherUtility.DurableFunction;
 using WeatherUtility.Lib;
+using WeatherUtility.Lib.Services;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 namespace WeatherUtility.DurableFunction
@@ -13,7 +14,11 @@ namespace WeatherUtility.DurableFunction
 
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            builder?.Services.AddTransient<ITemperatureConvertor, TemperatureConvertor>();
+            builder?.Services.AddSingleton<IWeatherDataService, WeatherDataService>();
+
+            builder?.Services.AddSingleton<ITemperatureConvertor, TemperatureConvertor>();
+
+            builder?.Services.AddSingleton<ITemperatureUtility, TemperatureUtility>();
         }
 
     }

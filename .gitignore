@@ -355,3 +355,7 @@ microsoft-reactor/S9_2022Jan12_WebAppsDeploymentSlots/Source/College.Web/College
 microsoft-reactor/S9_2022Jan12_WebAppsDeploymentSlots/Source/College.Web/College.RazorApp/Properties/serviceDependencies.local.json
 microsoft-reactor/S9_2022Jan12_WebAppsDeploymentSlots/Source/College.Web/College.RazorApp/Properties/serviceDependencies.json
 microsoft-reactor/S9_2022Jan12_WebAppsDeploymentSlots/Source/College.Web/WebJob1/Properties/ServiceDependencies/app-college-web-razor - Web Deploy/profile.arm.json
+microsoft-reactor/S12_2022Feb23_Azure_Durable_Functions/Source/WeatherUtility.DurableFunctions/Properties/serviceDependencies.func-weather-utility-dev - Zip Deploy.json
+microsoft-reactor/S12_2022Feb23_Azure_Durable_Functions/Source/WeatherUtility.DurableFunctions/Properties/ServiceDependencies/func-weather-utility-dev - Zip Deploy/appInsights1.arm.json
+microsoft-reactor/S12_2022Feb23_Azure_Durable_Functions/Source/WeatherUtility.DurableFunctions/Properties/ServiceDependencies/func-weather-utility-dev - Zip Deploy/profile.arm.json
+microsoft-reactor/S12_2022Feb23_Azure_Durable_Functions/Source/WeatherUtility.DurableFunctions/Properties/ServiceDependencies/func-weather-utility-dev - Zip Deploy/storage1.arm.json

@@ -2,6 +2,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.DurableTask;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using WeatherUtility.Core.DTOs;
 using WeatherUtility.Core.Entities;
 
 namespace WeatherUtility.DurableFunction
@@ -15,12 +16,16 @@ namespace WeatherUtility.DurableFunction
         {
             IList<WeatherData> weatherData;
 
+            var weatherRequestDto = context.GetInput<WeatherRequestDto>();
+
             // Replace "hello" with the name of your Durable Activity Function.
-            weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetWeatherData", "SriVaru");
+            weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetWeatherData", weatherRequestDto.Name);
 
             weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetCelsiusToFahrenheit", weatherData);
 
-            // returns ["Hello Tokyo!", "Hello Seattle!", "Hello London!"]
+            weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetComfortIndex", weatherData);
+
+            // returns Weather Data
             return weatherData;
         }
 

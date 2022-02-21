@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherUtility.Lib", "Weath
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherUtility.DurableFunctions", "WeatherUtility.DurableFunctions\WeatherUtility.DurableFunctions.csproj", "{E9758A5B-3E0C-45D9-9CDB-71EFACF9DF10}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5A79B943-D95A-437D-9421-363A92D34464}"
+	ProjectSection(SolutionItems) = preProject
+		WeatherUtilitySolution.dgml = WeatherUtilitySolution.dgml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
