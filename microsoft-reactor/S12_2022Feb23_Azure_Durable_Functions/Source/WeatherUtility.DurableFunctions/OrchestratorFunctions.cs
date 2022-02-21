@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using WeatherUtility.Core.Entities;
 
-namespace WeatherUtility_DurableFunction
+namespace WeatherUtility.DurableFunction
 {
     public static class OrchestratorFunctions
     {

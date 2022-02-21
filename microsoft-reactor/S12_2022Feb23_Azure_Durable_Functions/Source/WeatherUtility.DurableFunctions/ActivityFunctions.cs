@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using WeatherUtility.Core.Entities;
 
-namespace WeatherUtility_DurableFunction
+namespace WeatherUtility.DurableFunction
 {
 
     public static class ActivityFunctions
@@ -15,12 +15,22 @@ namespace WeatherUtility_DurableFunction
         [FunctionName(nameof(GetWeatherData))]
         public static async Task<IList<WeatherData>> GetWeatherData([ActivityTrigger] string name, ILogger log)
         {
-            log.LogInformation($"Request received at {DateTime.UtcNow} for user {name}.");
+            log.LogInformation($"Request received at ActivityFunctions::GetWeatherData() {DateTime.UtcNow} for user {name}.");
 
             return await Task.FromResult(GetWeatherDataFromDatabase());
         }
 
-        // TODO: Get this data from SQLite
+        [FunctionName(nameof(GetCelsiusToFahrenheit))]
+        public static async Task<IList<WeatherData>> GetCelsiusToFahrenheit([ActivityTrigger] string name, ILogger log)
+        {
+            log.LogInformation($"Request received at ActivityFunctions::GetCelsiusToFahrenheit() {DateTime.UtcNow} for user {name}.");
+
+            return await Task.FromResult(GetWeatherDataFromDatabase());
+        }
+
+        // 
+
+        // TODO: Get this data from SQLite/SQL Server/Cosmos etc.
         private static IList<WeatherData> GetWeatherDataFromDatabase() => new List<WeatherData>
             {
                 new WeatherData { Location= "San Francisco", TemperatureCelsius = 19, Humidity = 73 },

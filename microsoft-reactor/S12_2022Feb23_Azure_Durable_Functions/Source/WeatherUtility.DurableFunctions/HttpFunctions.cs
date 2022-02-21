@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace WeatherUtility_DurableFunction
+namespace WeatherUtility.DurableFunction
 {
     public static class HttpFunctions
     {
