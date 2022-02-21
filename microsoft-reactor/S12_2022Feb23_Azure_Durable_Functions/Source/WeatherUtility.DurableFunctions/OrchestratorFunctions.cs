@@ -18,8 +18,7 @@ namespace WeatherUtility.DurableFunction
             // Replace "hello" with the name of your Durable Activity Function.
             weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetWeatherData", "SriVaru");
 
-            // outputs.Add(await context.CallActivityAsync<string>("Function1_Hello", "Seattle"));
-            // outputs.Add(await context.CallActivityAsync<string>("Function1_Hello", "London"));
+            weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetCelsiusToFahrenheit", weatherData);
 
             // returns ["Hello Tokyo!", "Hello Seattle!", "Hello London!"]
             return weatherData;

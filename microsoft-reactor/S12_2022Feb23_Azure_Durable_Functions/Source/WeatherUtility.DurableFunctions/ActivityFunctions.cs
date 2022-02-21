@@ -5,15 +5,23 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using WeatherUtility.Core.Entities;
+using WeatherUtility.Core.Interfaces;
 
 namespace WeatherUtility.DurableFunction
 {
 
-    public static class ActivityFunctions
+    public class ActivityFunctions
     {
 
+        private readonly ITemperatureConvertor _temperatureConvertor;
+
+        public ActivityFunctions(ITemperatureConvertor temperatureConvertor)
+        {
+            _temperatureConvertor = temperatureConvertor ?? throw new ArgumentNullException(nameof(temperatureConvertor)); ;
+        }
+
         [FunctionName(nameof(GetWeatherData))]
-        public static async Task<IList<WeatherData>> GetWeatherData([ActivityTrigger] string name, ILogger log)
+        public async Task<IList<WeatherData>> GetWeatherData([ActivityTrigger] string name, ILogger log)
         {
             log.LogInformation($"Request received at ActivityFunctions::GetWeatherData() {DateTime.UtcNow} for user {name}.");
 
@@ -21,11 +29,16 @@ namespace WeatherUtility.DurableFunction
         }
 
         [FunctionName(nameof(GetCelsiusToFahrenheit))]
-        public static async Task<IList<WeatherData>> GetCelsiusToFahrenheit([ActivityTrigger] string name, ILogger log)
+        public async Task<IList<WeatherData>> GetCelsiusToFahrenheit([ActivityTrigger] IList<WeatherData> weatherDatas, ILogger log)
         {
-            log.LogInformation($"Request received at ActivityFunctions::GetCelsiusToFahrenheit() {DateTime.UtcNow} for user {name}.");
+            log.LogInformation($"Request received at ActivityFunctions::GetCelsiusToFahrenheit() {DateTime.UtcNow} for user.");
 
-            return await Task.FromResult(GetWeatherDataFromDatabase());
+            foreach (WeatherData weatherData in weatherDatas)
+            {
+                weatherData.TemperatureFahrenheit = _temperatureConvertor.CelsiusToFahrenheit(weatherData.TemperatureCelsius);
+            }
+
+            return await Task.FromResult(weatherDatas);
         }
 
         // 

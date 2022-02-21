@@ -12,6 +12,8 @@ namespace WeatherUtility.Core.Entities
         public float Humidity { get; set; }
 
         public float ComfortIndex { get; set; }
+
+        public DateTime CreatedDateTime { get; set; } = DateTime.UtcNow;
     }
 
 }
