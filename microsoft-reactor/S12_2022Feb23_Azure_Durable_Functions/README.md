@@ -88,7 +88,7 @@
 > 1. Discussion and Demo
 
 
-![NodeJS Linux Docker Container | 100x100](./Documentation/Images/NodeJS_Linux_Docker_Container.PNG)
+## ![Solution Map | 100x100](./Documentation/Images/SolutionMap.PNG)
 
 
 ---
