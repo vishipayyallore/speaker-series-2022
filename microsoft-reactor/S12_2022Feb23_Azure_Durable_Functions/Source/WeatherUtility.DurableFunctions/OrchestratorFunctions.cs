@@ -1,5 +1,7 @@
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.DurableTask;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using WeatherUtility.Core.DTOs;
@@ -11,22 +13,40 @@ namespace WeatherUtility.DurableFunction
     {
 
         [FunctionName(nameof(WeatherUtilityOrchestrator))]
-        public static async Task<IList<WeatherData>> WeatherUtilityOrchestrator(
-            [OrchestrationTrigger] IDurableOrchestrationContext context)
+        public static async Task<WeatherResponseDto> WeatherUtilityOrchestrator(
+            [OrchestrationTrigger] IDurableOrchestrationContext context, ILogger log)
         {
-            IList<WeatherData> weatherData;
+            // log = context.CreateReplaySafeLogger(log);
 
+            IList<WeatherData> weatherData;
+            WeatherResponseDto weatherResponseDto = new();
+
+            log.LogInformation("Retrieving the DTO from Request");
             var weatherRequestDto = context.GetInput<WeatherRequestDto>();
 
-            // Replace "hello" with the name of your Durable Activity Function.
-            weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetWeatherData", weatherRequestDto.Name);
+            try
+            {
+                log.LogInformation("Invoking GetWeatherData() Activity Function.");
+                weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetWeatherData", weatherRequestDto.Name);
 
-            weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetCelsiusToFahrenheit", weatherData);
+                log.LogInformation("Invoking GetCelsiusToFahrenheit() Activity Function.");
+                weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetCelsiusToFahrenheit", weatherData);
+                // throw new Exception("Just Chill !!");
 
-            weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetComfortIndex", weatherData);
+                log.LogInformation("Invoking GetComfortIndex() Activity Function.");
+                weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetComfortIndex", weatherData);
 
-            // returns Weather Data
-            return weatherData;
+                weatherResponseDto.Data = weatherData;
+            }
+            catch (Exception error)
+            {
+                log.LogError(error.Message);
+
+                weatherResponseDto.Success = false;
+                weatherResponseDto.Message = "Unable to process. Please speak to the Administrator";
+            }
+
+            return weatherResponseDto;
         }
 
     }

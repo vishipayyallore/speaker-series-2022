@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph DataVirtualized="True" GraphDirection="TopToBottom" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="(@5 @13 Type=HttpFunctions)" Category="CodeSchema_Class" Bounds="302.158333333333,80,135.576666666667,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="HttpFunctions" />
-    <Node Id="@10" Category="CodeSchema_Namespace" Bounds="387.2575,464.609047727174,234.65,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="System‎.Runtime‎.CompilerServices" />
-    <Node Id="@11" Category="CodeSchema_Namespace" Bounds="535.2725,409.609047727174,200.62,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="WeatherUtility‎.Core‎.Entities" />
-    <Node Id="@12" Category="CodeSchema_Namespace" Bounds="397.7225,354.609047727174,213.72,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="WeatherUtility‎.Core‎.Interfaces" />
-    <Node Id="@14" Category="CodeSchema_Namespace" Bounds="152.915,40,304.82,195" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="4" Group="Expanded" Label="WeatherUtility‎.DurableFunction" />
-    <Node Id="@15" Category="CodeSchema_Namespace" Bounds="44.670883194187,384.100173330205,150.543333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="WeatherUtility‎.Lib" />
-    <Node Id="@16" Category="CodeSchema_Class" Bounds="172.915,135,150.653333333333,25" CodeSchemaProperty_IsPublic="True" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="ActivityFunctions" />
-    <Node Id="@17" Category="CodeSchema_Class" Bounds="172.915,190,178.41,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="OrchestratorFunctions" />
-    <Node Id="@18" Category="CodeSchema_Class" Bounds="172.915,80,99.2433333333332,25" CodeSchemaProperty_IsPublic="True" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Startup" />
-    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="-17.3824501391466,344.100330473098,274.65,195" CodeSchemaProperty_StrongName="WeatherUtility.Lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="3" FilePath="$(2afda9c4-788c-4d26-9b5d-1c2680c4c9fc.OutputPath)" Group="Expanded" Label="WeatherUtility.Lib.dll" UseManualLocation="True" />
-    <Node Id="@4" Category="CodeSchema_Assembly" Bounds="367.2575,314.609375,388.635,250" CodeSchemaProperty_StrongName="WeatherUtility.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="4" FilePath="$(53a8991d-0b34-4d8a-b792-5dd34a730b0c.OutputPath)" Group="Expanded" Label="WeatherUtility.Core.dll" UseManualLocation="True" />
-    <Node Id="@6" Category="CodeSchema_Assembly" Bounds="132.915,0,344.82,255" CodeSchemaProperty_StrongName="WeatherUtility.DurableFunctions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" FilePath="$(e9758a5b-3e0c-45d9-9cdb-71efacf9df10.OutputPath)" Group="Expanded" Label="WeatherUtility.DurableFunctions.dll" />
-    <Node Id="@7" Category="CodeSchema_Namespace" Bounds="29.8308831941872,494.100173330204,180.223333333333,25.0000000000003" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Microsoft‎.CodeAnalysis" />
-    <Node Id="@8" Category="CodeSchema_Namespace" Bounds="414.470833333334,519.609047727174,180.223333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Microsoft‎.CodeAnalysis" />
-    <Node Id="@9" Category="CodeSchema_Namespace" Bounds="2.61754986085342,439.100173330204,234.65,25.0000000000001" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="System‎.Runtime‎.CompilerServices" />
+    <Node Id="(@5 @13 Type=HttpFunctions)" Category="CodeSchema_Class" Bounds="302.158333333333,22.3429713682361,135.576666666667,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="HttpFunctions" />
+    <Node Id="@10" Category="CodeSchema_Namespace" Bounds="129.54882103308,402.041468419462,234.65,24.9999999999999" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="System‎.Runtime‎.CompilerServices" />
+    <Node Id="@11" Category="CodeSchema_Namespace" Bounds="277.563821033081,347.041368419463,200.62,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="WeatherUtility‎.Core‎.Entities" />
+    <Node Id="@12" Category="CodeSchema_Namespace" Bounds="140.01382103308,292.041268419463,213.72,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="WeatherUtility‎.Core‎.Interfaces" />
+    <Node Id="@14" Category="CodeSchema_Namespace" Bounds="152.915,-17.6571286317639,304.82,195.0004" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="4" Group="Expanded" Label="WeatherUtility‎.DurableFunction" />
+    <Node Id="@15" Category="CodeSchema_Namespace" Bounds="-247.362769086138,165.118687171167,150.543333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="WeatherUtility‎.Lib" />
+    <Node Id="@16" Category="CodeSchema_Class" Bounds="172.915,77.3430713682361,150.653333333333,25" CodeSchemaProperty_IsPublic="True" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="ActivityFunctions" />
+    <Node Id="@17" Category="CodeSchema_Class" Bounds="172.915,132.343171368236,178.41,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="OrchestratorFunctions" />
+    <Node Id="@18" Category="CodeSchema_Class" Bounds="172.915,22.3429713682361,99.2433333333332,25" CodeSchemaProperty_IsPublic="True" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Startup" />
+    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="-309.416102419472,125.118587171167,274.65,195.0004" CodeSchemaProperty_StrongName="WeatherUtility.Lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="3" FilePath="$(2afda9c4-788c-4d26-9b5d-1c2680c4c9fc.OutputPath)" Group="Expanded" Label="WeatherUtility.Lib.dll" UseManualLocation="True" />
+    <Node Id="@4" Category="CodeSchema_Assembly" Bounds="109.54882103308,252.041168419463,388.635,250.0005" CodeSchemaProperty_StrongName="WeatherUtility.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="4" FilePath="$(53a8991d-0b34-4d8a-b792-5dd34a730b0c.OutputPath)" Group="Expanded" Label="WeatherUtility.Core.dll" UseManualLocation="True" />
+    <Node Id="@6" Category="CodeSchema_Assembly" Bounds="132.915,-57.6572286317639,344.82,255.0006" CodeSchemaProperty_StrongName="WeatherUtility.DurableFunctions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" FilePath="$(e9758a5b-3e0c-45d9-9cdb-71efacf9df10.OutputPath)" Group="Expanded" Label="WeatherUtility.DurableFunctions.dll" />
+    <Node Id="@7" Category="CodeSchema_Namespace" Bounds="-262.202769086138,275.118887171167,180.223333333333,25.0000000000002" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Microsoft‎.CodeAnalysis" />
+    <Node Id="@8" Category="CodeSchema_Namespace" Bounds="156.762154366415,457.041568419462,180.223333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Microsoft‎.CodeAnalysis" />
+    <Node Id="@9" Category="CodeSchema_Namespace" Bounds="-289.416102419472,220.118787171167,234.65,25.0000000000002" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="System‎.Runtime‎.CompilerServices" />
   </Nodes>
   <Links>
-    <Link Source="@10" Target="@8" Category="CodeSchema_AttributeUse" Bounds="504.5825,489.609097727174,1.70530256582424E-13,21.0001000000001" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
-    <Link Source="@11" Target="@10" Category="CodeSchema_AttributeUse" Bounds="542.653462075853,434.608997727174,63.156364783553,26.5160792269611" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
-    <Link Source="@12" Target="@10" Category="CodeSchema_AttributeUse" Bounds="504.5825,379.608897727174,0,76.0002" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
-    <Link Source="@12" Target="@11" Category="References" Bounds="534.355173140594,379.608897727174,63.1563647835529,26.5160792269609" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@10" Target="@8" Category="CodeSchema_AttributeUse" Bounds="246.87382103308,427.041468419462,5.96855898038484E-13,21.0001000000003" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@11" Target="@10" Category="CodeSchema_AttributeUse" Bounds="284.944783108933,372.041368419462,63.1563647835533,26.5160792269611" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@12" Target="@10" Category="CodeSchema_AttributeUse" Bounds="246.87382103308,317.041268419462,2.8421709430404E-14,76.0002" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@12" Target="@11" Category="References" Bounds="276.646494173675,317.041268419462,63.1563647835532,26.516079226961" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
     <Link Source="@14" Target="(@5 @13 Type=HttpFunctions)" Category="Contains" FetchingParent="@14" />
     <Link Source="@14" Target="@16" Category="Contains" FetchingParent="@14" />
     <Link Source="@14" Target="@17" Category="Contains" FetchingParent="@14" />
@@ -33,7 +33,7 @@
       <Category Ref="CodeSchema_Calls" />
       <Category Ref="Implements" />
     </Link>
-    <Link Source="@15" Target="@9" Category="CodeSchema_AttributeUse" Bounds="119.942549860854,409.100073330204,9.9475983006414E-14,21.0001" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@15" Target="@9" Category="CodeSchema_AttributeUse" Bounds="-172.091102419472,190.118687171167,4.83169060316868E-13,21.0000999999995" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
     <Link Source="@16" Target="@11" Category="References" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="57">
       <Category Ref="CodeSchema_Calls" />
     </Link>
@@ -54,7 +54,7 @@
     <Link Source="@6" Target="@14" Category="Contains" FetchingParent="@6" />
     <Link Source="@6" Target="@2" Category="CodeMap_ProjectReference" />
     <Link Source="@6" Target="@4" Category="CodeMap_ProjectReference" />
-    <Link Source="@9" Target="@7" Category="CodeSchema_AttributeUse" Bounds="119.942549860854,464.100173330204,1.56319401867222E-13,21.0000999999997" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@9" Target="@7" Category="CodeSchema_AttributeUse" Bounds="-172.091102419472,245.118787171167,4.54747350886464E-13,21.0000999999996" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
   </Links>
   <Categories>
     <Category Id="CodeMap_ProjectReference" Label="Project Reference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References" />
