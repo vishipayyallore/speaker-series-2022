@@ -58,6 +58,9 @@
 > 1. Discussion and Demo
 
 
+**Manual Deployments**
+## ![Deploy .sqlproj SQL DacPac To LocalDB | 100x100](./Documentation/Images/DeploySQLToLocalDB.PNG)
+
 ## 2. Infrastructure as a Code
 
 > 1. Discussion and Demo
