@@ -57,21 +57,35 @@
 
 > 1. Discussion and Demo
 
+## 2. Manual Deployments
 
-**Manual Deployments**
-## ![Deploy .sqlproj SQL DacPac To LocalDB | 100x100](./Documentation/Images/DeploySQLToLocalDB.PNG)
+> 1. Discussion and Demo
+> 1. Create SQL Server, and Database manually in Azure Portal
+> 1. Deploy it using VS 2022
 
-## 2. Infrastructure as a Code
+![Deploy .sqlproj SQL DacPac To LocalDB | 100x100](./Documentation/Images/DeploySQLToLocalDB.PNG)
+
+## 3. PR Process
+
+> 1. Discussion and Demo
+> 1. Try checking into `main` branch
+> 1. Create a feature branch and raise a PR
+> 1. Code Review, Comments, Approvals
+> 1. Gated Builds, Continuous Integration, and Artifacts
+
+![PR Process CI CD | 100x100](./Documentation/Images/PR_CI_CD.PNG)
+
+## 4. Infrastructure as a Code
 
 > 1. Discussion and Demo
 
-## 3. Build Pipeline
+## 5. Build Pipeline
 
 > 1. Discussion
 
 ## ![Build Pipeline to Build SQLDacPac from .sqlproj | 100x100](./Documentation/Images/BuildPipelineSQLDacPac.PNG)
 
-## 4. Release Pipeline
+## 6. Release Pipeline
 
 > 1. Discussion and Demo
 
