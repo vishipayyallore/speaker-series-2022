@@ -80,6 +80,10 @@
 
 ![PR Process CI CD | 100x100](./Documentation/Images/PR_CI_CD.PNG)
 
+### Architecture
+
+![Architecture | 100x100](./Documentation/Images/Architecture.PNG)
+
 ## 4. Infrastructure as a Code (55 Minutes)
 
 > 1. Discussion and Demo
