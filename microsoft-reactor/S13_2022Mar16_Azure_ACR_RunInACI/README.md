@@ -41,14 +41,10 @@
 
 ## What are we doing today?
 
-> 1. Deploy Node JS Web API to Azure. It connects to Mongo Atlas.
-> 1. **MERN Stack** - Deploy ReactJS Web App to Azure. It retrieves the data from Node JS Web API
-> 1. **MEAN Stack** - Deploy Angular 13 App to Azure. It retrieves the data from Node JS Web API
-> 1. Deploy .NET 6 Razor Web App to Azure Container Registry, and Azure Container Instances
-> 1. Deploy .NET 6 Razor Web App to Docker Registry, and Azure App Server (Docker Container)
-> 1. Deploy .sqlproj to SQL Azure
-> 1. Deploy .NET 6 Web API to Azure
-> 1. Deploy .NET 6 Blazor Web App to Azure. It retrieves the data from .NET 6 Web API
+> 1. Azure Container Registry service tiers
+> 1. Explore storage capabilities
+> 1. Build and manage containers with tasks
+> 1. 
 
 ---
 
