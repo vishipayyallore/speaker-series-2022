@@ -52,37 +52,14 @@
 
 ---
 
-## 1. What are Durable Functions?
+## X. Build and manage containers with tasks
 
-**Reference**: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-types-features-overview
+**az acr build**
 
-> 1. Durable Functions
-> 1. Orchestrator functions
-> 1. Activity functions
-> 1. Client functions
-> 1. Entity functions
-> 1. Task Hubs / Storage Account (Queues, Tables, and Blobs)
-> 1. DurableClient Bindings
+![Az Acr Build | 100x100](./Documentation/Images/AzAcrBuild.PNG)
 
-**State in Task Hubs inside Storage**
-![Storage and Task Hubs | 100x100](./Documentation/Images/Storage_TaskHubs.PNG)
+![Az Acr Build | 100x100](./Documentation/Images/AzAcrBuild_Image2.PNG)
 
-## 2. Few Application patterns in Durable Functions
-
-> 1. Function chaining
-> 1. Fan-out/fan-in
-> 1. Async HTTP APIs
-> 1. Monitoring
-> 1. Human interaction
-> 1. Aggregator (stateful entities)
-
-**Reference**: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp
-
-## 3. Hands-on with `Function chaining` Durable Functions
-
-> 1. Discussion and Demo
-
-## ![Solution Map | 100x100](./Documentation/Images/SolutionMap.PNG)
 
 ---
 
