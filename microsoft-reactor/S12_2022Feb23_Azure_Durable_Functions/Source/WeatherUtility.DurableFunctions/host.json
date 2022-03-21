@@ -1,11 +1,16 @@
 {
-    "version": "2.0",
+    "extensions": {
+        "durableTask": {
+            "hubName": "WeatherUtility20Mar2022"
+        }
+    },
     "logging": {
         "applicationInsights": {
             "samplingSettings": {
-                "isEnabled": true,
-                "excludedTypes": "Request"
+                "excludedTypes": "Request",
+                "isEnabled": true
             }
         }
-    }
+    },
+    "version": "2.0"
 }
