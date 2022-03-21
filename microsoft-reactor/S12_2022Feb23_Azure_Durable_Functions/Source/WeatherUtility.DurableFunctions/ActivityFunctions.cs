@@ -57,6 +57,10 @@ namespace WeatherUtility.DurableFunction
                 weatherData.ComfortIndex = _temperatureUtility.GetComfortIndex(weatherData.TemperatureFahrenheit, weatherData.Humidity);
             }
 
+            // Notes: To Simulate the exception, uncomment the following two lines.
+            //var num = 0;
+            //var sum = 100 / num;
+
             return await Task.FromResult(weatherDatas);
         }
 

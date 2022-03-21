@@ -14,9 +14,10 @@ namespace WeatherUtility.DurableFunction
 
         [FunctionName(nameof(WeatherUtilityOrchestrator))]
         public static async Task<WeatherResponseDto> WeatherUtilityOrchestrator(
-            [OrchestrationTrigger] IDurableOrchestrationContext context, ILogger log)
+            [OrchestrationTrigger] IDurableOrchestrationContext context,
+            ILogger log)
         {
-            // log = context.CreateReplaySafeLogger(log);
+            log = context.CreateReplaySafeLogger(log);
 
             IList<WeatherData> weatherData;
             WeatherResponseDto weatherResponseDto = new();
@@ -31,7 +32,6 @@ namespace WeatherUtility.DurableFunction
 
                 log.LogInformation("Invoking GetCelsiusToFahrenheit() Activity Function.");
                 weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetCelsiusToFahrenheit", weatherData);
-                // throw new Exception("Just Chill !!");
 
                 log.LogInformation("Invoking GetComfortIndex() Activity Function.");
                 weatherData = await context.CallActivityAsync<IList<WeatherData>>("GetComfortIndex", weatherData);
