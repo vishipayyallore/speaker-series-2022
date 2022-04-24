@@ -1,6 +1,6 @@
-# AZ-204 | Manage images in ACR, and Run Container images in ACI
+# AZ-204 | Implement Secure Cloud Solutions, Support Monitoring, and Logging
 
-## Date Time: 16-Mar-2022 at 09:00 AM IST
+## Date Time: 24-Apr-2022 at 09:00 AM IST
 
 ## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/284040465](https://www.meetup.com/microsoft-reactor-bengaluru/events/284040465)
 
@@ -23,8 +23,8 @@
 ### Prior Knowledge
 
 > 1. C#, Node JS
-> 1. Azure Storage
-> 1. Azure Functions
+> 1. Application Insights
+> 1. Azure Key Vault
 > 1. .NET Razor/Blazor WASM
 
 ### Assumptions
@@ -33,7 +33,7 @@
 
 ## Technology Stack
 
-> 1. Azure Functions
+> 1. Azure
 
 ## Information
 
@@ -41,10 +41,10 @@
 
 ## What are we doing today?
 
-> 1. Azure Container Registry service tiers
-> 1. Explore storage capabilities
-> 1. Build and manage containers with tasks
-> 1. 
+> 1. Azure Key Vault. How to set and retrieve secrets by using the Azure CLI
+> 1. Managed identities to deploy secure solutions on Azure
+> 1. Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features
+> 1. Application Insights to enhance the performance and stability of your applications
 
 ---
 
@@ -52,14 +52,27 @@
 
 ---
 
-## X. Build and manage containers with tasks
+## 1. Azure Key Vault. How to set and retrieve secrets by using the Azure CLI
+
+> 1. Discussion and Demo.
+
+## 1. Managed identities to deploy secure solutions on Azure
+
+> 1. Discussion and Demo.
+
+## 1. Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features
+
+> 1. Discussion and Demo.
+
+## 1. Application Insights to enhance the performance and stability of your applications
+
+> 1. Discussion and Demo.
 
 **az acr build**
 
 ![Az Acr Build | 100x100](./Documentation/Images/AzAcrBuild.PNG)
 
 ![Az Acr Build | 100x100](./Documentation/Images/AzAcrBuild_Image2.PNG)
-
 
 ---
 
