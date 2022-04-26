@@ -52,6 +52,21 @@
 
 ---
 
+## Implement secure cloud solutions
+
+### 1. Storage Encryption
+
+> 1. Discussion & Demo
+
+![Storage Encryption | 100x100](./Documentation/Images/Storage_Encryption.PNG)
+
+### 2. SQL Database Encryption
+
+> 1. Discussion & Demo
+
+![SQL Databases Encryption | 100x100](./Documentation/Images/SQLDatabase_Encryption.PNG)
+
+
 ## 1. Azure Key Vault. How to set and retrieve secrets by using the Azure CLI
 
 > 1. Discussion and Demo.
