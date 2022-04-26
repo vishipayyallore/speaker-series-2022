@@ -57,8 +57,15 @@
 ### 1. Azure Key Vault 
 
 > 1. Discussion and Demo
-> 1. Show casing the Purge protection of Key Vault
+> 1. Show casing the `Soft Delete` and `Purge protection` of Key Vault
 > 1. How to set and retrieve secrets by using the Azure CLI
+
+```
+az group create --name rg-name --location eastus
+az keyvault create --name kv-name --resource-group rg-name --location eastus
+az keyvault secret set --vault-name kv-name --name "ExamplePassword" --value "NoPassword@123$"
+az keyvault secret show --name "ExamplePassword" --vault-name kv-name
+```
 
 ### 2. Storage Encryption
 
@@ -80,6 +87,8 @@
 
 **SQL Database**
 ![SQL Databases Encryption | 100x100](./Documentation/Images/SQLDatabase_Encryption.PNG)
+
+Reference: [Transport Layer Security (Encryption-in-transit)](https://docs.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql#:~:text=SQL%20Database%2C%20SQL%20Managed%20Instance%2C%20and%20Azure%20Synapse%20Analytics%20enforce,TrustServerCertificate%20in%20the%20connection%20string.)
 
 ### 4. Azure Key Vault to store secrets of Azure SQL Server
 
