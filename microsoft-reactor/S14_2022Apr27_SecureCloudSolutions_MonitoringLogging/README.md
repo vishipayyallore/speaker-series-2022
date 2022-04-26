@@ -56,7 +56,8 @@
 
 ### 1. Azure Key Vault 
 
-> 1. Discussion and Demo.
+> 1. Discussion and Demo
+> 1. Show casing the Purge protection of Key Vault
 > 1. How to set and retrieve secrets by using the Azure CLI
 
 ### 2. Storage Encryption
@@ -80,23 +81,53 @@
 **SQL Database**
 ![SQL Databases Encryption | 100x100](./Documentation/Images/SQLDatabase_Encryption.PNG)
 
+### 4. Azure Key Vault to store secrets of Azure SQL Server
 
+> 1. Demo & Discussion
+> 1. We will store the Azure SQL Server secrets in Azure Key Vault
 
-## 1. Managed identities to deploy secure solutions on Azure
+**SqlServerConnectionString**
+
+```
+Server=tcp:YourServer.database.windows.net,1433;Initial Catalog=sqldb-booksstore;Persist Security Info=False;User ID=demouser;Password=YourPassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+```
+
+![Secrets In Azure Key Vault | 100x100](./Documentation/Images/SecretsInAzureKeyVault.PNG)
+
+### 5. Managed identities to deploy secure solutions on Azure
+
+> 1. Demo & Discussion
+
+### 6. Modify the Web API's Configuration to use secrets from Azure Key Vault
+
+> 1. Discussion and Demo.
+> 1. Modify the Web API's Configuration to use secrets from Azure Key Vault
+> 1. Verify the Web API endpoint using Chrome. It will NOT work.
+> 1. Enable the IP address of the Web API inside the SQL Server Fire Wall Rule.
+> 1. Verify the Web API endpoint using Chrome. It will work.
+
+```
+https://YourKeyVault.vault.azure.net/secrets/SqlServerConnectionString/5038a0ac6f2c4dc6adb0098517c09253
+DataStoreSettings__SqlServerConnectionString
+@Microsoft.KeyVault(SecretUri=https://YourKeyVault.vault.azure.net/secrets/SqlServerConnectionString/5038a0ac6f2c4dc6adb0098517c09253)
+```
+
+## Instrument solutions to support monitoring and logging
+
+### 1. Azure Monitor
+
+> 1. Discussion and Demo
+
+### 1. Application Insights to enhance the performance and stability of your applications
 
 > 1. Discussion and Demo.
 
-## 1. Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features
+---
 
+## Stretch Goal
+
+### 1. Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features
 > 1. Discussion and Demo.
-
-## 1. Application Insights to enhance the performance and stability of your applications
-
-> 1. Discussion and Demo.
-
-**az acr build**
-
-![Az Acr Build | 100x100](./Documentation/Images/AzAcrBuild.PNG)
 
 ---
 
