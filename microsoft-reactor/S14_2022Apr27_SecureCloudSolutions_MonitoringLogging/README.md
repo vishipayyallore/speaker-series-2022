@@ -54,22 +54,33 @@
 
 ## Implement secure cloud solutions
 
-### 1. Storage Encryption
+### 1. Azure Key Vault 
+
+> 1. Discussion and Demo.
+> 1. How to set and retrieve secrets by using the Azure CLI
+
+### 2. Storage Encryption
 
 > 1. Discussion & Demo
+
+**SSE** 
 
 ![Storage Encryption | 100x100](./Documentation/Images/Storage_Encryption.PNG)
 
-### 2. SQL Database Encryption
+**Secure Transfer**
+![Storage Secure Transfer | 100x100](./Documentation/Images/Storage_SecureTransfer.PNG)
+
+### 3. SQL Server and Database Encryption
 
 > 1. Discussion & Demo
 
+**SQL Server**
+![SQL Server Encryption | 100x100](./Documentation/Images/SQLServer_Encryption.PNG)
+
+**SQL Database**
 ![SQL Databases Encryption | 100x100](./Documentation/Images/SQLDatabase_Encryption.PNG)
 
 
-## 1. Azure Key Vault. How to set and retrieve secrets by using the Azure CLI
-
-> 1. Discussion and Demo.
 
 ## 1. Managed identities to deploy secure solutions on Azure
 
