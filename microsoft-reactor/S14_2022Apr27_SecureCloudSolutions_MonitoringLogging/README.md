@@ -72,8 +72,6 @@
 
 ![Az Acr Build | 100x100](./Documentation/Images/AzAcrBuild.PNG)
 
-![Az Acr Build | 100x100](./Documentation/Images/AzAcrBuild_Image2.PNG)
-
 ---
 
 ## X. SUMMARY / RECAP / Q&A
