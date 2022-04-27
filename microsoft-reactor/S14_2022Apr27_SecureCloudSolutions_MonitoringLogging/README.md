@@ -54,7 +54,7 @@
 
 ## Implement secure cloud solutions
 
-### 1. Azure Key Vault 
+### 1. Azure Key Vault
 
 > 1. Discussion and Demo
 > 1. Show casing the `Soft Delete` and `Purge protection` of Key Vault
@@ -71,7 +71,7 @@ az keyvault secret show --name "ExamplePassword" --vault-name kv-name
 
 > 1. Discussion & Demo
 
-**SSE** 
+**SSE**
 
 ![Storage Encryption | 100x100](./Documentation/Images/Storage_Encryption.PNG)
 
@@ -100,8 +100,6 @@ Reference: [Transport Layer Security (Encryption-in-transit)](https://docs.micro
 ```
 Server=tcp:YourServer.database.windows.net,1433;Initial Catalog=sqldb-booksstore;Persist Security Info=False;User ID=demouser;Password=YourPassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 ```
-
-![Secrets In Azure Key Vault | 100x100](./Documentation/Images/SecretsInAzureKeyVault.PNG)
 
 ### 5. Managed identities to deploy secure solutions on Azure
 
@@ -136,6 +134,7 @@ DataStoreSettings__SqlServerConnectionString
 ## Stretch Goal
 
 ### 1. Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features
+
 > 1. Discussion and Demo.
 
 ---
@@ -149,11 +148,15 @@ DataStoreSettings__SqlServerConnectionString
 
 ---
 
-## What is Next? (`Session 14` of `20 Sessions` on 30-Mar-2022)
+## What is Next? (`Session 15` of `20 Sessions` on May 11, 2022)
 
-### AZ-204 | Implement secure cloud solutions, support monitoring, and logging
+### AZ-204 | Integrate caching and content delivery within solutions
 
-> 1. Azure Key Vault can help you keep your apps more secure, and how to set and retrieve secrets by using the Azure CLI.
-> 1. Managed identities can help you deploy secure solutions on Azure without the need to manage credentials.
-> 1. Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features.
-> 1. Application Insights to enhance the performance and stability of your applications..
+> 1. Explore Azure Cache for Redis
+> 1. Configure Azure Cache for Redis
+> 1. Interact with Azure Cache for Redis by using .NET
+> 1. Cache Aside Pattern using Azure Cache for Redis by using .NET Core
+> 1. Explore Azure Content Delivery Networks
+> 1. Control cache behavior on Azure Content Delivery Networks
+> 1. Interact with Azure Content Delivery Networks by using .NET
+> 1. Q & A
