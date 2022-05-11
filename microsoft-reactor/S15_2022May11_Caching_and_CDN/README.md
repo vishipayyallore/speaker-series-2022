@@ -50,6 +50,7 @@
 > 1. Interact with Azure Content Delivery Networks by using .NET
 > 1. Q & A
 
+### [MS Learn Module](https://docs.microsoft.com/en-us/learn/paths/az-204-integrate-caching-content-delivery-within-solutions/)
 ---
 
 ![Information | 100x100](./Documentation/Images/SeatBelt.PNG)
@@ -58,11 +59,16 @@
 
 ## Explore Azure Cache for Redis
 > 1. Discussion and Demo
+> 1. Few scenarios
+> 1. Service tiers
+> 1. Security Considerations
+
+Reference: [Azure Cache for Redis/](https://docs.microsoft.com/en-us/learn/modules/develop-for-azure-cache-for-redis/)
 
 ## Configure Azure Cache for Redis
 > 1. Discussion and Demo
 
-![Storage Encryption | 100x100](./Documentation/Images/ToBeDone.PNG)
+![Storage Encryption | 100x100](./Documentation/Images/AzureCacheRedis_1.PNG)
 
 ## Interact with Azure Cache for Redis by using .NET
 > 1. Discussion and Demo
