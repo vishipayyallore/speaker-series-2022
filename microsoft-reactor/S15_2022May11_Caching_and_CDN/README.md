@@ -1,6 +1,6 @@
-# AZ-204 | Implement Secure Cloud Solutions, Support Monitoring, and Logging
+# AZ-204 | Integrate caching and content delivery within solutions
 
-## Date Time: 24-Apr-2022 at 09:00 AM IST
+## Date Time: 11-May-2022 at 09:00 AM IST
 
 ## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/284040465](https://www.meetup.com/microsoft-reactor-bengaluru/events/284040465)
 
