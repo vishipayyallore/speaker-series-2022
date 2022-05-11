@@ -51,6 +51,8 @@
 > 1. Q & A
 
 ### [MS Learn Module](https://docs.microsoft.com/en-us/learn/paths/az-204-integrate-caching-content-delivery-within-solutions/)
+
+### [Source code for today's session](https://github.com/vishipayyallore/blazorwasm-dot-net6-containerized)
 ---
 
 ![Information | 100x100](./Documentation/Images/SeatBelt.PNG)
@@ -68,10 +70,12 @@ Reference: [Azure Cache for Redis/](https://docs.microsoft.com/en-us/learn/modul
 ## Configure Azure Cache for Redis
 > 1. Discussion and Demo
 
-![Storage Encryption | 100x100](./Documentation/Images/AzureCacheRedis_1.PNG)
+![Azure Cache for Redis | 100x100](./Documentation/Images/AzureCacheRedis_1.PNG)
 
 ## Interact with Azure Cache for Redis by using .NET
 > 1. Discussion and Demo
+
+![Azure Cache for Redis | 100x100](./Documentation/Images/AzureCacheRedis_2.PNG)
 
 ## Cache Aside Pattern using Azure Cache for Redis by using .NET Core
 > 1. Discussion and Demo
