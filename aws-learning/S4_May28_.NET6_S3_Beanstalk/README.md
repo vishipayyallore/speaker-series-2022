@@ -22,7 +22,7 @@
 
 ## What are we doing today?
 
-> 1. What is S3 Buckets and Objects?    
+> 1. What is S3 Buckets and Objects?
 > 1. How to create S3 Buckets, and Objects.
 > 1. Accessing Objects in S3 Buckets.
 > 1. How to delete Objects in S3 Buckets, and S3 Buckets.
@@ -35,8 +35,6 @@
 ---
 
 ## 1. Modify the .NET 6 Web API to work with DynamoDB
-
-
 
 ---
 
