@@ -42,6 +42,10 @@
 ## What are we doing today?
 
 > 1. Authentication (101 / Under the hood) - ASP.Net Core Identity
+> 1. Azure Functions - Authentication using AAD
+> 1. APIM - Authentication using AAD
+> 1. ASP.Net Identity using IdentityServer 6
+> 1. .NET 6 Web API - Authentication using Auth0
 > 1. SUMMARY / RECAP / Q&A
 
 ---
