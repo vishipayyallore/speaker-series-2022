@@ -41,10 +41,7 @@
 
 ## What are we doing today?
 
-> 1. Azure DevOps Boards
-> 1. Infrastructure as a Code
-> 1. Build Pipeline
-> 1. Release Pipeline
+> 1. Authentication (101 / Under the hood) - ASP.Net Core Identity
 > 1. SUMMARY / RECAP / Q&A
 
 ---
