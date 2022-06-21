@@ -44,12 +44,12 @@
 > 1. Explore Azure Cosmos DB
 > 1. Implement partitioning in Azure Cosmos DB
 > 1. Work with Azure Cosmos DB
-> 1. Mini Project
+> 1. Mini Project(s)
 > 1. Q & A
 
 ### [MS Learn Module](https://docs.microsoft.com/en-us/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/)
 
-### [Source code for today's session](https://github.com/vishipayyallore/blazorwasm-dot-net6-containerized)
+### [Source code for today's session](https://github.com/vishipayyallore/speaker-series-2022/tree/main/microsoft-reactor/S17_2022Jun22_AzureCosmosDB)
 
 ---
 
@@ -57,59 +57,21 @@
 
 ---
 
-## Explore Azure Cache for Redis
-
-> 1. Discussion and Demo
-> 1. Few scenarios
-> 1. Service tiers
-> 1. Security Considerations
-
-Reference: [Azure Cache for Redis/](https://docs.microsoft.com/en-us/learn/modules/develop-for-azure-cache-for-redis/)
-
-## Configure Azure Cache for Redis
+## Explore Azure Cosmos DB
 
 > 1. Discussion and Demo
 
-![Azure Cache for Redis | 100x100](./Documentation/Images/AzureCacheRedis_1.PNG)
-
-## Interact with Azure Cache for Redis by using .NET
+## Implement partitioning in Azure Cosmos DB
 
 > 1. Discussion and Demo
 
-![Azure Cache for Redis | 100x100](./Documentation/Images/AzureCacheRedis_2.PNG)
-
-## Cache Aside Pattern using Azure Cache for Redis by using .NET Core
+## Work with Azure Cosmos DB
 
 > 1. Discussion and Demo
 
-## Explore Azure Content Delivery Networks
+## Mini Project(s)
 
 > 1. Discussion and Demo
-
-## Control cache behavior on Azure Content Delivery Networks
-
-> 1. Discussion and Demo
-
-## Interact with Azure Content Delivery Networks by using .NET
-
-> 1. Discussion and Demo
-
-## Q & A
-
-> 1. Demo & Discussion
-> 1. We will store the Azure SQL Server secrets in Azure Key Vault
-
-**SqlServerConnectionString**
-
-```
-Server=tcp:YourServer.database.windows.net,1433;Initial Catalog=sqldb-booksstore;Persist Security Info=False;User ID=demouser;Password=YourPassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
-```
-
-```
-https://YourKeyVault.vault.azure.net/secrets/SqlServerConnectionString/5038a0ac6f2c4dc6adb0098517c09253
-DataStoreSettings__SqlServerConnectionString
-@Microsoft.KeyVault(SecretUri=https://YourKeyVault.vault.azure.net/secrets/SqlServerConnectionString/5038a0ac6f2c4dc6adb0098517c09253)
-```
 
 ---
 
@@ -122,16 +84,12 @@ DataStoreSettings__SqlServerConnectionString
 
 ---
 
-## What is Next? (`Session 16` of `20 Sessions` on May 11, 2022)
+## What is Next? Session `18` of `21` Sessions on July 06, 2022
 
-### AZ-204 | Implement API Management
+### AZ-204 | Develop solutions that use Blob storage
 
-> 1. Discover the API Management service
-> 1. Explore API gateways
-> 1. Explore API Management policies
-> 1. Create advanced policies
-> 1. Secure APIs by using subscriptions
-> 1. Secure APIs by using certificates
-> 1. Create a backend API for .NET 6 Web APIs
-> 1. Create a backend API for Azure Functions
+> 1. Explore Azure Blob storage
+> 1. Manage the Azure Blob storage lifecycle
+> 1. Work with Azure Blob storage
+> 1. Mini Project(s)
 > 1. Q & A
