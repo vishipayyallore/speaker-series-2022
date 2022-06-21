@@ -60,10 +60,20 @@
 ## Explore Azure Cosmos DB
 
 > 1. Discussion and Demo
+> 1. Key Benefits of Azure Cosmos DB
+> 1. Resource Hierarchy
+> 1. Consistency Levels
+> 1. APIs supported in Azure Cosmos DB
+> 1. Request Units (RUs)
+
+**Reference(s):**
+
+[https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels](https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels)
 
 ## Implement partitioning in Azure Cosmos DB
 
 > 1. Discussion and Demo
+> 1. Explore partitions
 
 ## Work with Azure Cosmos DB
 
