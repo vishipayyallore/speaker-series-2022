@@ -10,7 +10,7 @@ IConfiguration _configuration = new ConfigurationBuilder()
 
 string _endpointUrl = _configuration["CosmosDbConnectionStrings:AccountEndpoint"];
 string _primaryKey = _configuration["CosmosDbConnectionStrings:AccountKey"];
-string _databaseId = "ToDoList";
+string _databaseId = "Persons";
 string _containerId = "FamilyTree";
 
 
@@ -36,7 +36,11 @@ using (var cosmosClient = new CosmosClient(_endpointUrl, _primaryKey, new Cosmos
 
     // Run a query (using Azure Cosmos DB SQL syntax) against the container
     // Including the partition key value of lastName in the WHERE filter results in a more efficient query
-    await QueryItemsAsync(familyTreeContainer);
+    await QueryItemsAsync(familyTreeContainer, "Andersen");
+
+    await ReplaceFamilyItemAsync(familyTreeContainer);
+
+    await QueryItemsAsync(familyTreeContainer, "Wakefield");
 }
 
 
@@ -130,16 +134,18 @@ static async Task AddNewFamily(Container familyTreeContainer, Family newFamily)
     }
 }
 
-static async Task QueryItemsAsync(Container familyTreeContainer)
+static async Task QueryItemsAsync(Container familyTreeContainer, string familyKey)
 {
-    var sqlQueryText = "SELECT * FROM c WHERE c.partitionKey = 'Andersen'";
+    var sqlQueryText = $"SELECT * FROM c WHERE c.partitionKey = '{familyKey}'";
 
     Console.WriteLine("Running query: {0}\n", sqlQueryText);
 
-    QueryDefinition queryDefinition = new QueryDefinition(sqlQueryText);
+    QueryDefinition queryDefinition = new(sqlQueryText);
     FeedIterator<Family> queryResultSetIterator = familyTreeContainer.GetItemQueryIterator<Family>(queryDefinition);
 
-    List<Family> families = new List<Family>();
+    List<Family> families = new();
+    //List<Family> families1 = new List<Family>();
+    //var families2 = new List<Family>();
 
     while (queryResultSetIterator.HasMoreResults)
     {
@@ -151,55 +157,19 @@ static async Task QueryItemsAsync(Container familyTreeContainer)
         }
     }
 }
-// </QueryItemsAsync>
 
-//// <ReplaceFamilyItemAsync>
-///// <summary>
-///// Replace an item in the container
-///// </summary>
-//private async Task ReplaceFamilyItemAsync()
-//{
-//    ItemResponse<Family> wakefieldFamilyResponse = await familyTreeContainer.ReadItemAsync<Family>("Wakefield.7", new PartitionKey("Wakefield"));
-//    var itemBody = wakefieldFamilyResponse.Resource;
+static async Task ReplaceFamilyItemAsync(Container familyTreeContainer)
+{
+    ItemResponse<Family> wakefieldFamilyResponse = await familyTreeContainer.ReadItemAsync<Family>("Wakefield.7", new PartitionKey("Wakefield"));
+    var itemBody = wakefieldFamilyResponse.Resource;
 
-//    // update registration status from false to true
-//    itemBody.IsRegistered = true;
-//    // update grade of child
-//    itemBody.Children[0].Grade = 6;
+    // update registration status from false to true
+    itemBody.IsRegistered = false;
+    // update grade of child
+    itemBody.Children[0].Grade = 8;
 
-//    // replace the item with the updated content
-//    wakefieldFamilyResponse = await familyTreeContainer.ReplaceItemAsync<Family>(itemBody, itemBody.Id, new PartitionKey(itemBody.PartitionKey));
-//    Console.WriteLine("Updated Family [{0},{1}].\n \tBody is now: {2}\n", itemBody.LastName, itemBody.Id, wakefieldFamilyResponse.Resource);
-//}
-//// </ReplaceFamilyItemAsync>
+    // replace the item with the updated content
+    wakefieldFamilyResponse = await familyTreeContainer.ReplaceItemAsync<Family>(itemBody, itemBody.Id, new PartitionKey(itemBody.PartitionKey));
+    Console.WriteLine("Updated Family [{0},{1}].\n \tBody is now: {2}\n", itemBody.LastName, itemBody.Id, wakefieldFamilyResponse.Resource);
+}
 
-//// <DeleteFamilyItemAsync>
-///// <summary>
-///// Delete an item in the container
-///// </summary>
-//private async Task DeleteFamilyItemAsync()
-//{
-//    var partitionKeyValue = "Wakefield";
-//    var familyId = "Wakefield.7";
-
-//    // Delete an item. Note we must provide the partition key value and id of the item to delete
-//    ItemResponse<Family> wakefieldFamilyResponse = await familyTreeContainer.DeleteItemAsync<Family>(familyId, new PartitionKey(partitionKeyValue));
-//    Console.WriteLine("Deleted Family [{0},{1}]\n", partitionKeyValue, familyId);
-//}
-//// </DeleteFamilyItemAsync>
-
-//// <DeleteDatabaseAndCleanupAsync>
-///// <summary>
-///// Delete the database and dispose of the Cosmos Client instance
-///// </summary>
-//private async Task DeleteDatabaseAndCleanupAsync()
-//{
-//    DatabaseResponse databaseResourceResponse = await cosmosDatabase.DeleteAsync();
-//    // Also valid: await this.cosmosClient.Databases["FamilyDatabase"].DeleteAsync();
-
-//    Console.WriteLine("Deleted Database: {0}\n", cosmosDatabaseId);
-
-//    //Dispose of CosmosClient
-//    this.cosmosClient.Dispose();
-//}
-//// </DeleteDatabaseAndCleanupAsync>
