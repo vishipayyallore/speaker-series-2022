@@ -12,7 +12,7 @@ string _endpointUrl = _configuration["CosmosDbConnectionStrings:AccountEndpoint"
 string _primaryKey = _configuration["CosmosDbConnectionStrings:AccountKey"];
 string _databaseId = "Persons";
 string _containerId = "FamilyTree";
-
+string _partitionKey = "/partitionKey";
 
 using (var cosmosClient = new CosmosClient(_endpointUrl, _primaryKey, new CosmosClientOptions() { ApplicationName = "CosmosDBDotnetQuickstart" }))
 {
@@ -23,7 +23,7 @@ using (var cosmosClient = new CosmosClient(_endpointUrl, _primaryKey, new Cosmos
 
     // Create the container if it does not exist.
     // Specifiy "/partitionKey" as the partition key path since we're storing family information, to ensure good distribution of requests and storage.
-    var familyTreeContainerResponse = await cosmosDatabase?.CreateContainerIfNotExistsAsync(_containerId, "/partitionKey")!;
+    var familyTreeContainerResponse = await cosmosDatabase?.CreateContainerIfNotExistsAsync(_containerId, _partitionKey)!;
     var familyTreeContainer = familyTreeContainerResponse.Container;
     Console.WriteLine("Created Container: {0}\n", familyTreeContainer.Id);
 
@@ -38,11 +38,10 @@ using (var cosmosClient = new CosmosClient(_endpointUrl, _primaryKey, new Cosmos
     // Including the partition key value of lastName in the WHERE filter results in a more efficient query
     await QueryItemsAsync(familyTreeContainer, "Andersen");
 
-    await ReplaceFamilyItemAsync(familyTreeContainer);
+    await ReplaceFamilyItemAsync(familyTreeContainer, "Wakefield.7", "Wakefield");
 
     await QueryItemsAsync(familyTreeContainer, "Wakefield");
 }
-
 
 // Create a family object for the Andersen family
 Family GetAndersenFamily()
@@ -158,9 +157,9 @@ static async Task QueryItemsAsync(Container familyTreeContainer, string familyKe
     }
 }
 
-static async Task ReplaceFamilyItemAsync(Container familyTreeContainer)
+static async Task ReplaceFamilyItemAsync(Container familyTreeContainer, string idValue, string partitionKeyValue)
 {
-    ItemResponse<Family> wakefieldFamilyResponse = await familyTreeContainer.ReadItemAsync<Family>("Wakefield.7", new PartitionKey("Wakefield"));
+    ItemResponse<Family> wakefieldFamilyResponse = await familyTreeContainer.ReadItemAsync<Family>(idValue, new PartitionKey(partitionKeyValue));
     var itemBody = wakefieldFamilyResponse.Resource;
 
     // update registration status from false to true
