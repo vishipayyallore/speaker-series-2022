@@ -91,10 +91,15 @@ aws s3api list-objects --bucket eshop-microservices-bucket
 ## 7. Working with S3 using .NET
 
 > 1. Demo and Discussion
+> 1. Creating a Bucket
+> 1. Uploading the Object
+> 1. Downloading the Object
 
 **Reference:**
 
 https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/S3_Basics
+
+![Working with S3 using .NET6 C# | 100x100](./documentation/images/.NET6_S3.PNG)
 
 ## 8. Deploying static websites on Amazon S3 (**Stretch Goal**)
 
