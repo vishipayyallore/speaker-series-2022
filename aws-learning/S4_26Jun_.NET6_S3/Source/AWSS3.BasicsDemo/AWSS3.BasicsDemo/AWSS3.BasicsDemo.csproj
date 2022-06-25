@@ -10,20 +10,12 @@
 
   <ItemGroup>
     <None Remove="appsettings.json" />
-    <None Remove="Downloads\A.txt" />
-    <None Remove="Downloads\Sample-26jun2022.txt" />
     <None Remove="Uploads\Sample-26jun2022.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Downloads\A.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Downloads\Sample-26jun2022.txt">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
     <Content Include="Uploads\Sample-26jun2022.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
