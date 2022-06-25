@@ -1,18 +1,12 @@
 # S3 Buckets, Deploying .NET 6 Apps to Windows/Linux EC2, and Beanstalk
 
-## Date Time: 28-May-2022 at 09:00 AM IST
+## Date Time: 26-Jun-2022 at 10:00 AM IST
 
-## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/285669327](https://www.meetup.com/dot-net-learners-house-hyderabad/events/285669327)
+## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/286232863](https://www.meetup.com/dot-net-learners-house-hyderabad/events/286232863)
 
-## Youtube URL: [https://www.youtube.com/watch?v=aeNbN7sIUcc](https://www.youtube.com/watch?v=aeNbN7sIUcc)
+## Youtube URL: [https://www.youtube.com/watch?v=yu8o1ray_cU](https://www.youtube.com/watch?v=yu8o1ray_cU)
 
 ![Viswanatha Swamy P K |150x150](./documentation/images/ViswanathaSwamyPK.PNG)
-
----
-
-## Application Architecture Diagram
-
-> 1. To Be Done
 
 ---
 
