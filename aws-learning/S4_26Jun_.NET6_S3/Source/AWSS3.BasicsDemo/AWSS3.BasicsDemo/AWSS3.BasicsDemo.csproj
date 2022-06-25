@@ -10,10 +10,14 @@
 
   <ItemGroup>
     <None Remove="appsettings.json" />
+    <None Remove="Data\Sample-26jun2022.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Sample-26jun2022.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
