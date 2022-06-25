@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace AWSS3.BasicsDemo
 {
     
-    internal class S3BucketHelper
+    internal class S3BucketUtility
     {
         public static async Task<bool> CreateBucketAsync(IAmazonS3 client, string bucketName)
         {
@@ -49,6 +49,31 @@ namespace AWSS3.BasicsDemo
             else
             {
                 Console.WriteLine($"Could not upload {objectName} to {bucketName}.");
+                return false;
+            }
+        }
+
+        public static async Task<bool> DownloadObjectFromBucketAsync(IAmazonS3 client, string bucketName, string objectName, string filePath)
+        {
+            // Create a GetObject request
+            var request = new GetObjectRequest
+            {
+                BucketName = bucketName,
+                Key = objectName,
+            };
+
+            // Issue request and remember to dispose of the response
+            using GetObjectResponse response = await client.GetObjectAsync(request);
+
+            try
+            {
+                // Save object to local file
+                await response.WriteResponseStreamToFileAsync($"{filePath}\\{objectName}", true, System.Threading.CancellationToken.None);
+                return response.HttpStatusCode == System.Net.HttpStatusCode.OK;
+            }
+            catch (AmazonS3Exception ex)
+            {
+                Console.WriteLine($"Error saving {objectName}: {ex.Message}");
                 return false;
             }
         }
