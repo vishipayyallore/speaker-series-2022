@@ -16,12 +16,13 @@
 
 ## What are we doing today?
 
-> 1. What is S3 Buckets and Objects?
-> 1. How to create S3 Buckets, and Objects.
-> 1. Accessing Objects in S3 Buckets.
-> 1. How to delete Objects in S3 Buckets, and S3 Buckets.
-> 1. How to deploy .NET Apps into EC2 (Windows/Linux).
-> 1. How to deploy .NET Apps into Beanstalk.
+> 1. What are S3 Buckets and Objects?
+> 1. How to create S3 Buckets and Objects in AWS Console
+> 1. How to delete Objects in S3 Buckets, and S3 Buckets in AWS Console
+> 1. Accessing Objects in S3 Buckets
+> 1. Working with S3 using AWS CLI
+> 1. Working with S3 using .NET
+> 1. Deploying static websites on Amazon S3
 > 1. SUMMARY / RECAP / Q&A
 
 ![Seat Belt | 100x100](./documentation/images/SeatBelt.PNG)
@@ -32,7 +33,7 @@
 
 > 1. Demo and Discussion
 
-Note:
+**Note:**
 
 > 1. [S3 Buckets](https://aws.amazon.com/s3/)
 > 1. It is `globally distributed`, and can be accessed from anywhere in the world.
@@ -78,15 +79,17 @@ aws s3api list-objects --bucket eshop-microservices-bucket
 
 ![AWS_CLI_S3API | 100x100](./documentation/images/AWS_CLI_S3API.PNG)
 
-## 4. Working with S3 using .NET
+## 6. Working with S3 using .NET
 
 > 1. Demo and Discussion
 
-Deploying static websites on Amazon S3
+## 7. Deploying static websites on Amazon S3
+
+> 1. Demo and Discussion
 
 ---
 
-## 4. SUMMARY / RECAP / Q&A
+## 8. SUMMARY / RECAP / Q&A
 
 ---
 
@@ -99,14 +102,6 @@ Deploying static websites on Amazon S3
 
 **URL:** [https://www.meetup.com/dot-net-learners-house-hyderabad/events/ToBeDone](https://www.meetup.com/dot-net-learners-house-hyderabad/events/ToBeDone)
 
-**Date:** `25-Jun-2022` at `09:00 AM IST`
+**Date:** `24-Jul-2022` at `10:00 AM IST`
 
-> 1. Reboot the machine to show data loss
-> 1. VPC, Subnets
-> 1. Availability Zones (AZs)
-> 1. Regions
-> 1. Edge Locations
-> 1. Regional Edge Caches
-> 1. Working with S3 using .NET (`Console Application`)
-> 1. Deploying static websites on Amazon S3
-> 1. Deploying .NET 6 + Mongo Db Web API into Amazon EC2 using Beanstalk
+> 1. To be done
