@@ -21,6 +21,7 @@
 > 1. How to delete Objects in S3 Buckets, and S3 Buckets in AWS Console
 > 1. Accessing Objects in S3 Buckets
 > 1. Working with S3 using AWS CLI
+> 1. AWS Explorer in VS 2022 / Visual Studio Code
 > 1. Working with S3 using .NET
 > 1. Deploying static websites on Amazon S3
 > 1. SUMMARY / RECAP / Q&A
@@ -79,17 +80,29 @@ aws s3api list-objects --bucket eshop-microservices-bucket
 
 ![AWS_CLI_S3API | 100x100](./documentation/images/AWS_CLI_S3API.PNG)
 
-## 6. Working with S3 using .NET
+## 6. AWS Explorer in VS 2022 / Visual Studio Code
 
 > 1. Demo and Discussion
 
-## 7. Deploying static websites on Amazon S3
+![AWS Explorer in Visual Studio 2022 | 100x100](./documentation/images/AWSExplorer_VS2022.PNG)
+
+![AWS Explorer in Visual Studio Code | 100x100](./documentation/images/AWSExplorer_VS_Code.PNG)
+
+## 7. Working with S3 using .NET
+
+> 1. Demo and Discussion
+
+**Reference:**
+
+https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/S3_Basics
+
+## 8. Deploying static websites on Amazon S3 (**Stretch Goal**)
 
 > 1. Demo and Discussion
 
 ---
 
-## 8. SUMMARY / RECAP / Q&A
+## 9. SUMMARY / RECAP / Q&A
 
 ---
 
