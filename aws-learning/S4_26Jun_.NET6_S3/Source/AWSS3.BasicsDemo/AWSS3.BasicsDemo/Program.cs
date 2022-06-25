@@ -18,16 +18,16 @@ string _keyName = _configuration["AWSS3:KeyName"];
 
 using (IAmazonS3 client = new AmazonS3Client())
 {
-    Console.ResetColor();
+    ResetColor();
     await S3BucketHelper.CreateBucketAsync(_bucketName, client);
-    Console.ResetColor();
+    ResetColor();
 
     _keyName = await S3BucketHelper.UploadFileAsync(_bucketName, _filePath, client);
-    Console.ResetColor();
+    ResetColor();
 
     _filePath = _configuration["AWSS3:DownFilePath"];
     await S3BucketHelper.DownloadObjectFromBucketAsync(_bucketName, _filePath, _keyName, client);
-    Console.ResetColor();
+    ResetColor();
 }
 
 WriteLine("\n\nPress any key ...");
