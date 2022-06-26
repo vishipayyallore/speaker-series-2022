@@ -60,7 +60,7 @@
 **Reference:**
 
 > 1. [AWS S3 CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html)
-> 1. [AWS S3API CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html)
+> 1. [AWS S3API CLI](https://docs.aws.amazon.com/cli/latest/reference/s3api/)
 > 1. [S3 vs S3API](https://aws.amazon.com/blogs/developer/leveraging-the-s3-and-s3api-commands/#:~:text=The%20main%20difference%20between%20the,provided%20by%20the%20s3api%20commands)
 
 ```
