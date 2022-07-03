@@ -81,6 +81,10 @@
 
 > 1. Discussion and Demo
 
+![Storage Browser | 100x100](./Documentation/Images/StorageBrowser.PNG)
+
+![Storage Explorer | 100x100](./Documentation/Images/StorageExplorer.PNG)
+
 ## Working with `AzCopy`
 
 > 1. Discussion and Demo
@@ -99,9 +103,9 @@ HEAD https://stforeshop.blob.core.windows.net/justfordemo?resType=container&comp
 HEAD https://stforeshop.blob.core.windows.net/productsimages/product-1.png
 ```
 
-![Metadata Headers using CURL | 100x100](./Documentation/Images/ContainerAndBlobMetadata1.PNG)
+![Metadata Headers using CURL | 100x100](./Documentation/Images/ContainerAndBlobMetadata_CURL.PNG)
 
-![Metadata Headers using Postman | 100x100](./Documentation/Images/ContainerAndBlobMetadata2.PNG)
+![Metadata Headers using Postman | 100x100](./Documentation/Images/ContainerAndBlobMetadata_Postman.PNG)
 
 ## Mini Project(s)
 
