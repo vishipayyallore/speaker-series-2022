@@ -61,12 +61,31 @@
 ## Explore Azure Blob storage
 
 > 1. Discussion and Demo
+> 1. Microsoft's object storage solution for the cloud
+> 1. Types of storage: Standard general-purpose v2, Premium block blobs, Premium page blobs, and Premium file shares)
+> 1. Access tiers for block blob data (Hot, Cold, and Archive)
+> 1. Storage accounts -> Containers -> Blobs (Block, Append, and Page blobs)
+> 1. Azure Storage encryption for data at rest
+> 1. Azure Storage encryption for data in transit
+> 1. Azure Storage redundancy options
+
+## Create a block blob storage account using `Azure Portal`
+
+> 1. Discussion and Demo
+
+## Create account by using Azure CLI inside Cloud Shell
+
+> 1. Discussion and Demo
 
 ## Manage the Azure Blob storage lifecycle
 
 > 1. Discussion and Demo
 
-## Work with Azure Blob storage
+## Work with Azure Blob storage using `.NET 6`
+
+> 1. Discussion and Demo
+
+## Working with `AzCopy`
 
 > 1. Discussion and Demo
 
