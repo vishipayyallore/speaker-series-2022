@@ -73,15 +73,11 @@
 
 > 1. Discussion and Demo
 
-## Create account by using Azure CLI inside Cloud Shell
+## Create account by using Azure CLI inside `Cloud Shell`
 
 > 1. Discussion and Demo
 
-## Manage the Azure Blob storage lifecycle
-
-> 1. Discussion and Demo
-
-## Work with Azure Blob storage using `.NET 6`
+## Working with `Storage Explorer` and `Storage Browser`
 
 > 1. Discussion and Demo
 
@@ -89,11 +85,37 @@
 
 > 1. Discussion and Demo
 
-## Deploy Static Web Apps to Azure Blob storage
+## Manage the Azure Blob storage lifecycle
 
 > 1. Discussion and Demo
 
+## Metadata for blob resources by using REST
+
+> 1. Discussion and Demo
+
+```
+HEAD https://stforeshop.blob.core.windows.net/justfordemo?resType=container&comp=metadata
+
+HEAD https://stforeshop.blob.core.windows.net/productsimages/product-1.png
+```
+
+![Metadata Headers using CURL | 100x100](./Documentation/Images/ContainerAndBlobMetadata1.PNG)
+
+![Metadata Headers using Postman | 100x100](./Documentation/Images/ContainerAndBlobMetadata2.PNG)
+
 ## Mini Project(s)
+
+> 1. Discussion and Demo
+
+## Work with Azure Blob storage using `.NET 6`
+
+> 1. Discussion and Demo
+
+## Container properties and metadata by using `.NET 6`
+
+> 1. Discussion and Demo
+
+## Deploy Static Web Apps to Azure Blob storage
 
 > 1. Discussion and Demo
 
