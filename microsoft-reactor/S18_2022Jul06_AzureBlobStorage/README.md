@@ -48,9 +48,9 @@
 > 1. Mini Project(s)
 > 1. Q & A
 
-### [MS Learn Module](https://docs.microsoft.com/en-us/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/)
+### [AZ-204 MS Learn Module](https://docs.microsoft.com/en-us/learn/paths/develop-solutions-that-use-blob-storage/?source=learn)
 
-### [Source code for today's session](https://github.com/vishipayyallore/speaker-series-2022/tree/main/microsoft-reactor/S17_2022Jun22_AzureCosmosDB)
+### [Source code for today's session](https://github.com/vishipayyallore/speaker-series-2022/tree/main/microsoft-reactor/S18_2022Jul06_AzureBlobStorage)
 
 ---
 
@@ -58,25 +58,19 @@
 
 ---
 
-## Explore Azure Cosmos DB
+## Explore Azure Blob storage
 
 > 1. Discussion and Demo
-> 1. Key Benefits of Azure Cosmos DB
-> 1. Resource Hierarchy
-> 1. Consistency Levels
-> 1. APIs supported in Azure Cosmos DB
-> 1. Request Units (RUs)
 
-**Reference(s):**
-
-[https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels](https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels)
-
-## Implement partitioning in Azure Cosmos DB
+## Manage the Azure Blob storage lifecycle
 
 > 1. Discussion and Demo
-> 1. Explore partitions
 
-## Work with Azure Cosmos DB
+## Work with Azure Blob storage
+
+> 1. Discussion and Demo
+
+## Deploy Static Web Apps to Azure Blob storage
 
 > 1. Discussion and Demo
 
