@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using AzBlobStorage.GettingStarted;
 using Azure;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
@@ -11,31 +12,37 @@ IConfiguration _configuration = new ConfigurationBuilder()
 
 // To Show Case Delete Blob with Snapshots
 var deleteFile = false;
+var deleteBlobContainer = false;
 
 // Copy the connection string from the portal in the variable below.
 string storageConnectionString = _configuration["AzStorage:BlobStorageConnectionString"];
 BlobServiceClient blobServiceClient = new(storageConnectionString);
 
 string containerName = _configuration["AzStorage:BlobContainerName"];
-var containerClient = await CreateContainerAsync(blobServiceClient, containerName);
+var blobContainerClient = await BlobGettingStartedHelper.CreateContainerAsync(blobServiceClient, containerName);
 
 string fileForSnapshotAndDelete = _configuration["AzStorage:FileForSnapshotAndDelete"];
 foreach (var fileEntry in Directory.GetFiles(_configuration["AzStorage:FilesLocation"]))
 {
-    await UploadBlobAsync(containerClient, fileEntry, fileForSnapshotAndDelete, deleteFile);
+    await UploadBlobAsync(blobContainerClient, fileEntry, fileForSnapshotAndDelete, deleteFile);
 }
 
-await ListBlobAsync(containerClient);
+await ListBlobAsync(blobContainerClient);
+
+if (deleteBlobContainer)
+{
+    await blobContainerClient.DeleteIfExistsAsync();
+}
 
 Console.WriteLine("\n\nPress any key ...");
 
-static async Task<BlobContainerClient> CreateContainerAsync(BlobServiceClient blobServiceClient, string containerName)
-{
-    BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(containerName);
-    await containerClient.CreateIfNotExistsAsync();
+//static async Task<BlobContainerClient> CreateContainerAsync(BlobServiceClient blobServiceClient, string containerName)
+//{
+//    BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(containerName);
+//    await containerClient.CreateIfNotExistsAsync();
 
-    return containerClient;
-}
+//    return containerClient;
+//}
 
 static async Task UploadBlobAsync(BlobContainerClient containerClient, string localFilePath, string fileForSnapshotAndDelete, bool deleteFile)
 {
@@ -53,8 +60,8 @@ static async Task UploadBlobAsync(BlobContainerClient containerClient, string lo
         if (fileName == fileForSnapshotAndDelete)
         {
             var blockBlobSnapshotResponse = await CreateSnapshotAsync(blobClient);
-            
-            if(blockBlobSnapshotResponse.GetRawResponse().Status == 201 && deleteFile)
+
+            if (blockBlobSnapshotResponse.GetRawResponse().Status == 201 && deleteFile)
             {
                 await blobClient.DeleteIfExistsAsync(DeleteSnapshotsOption.IncludeSnapshots);
             }
