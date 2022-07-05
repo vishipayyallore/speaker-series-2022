@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Azure;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 using Microsoft.Extensions.Configuration;
@@ -7,6 +8,9 @@ IConfiguration _configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
     .AddUserSecrets("42B3177E-1CA6-448F-8F9A-1294955F5337")
     .Build();
+
+// To Show Case Delete Blob with Snapshots
+var deleteFile = false;
 
 // Copy the connection string from the portal in the variable below.
 string storageConnectionString = _configuration["AzStorage:BlobStorageConnectionString"];
@@ -18,7 +22,7 @@ var containerClient = await CreateContainerAsync(blobServiceClient, containerNam
 string fileForSnapshotAndDelete = _configuration["AzStorage:FileForSnapshotAndDelete"];
 foreach (var fileEntry in Directory.GetFiles(_configuration["AzStorage:FilesLocation"]))
 {
-    await UploadBlobAsync(containerClient, fileEntry, fileForSnapshotAndDelete);
+    await UploadBlobAsync(containerClient, fileEntry, fileForSnapshotAndDelete, deleteFile);
 }
 
 await ListBlobAsync(containerClient);
@@ -33,7 +37,7 @@ static async Task<BlobContainerClient> CreateContainerAsync(BlobServiceClient bl
     return containerClient;
 }
 
-static async Task UploadBlobAsync(BlobContainerClient containerClient, string localFilePath, string fileForSnapshotAndDelete)
+static async Task UploadBlobAsync(BlobContainerClient containerClient, string localFilePath, string fileForSnapshotAndDelete, bool deleteFile)
 {
     var fileName = Path.GetFileName(localFilePath);
     BlobClient blobClient = containerClient.GetBlobClient(fileName);
@@ -48,8 +52,14 @@ static async Task UploadBlobAsync(BlobContainerClient containerClient, string lo
 
         if (fileName == fileForSnapshotAndDelete)
         {
-            var blockBlobSnapshot = await blobClient.CreateSnapshotAsync();
+            var blockBlobSnapshotResponse = await CreateSnapshotAsync(blobClient);
+            
+            if(blockBlobSnapshotResponse.GetRawResponse().Status == 201 && deleteFile)
+            {
+                await blobClient.DeleteIfExistsAsync(DeleteSnapshotsOption.IncludeSnapshots);
+            }
         }
+
     }
 }
 
@@ -74,4 +84,9 @@ static async Task DownloadBlobAsync(BlobContainerClient containerClient, BlobIte
     await blobClient.DownloadToAsync(string.Format("./Downloads/CopyOf{0}", blob.Name));
 
     Console.WriteLine("\tDownloaded {0}", blob.Name);
+}
+
+static async Task<Response<BlobSnapshotInfo>> CreateSnapshotAsync(BlobClient blobClient)
+{
+    return await blobClient.CreateSnapshotAsync();
 }
