@@ -15,8 +15,10 @@ BlobServiceClient blobServiceClient = new(storageConnectionString);
 string containerName = _configuration["AzStorage:BlobContainerName"];
 var containerClient = await CreateContainerAsync(blobServiceClient, containerName);
 
-await UploadBlobAsync(containerClient, _configuration["AzStorage:TextFileLocalPath"]);
-await UploadBlobAsync(containerClient, _configuration["AzStorage:PngFileLocalPath"]);
+foreach (var fileEntry in Directory.GetFiles(_configuration["AzStorage:FilesLocation"]))
+{
+    await UploadBlobAsync(containerClient, fileEntry);
+}
 
 await ListBlobAsync(containerClient);
 
@@ -35,7 +37,8 @@ static async Task UploadBlobAsync(BlobContainerClient containerClient, string lo
     var fileName = Path.GetFileName(localFilePath);
     BlobClient blobClient = containerClient.GetBlobClient(fileName);
 
-    // Set the blob's content type so that the browser knows to treat it as an image.
+    Console.WriteLine("\nUploading {0}", fileName);
+
     var fileUploadResults = await blobClient.UploadAsync(File.OpenRead($"{localFilePath}"), true);
 
     if (fileUploadResults.GetRawResponse().Status == 201)
