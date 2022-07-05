@@ -13,7 +13,7 @@
     <None Remove="Downloads\A.txt" />
     <None Remove="Downloads\CopyOfimages\B.txt" />
     <None Remove="Uploads\ContainerAndBlobMetadata_CURL.PNG" />
-    <None Remove="Uploads\Deleteme.txt" />
+    <None Remove="Uploads\DeleteMe.txt" />
     <None Remove="Uploads\Sample.txt" />
   </ItemGroup>
 
@@ -30,7 +30,7 @@
     <Content Include="Uploads\ContainerAndBlobMetadata_CURL.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Uploads\Deleteme.txt">
+    <Content Include="Uploads\DeleteMe.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Uploads\Sample.txt">

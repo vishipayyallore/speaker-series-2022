@@ -15,9 +15,10 @@ BlobServiceClient blobServiceClient = new(storageConnectionString);
 string containerName = _configuration["AzStorage:BlobContainerName"];
 var containerClient = await CreateContainerAsync(blobServiceClient, containerName);
 
+string fileForSnapshotAndDelete = _configuration["AzStorage:FileForSnapshotAndDelete"];
 foreach (var fileEntry in Directory.GetFiles(_configuration["AzStorage:FilesLocation"]))
 {
-    await UploadBlobAsync(containerClient, fileEntry);
+    await UploadBlobAsync(containerClient, fileEntry, fileForSnapshotAndDelete);
 }
 
 await ListBlobAsync(containerClient);
@@ -32,7 +33,7 @@ static async Task<BlobContainerClient> CreateContainerAsync(BlobServiceClient bl
     return containerClient;
 }
 
-static async Task UploadBlobAsync(BlobContainerClient containerClient, string localFilePath)
+static async Task UploadBlobAsync(BlobContainerClient containerClient, string localFilePath, string fileForSnapshotAndDelete)
 {
     var fileName = Path.GetFileName(localFilePath);
     BlobClient blobClient = containerClient.GetBlobClient(fileName);
@@ -44,19 +45,24 @@ static async Task UploadBlobAsync(BlobContainerClient containerClient, string lo
     if (fileUploadResults.GetRawResponse().Status == 201)
     {
         Console.WriteLine($"{fileName} uploaded to the {blobClient.Uri} location");
+
+        if (fileName == fileForSnapshotAndDelete)
+        {
+            var blockBlobSnapshot = await blobClient.CreateSnapshotAsync();
+        }
     }
 }
 
-static async Task ListBlobAsync(BlobContainerClient containerClient)
+static async Task ListBlobAsync(BlobContainerClient blobContainerClient)
 {
     Console.WriteLine("\n\nDisplaying the Blobs");
 
     var counter = 1;
-    await foreach (var blob in containerClient.GetBlobsAsync())
+    await foreach (var blob in blobContainerClient.GetBlobsAsync())
     {
         Console.WriteLine("{2}- {0} (type: {1})", blob.Name, blob.GetType(), (counter++));
 
-        await DownloadBlobAsync(containerClient, blob);
+        await DownloadBlobAsync(blobContainerClient, blob);
     }
 }
 
