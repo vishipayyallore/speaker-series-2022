@@ -10,12 +10,20 @@
 
   <ItemGroup>
     <None Remove="appsettings.json" />
+    <None Remove="Downloads\A.txt" />
+    <None Remove="Downloads\CopyOfimages\B.txt" />
     <None Remove="Uploads\ContainerAndBlobMetadata_CURL.PNG" />
     <None Remove="Uploads\Sample.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Downloads\A.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Downloads\CopyOfimages\B.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Uploads\ContainerAndBlobMetadata_CURL.PNG">
