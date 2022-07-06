@@ -88,6 +88,21 @@
 ## Working with `AzCopy`
 
 > 1. Discussion and Demo
+> 1. `Azcopy` is a command line utility for copying files and directories to and from Azure storage
+> 1. Below are couple of commands to use `Azcopy`
+
+```
+azcopy list "https://stfor06jul2022demo.blob.core.windows.net/demoblobcontainerv1?sv=YourSharedAccessSignature"
+
+azcopy copy "./Uploads/*" "https://stfor06jul2022demo.blob.core.windows.net/demoblobcontainerv1?sv=YourSharedAccessSignature" --recursive
+```
+
+**Generate a SAS token for the AzCopy**
+![Metadata Headers using Postman | 100x100](./Documentation/Images/SAS_For_AzCopy.PNG)
+
+**Local Folder -> Storage Account -> Storage Container -> Storage Blob**
+![Metadata Headers using Postman | 100x100](./Documentation/Images/AzCopy_Copy_ToContainer.PNG)
+
 
 ## Manage the Azure Blob storage lifecycle
 
