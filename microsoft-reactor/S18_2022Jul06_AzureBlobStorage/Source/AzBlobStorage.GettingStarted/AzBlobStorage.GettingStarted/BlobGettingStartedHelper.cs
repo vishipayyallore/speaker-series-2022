@@ -65,7 +65,6 @@ namespace AzBlobStorage.GettingStarted
             Console.WriteLine("\tDownloaded {0}", blob.Name);
         }
 
-
         static async Task<Response<BlobSnapshotInfo>> CreateSnapshotAsync(BlobClient blobClient)
         {
             return await blobClient.CreateSnapshotAsync();
