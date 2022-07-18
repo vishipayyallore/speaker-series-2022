@@ -67,6 +67,9 @@
 ## Explore Azure Queue Storage
 
 > 1. Discussion and Demo
+> 1. Create `Storage Queue` using `ARM Template`
+
+## ![Azure Storage Queue using ARM Template | 100x100](./Documentation/Images/ARMTemplate_StorageQueue.PNG)
 
 ## Create and manage Azure Queue Storage queues and messages by using .NET (`Mini Project`)
 
