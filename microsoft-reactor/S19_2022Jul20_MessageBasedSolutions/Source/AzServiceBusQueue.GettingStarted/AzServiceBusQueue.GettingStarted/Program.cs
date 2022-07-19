@@ -1,6 +1,7 @@
-﻿using Azure.Messaging.ServiceBus;
+﻿using AzServiceBusQueue.GettingStarted.Data;
+using Azure.Messaging.ServiceBus;
 using Microsoft.Extensions.Configuration;
-
+using System.Text.Json;
 using static System.Console;
 
 IConfiguration _configuration = new ConfigurationBuilder()
@@ -10,12 +11,40 @@ IConfiguration _configuration = new ConfigurationBuilder()
 
 string connectionString = _configuration["AzServiceBus:ConnectionString"];
 string queueName = _configuration["AzServiceBus:QueueName"];
+string[] Importance = new string[] { "High", "Medium", "Low" };
 
 // since ServiceBusClient implements IAsyncDisposable we create it with "await using"
 await using var client = new ServiceBusClient(connectionString);
-ServiceBusSender sender = client.CreateSender(queueName);
+ServiceBusSender serviceBusSender = client.CreateSender(queueName);
 
 ServiceBusMessage message = new($"Hello world! {DateTime.Now}");
-await sender.SendMessageAsync(message);
+await serviceBusSender.SendMessageAsync(message);
+
+ServiceBusMessage orderMessage = new(JsonSerializer.Serialize(new Order() { Quantity = 100, UnitPrice = 9.99F }));
+await serviceBusSender.SendMessageAsync(orderMessage);
+
+List<Order> orders = new()
+{
+    new Order(){Quantity=100,UnitPrice=9.99F},
+    new Order(){Quantity=200,UnitPrice=10.99F},
+    new Order(){Quantity=300,UnitPrice=8.99F}
+};
+
+ServiceBusMessageBatch serviceBusMessageBatch = await serviceBusSender.CreateMessageBatchAsync();
+int i = 0;
+foreach (Order order in orders)
+{
+    ServiceBusMessage serviceBusMessage = new(JsonSerializer.Serialize(order))
+    {
+        ContentType = "application/json"
+    };
+    serviceBusMessage.ApplicationProperties.Add("Importance", Importance[i++]);
+    if (!serviceBusMessageBatch.TryAddMessage(serviceBusMessage))
+    {
+        throw new Exception("Error occured");
+    }
+}
+Console.WriteLine("Sending Batch messages");
+await serviceBusSender.SendMessagesAsync(serviceBusMessageBatch);
 
 WriteLine("\n\nPress any key ...");
