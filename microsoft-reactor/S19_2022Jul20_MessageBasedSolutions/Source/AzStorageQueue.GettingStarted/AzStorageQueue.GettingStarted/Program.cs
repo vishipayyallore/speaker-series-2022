@@ -1,7 +1,7 @@
 ﻿using AzStorageQueue.GettingStarted;
 using Azure.Storage.Queues;
 using Microsoft.Extensions.Configuration;
-
+using System.Text;
 using static System.Console;
 
 IConfiguration _configuration = new ConfigurationBuilder()
@@ -12,17 +12,28 @@ IConfiguration _configuration = new ConfigurationBuilder()
 // Copy the connection string from the portal in the variable below.
 string connectionString = _configuration["AzStorage:ConnectionString"];
 string queueName = _configuration["AzStorage:QueueName"];
+bool updateMessage = false;
 
 QueueClient queueClient = AzStorageQueueHelper.CreateQueueClient(connectionString, queueName);
 
 await AzStorageQueueHelper.CreateQueue(queueClient);
 
-string message = $"Simple message {DateTime.Now}";
-await AzStorageQueueHelper.InsertMessage(queueClient, queueName, message);
+List<string> messages = new();
+for (int i = 0; i < 10; i++)
+{
+    messages.Add($"{i + 1}. Simple message {DateTime.Now}");
+}
 
-await AzStorageQueueHelper.PeekMessage(queueClient, queueName);
+await AzStorageQueueHelper.InsertMessages(queueClient, messages);
 
-await AzStorageQueueHelper.UpdateMessage(queueClient, queueName);
+await AzStorageQueueHelper.PeekMessage(queueClient);
+
+if (updateMessage)
+    {
+    await AzStorageQueueHelper.UpdateMessage(queueClient);
+}
+
+await AzStorageQueueHelper.DequeueMessages(queueClient);
 
 WriteLine("\n\nPress any key ...");
 

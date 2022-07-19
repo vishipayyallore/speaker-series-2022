@@ -17,19 +17,10 @@ namespace AzStorageQueue.GettingStarted
         {
             try
             {
-                // Create the queue
-                await queueClient.CreateIfNotExistsAsync();
+                await EnsureQueueExists(queueClient);
 
-                if (queueClient.Exists())
-                {
-                    WriteLine($"Queue created: '{queueClient.Name}'");
-                    return true;
-                }
-                else
-                {
-                    WriteLine($"Make sure the Azurite storage emulator running and try again.");
-                    return false;
-                }
+                WriteLine($"Queue created: '{queueClient.Name}'");
+                return true;
             }
             catch (Exception ex)
             {
@@ -39,48 +30,73 @@ namespace AzStorageQueue.GettingStarted
             }
         }
 
-        public static async Task InsertMessage(QueueClient queueClient, string queueName, string message)
+        public static async Task InsertMessages(QueueClient queueClient, List<string> messages)
         {
-            // Create the queue if it doesn't already exist
-            queueClient.CreateIfNotExists();
+            await EnsureQueueExists(queueClient);
 
-            if (queueClient.Exists())
+            foreach (var message in messages)
             {
-                // Send a message to the queue
                 SendReceipt sendReceipt = await queueClient.SendMessageAsync(message);
-                WriteLine($"Content of Send Receipt: {sendReceipt}");
-            }
 
-            WriteLine($"Inserted: {message}");
+                WriteLine($"Inserted: {message}");
+                WriteLine($"Content of Send Receipt: MessageId = {sendReceipt.MessageId} InsertionTime = {sendReceipt.InsertionTime} ExpirationTime = {sendReceipt.ExpirationTime}");
+            }
         }
 
-        public static async Task PeekMessage(QueueClient queueClient, string queueName)
+        public static async Task PeekMessage(QueueClient queueClient)
         {
-            if (queueClient.Exists())
-            {
-                // Peek at the next message
-                PeekedMessage[] peekedMessage = await queueClient.PeekMessagesAsync();
+            await EnsureQueueExists(queueClient);
 
-                // Display the message
-                WriteLine($"Peeked message: '{peekedMessage[0].Body}'");
-            }
+            PeekedMessage[] peekedMessage = await queueClient.PeekMessagesAsync();
+
+            WriteLine($"Peeked message: '{peekedMessage[0].Body}'");
         }
 
-        public static async Task UpdateMessage(QueueClient queueClient, string queueName)
+        public static async Task UpdateMessage(QueueClient queueClient)
         {
-            if (queueClient.Exists())
-            {
-                // Get the message from the queue
-                QueueMessage[] message = await queueClient.ReceiveMessagesAsync();
+            await EnsureQueueExists(queueClient);
 
-                // Update the message contents
-                await queueClient.UpdateMessageAsync(message[0].MessageId,
-                        message[0].PopReceipt,
-                        $"Updated contents :: {message[0].Body}",
-                        TimeSpan.FromSeconds(60.0)  // Make it invisible for another 60 seconds
-                    );
+            QueueMessage[] message = await queueClient.ReceiveMessagesAsync();
+            var updatedContent = $"Updated contents :: {message[0].Body}";
+
+            // Update the message contents
+            await queueClient.UpdateMessageAsync(message[0].MessageId, message[0].PopReceipt,
+                    updatedContent, TimeSpan.FromSeconds(60.0)  // Make it invisible for another 60 seconds
+                );
+        }
+
+        public static async Task DequeueMessages(QueueClient queueClient)
+        {
+            await EnsureQueueExists(queueClient);
+
+            QueueProperties properties = await queueClient.GetPropertiesAsync();
+
+            int messagesCountForRetrieval = 0;
+            int cachedMessagesCount = properties.ApproximateMessagesCount;
+            WriteLine($"Number of messages in queue: {cachedMessagesCount}");
+            if (cachedMessagesCount > 5)
+            {
+                messagesCountForRetrieval = cachedMessagesCount - 5;
+            }
+
+            QueueMessage[] receivedMessages = await queueClient.ReceiveMessagesAsync(messagesCountForRetrieval, TimeSpan.FromMinutes(5));
+
+            foreach (QueueMessage message in receivedMessages)
+            {
+                Console.WriteLine($"De-queued message: '{message.Body}'");
+
+                await queueClient.DeleteMessageAsync(message.MessageId, message.PopReceipt);
             }
         }
+
+        private static async Task EnsureQueueExists(QueueClient queueClient)
+        {
+            if (!queueClient.Exists())
+            {
+                await queueClient.CreateIfNotExistsAsync();
+            }
+        }
+
     }
 
 }
