@@ -112,9 +112,15 @@ az servicebus queue create --resource-group $rgName --namespace-name $sbSpaceNam
 
 > 1. Discussion and Demo
 
+![Service Bus Explorer | 100x100](./Documentation/Images/ServiceBusExplorer.PNG)
+
 ## Exercise: Send and receive messages from a Service Bus queue by using .NET (`Mini Project`)
 
 > 1. Discussion and Demo
+
+**References:**
+
+> 1. [https://docs.microsoft.com/en-us/dotnet/api/overview/azure/messaging.servicebus-readme-pre](https://docs.microsoft.com/en-us/dotnet/api/overview/azure/messaging.servicebus-readme-pre)
 
 ---
 

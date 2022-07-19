@@ -1,7 +1,6 @@
 ﻿using AzStorageQueue.GettingStarted;
 using Azure.Storage.Queues;
 using Microsoft.Extensions.Configuration;
-using System.Text;
 using static System.Console;
 
 IConfiguration _configuration = new ConfigurationBuilder()
@@ -9,7 +8,6 @@ IConfiguration _configuration = new ConfigurationBuilder()
     .AddUserSecrets("42B3177E-1CA6-448F-8F9A-1294955F5337")
     .Build();
 
-// Copy the connection string from the portal in the variable below.
 string connectionString = _configuration["AzStorage:ConnectionString"];
 string queueName = _configuration["AzStorage:QueueName"];
 bool updateMessage = true;
