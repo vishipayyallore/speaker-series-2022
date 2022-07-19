@@ -37,7 +37,7 @@
 
 ## Information
 
-## ![Information | 100x100](./Documentation/Images/Information.PNG)
+![Information | 100x100](./Documentation/Images/Information.PNG)
 
 ## What are we doing today?
 
@@ -52,7 +52,7 @@
 
 ### [AZ-204 MS Learn Module](https://aka.ms/AZ-204-Message-basedsolutions)
 
-### [Source code for today's session](https://github.com/vishipayyallore/speaker-series-2022/tree/main/microsoft-reactor/S18_2022Jul06_AzureBlobStorage)
+### [Source code for today's session](https://github.com/vishipayyallore/speaker-series-2022/tree/main/microsoft-reactor/S19_2022Jul20_MessageBasedSolutions)
 
 ---
 
@@ -69,9 +69,9 @@
 > 1. Discussion and Demo
 > 1. Create `Storage Queue` using `ARM Template`
 
-## ![Azure Storage Queue using ARM Template | 100x100](./Documentation/Images/ARMTemplate_StorageQueue.PNG)
+![Azure Storage Queue using ARM Template | 100x100](./Documentation/Images/ARMTemplate_StorageQueue.PNG)
 
-## ![Storage Browser Queue | 100x100](./Documentation/Images/StorageBrowser_Queue.PNG)
+![Storage Browser Queue | 100x100](./Documentation/Images/StorageBrowser_Queue.PNG)
 
 ## Create and manage Azure Queue Storage queues and messages by using .NET (`Mini Project`)
 
@@ -82,11 +82,27 @@
 > 1. [https://docs.microsoft.com/en-us/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet](https://docs.microsoft.com/en-us/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet)
 > 1. [https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/storage/queues/storage-quickstart-queues-dotnet.md](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/storage/queues/storage-quickstart-queues-dotnet.md)
 
-## ![Azure Storage Getting Started .NET 6 | 100x100](./Documentation/Images/AzureStorageGettingStarted.PNG)
+![Azure Storage Getting Started .NET 6 | 100x100](./Documentation/Images/AzureStorageGettingStarted.PNG)
 
 ## Explore Azure Service Bus
 
 > 1. Discussion and Demo
+> 1. Create `Service Bus` and `Service Bus Queue` using `Az CLI`
+
+```
+rgName=az204svcbus$RANDOM
+location=eastus
+sbSpaceName=az204svcbus$RANDOM
+sbQueueName=az204svcbus$RANDOM
+
+az group create --name $rgName --location $location
+
+az servicebus namespace create --resource-group $rgName --name $sbSpaceName --location $location
+
+az servicebus queue create --resource-group $rgName --namespace-name $sbSpaceName --name $sbQueueName
+```
+
+![Az CLI Service Bus and Queue | 100x100](./Documentation/Images/Az_ServiceBus_And_Queue.PNG)
 
 ## Discover Service Bus queues, topics, and subscriptions
 
@@ -129,3 +145,7 @@
 > 1. Perform common operations with the Event Hubs client library
 > 1. Mini Project(s)
 > 1. Q & A
+
+```
+
+```
