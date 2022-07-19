@@ -57,12 +57,12 @@ namespace AzStorageQueue.GettingStarted
             await EnsureQueueExists(queueClient);
 
             QueueMessage[] message = await queueClient.ReceiveMessagesAsync();
-            var updatedContent = $"Updated contents :: {message[0].Body}";
+            var updatedContent = $"{message[0].Body} \nUpdated contents on {DateTime.Now}.";
 
-            // Update the message contents
+            WriteLine($"Updating -> {message[0].Body} to {updatedContent}");
+
             await queueClient.UpdateMessageAsync(message[0].MessageId, message[0].PopReceipt,
-                    updatedContent, TimeSpan.FromSeconds(60.0)  // Make it invisible for another 60 seconds
-                );
+                    updatedContent, TimeSpan.FromSeconds(10.0)); // Make it invisible for another 10 seconds
         }
 
         public static async Task DequeueMessages(QueueClient queueClient)
@@ -71,13 +71,9 @@ namespace AzStorageQueue.GettingStarted
 
             QueueProperties properties = await queueClient.GetPropertiesAsync();
 
-            int messagesCountForRetrieval = 0;
+            int messagesCountForRetrieval = 2;
             int cachedMessagesCount = properties.ApproximateMessagesCount;
             WriteLine($"Number of messages in queue: {cachedMessagesCount}");
-            if (cachedMessagesCount > 5)
-            {
-                messagesCountForRetrieval = cachedMessagesCount - 5;
-            }
 
             QueueMessage[] receivedMessages = await queueClient.ReceiveMessagesAsync(messagesCountForRetrieval, TimeSpan.FromMinutes(5));
 

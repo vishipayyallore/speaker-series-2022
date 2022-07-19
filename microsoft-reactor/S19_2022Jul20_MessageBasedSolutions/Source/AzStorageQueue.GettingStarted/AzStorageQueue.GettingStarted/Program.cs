@@ -12,14 +12,18 @@ IConfiguration _configuration = new ConfigurationBuilder()
 // Copy the connection string from the portal in the variable below.
 string connectionString = _configuration["AzStorage:ConnectionString"];
 string queueName = _configuration["AzStorage:QueueName"];
-bool updateMessage = false;
+bool updateMessage = true;
+bool deleteMessages = true;
 
 QueueClient queueClient = AzStorageQueueHelper.CreateQueueClient(connectionString, queueName);
 
+Console.ForegroundColor = ConsoleColor.Blue;
+
 await AzStorageQueueHelper.CreateQueue(queueClient);
 
+Console.ForegroundColor = ConsoleColor.Green;
 List<string> messages = new();
-for (int i = 0; i < 10; i++)
+for (int i = 0; i < 5; i++)
 {
     messages.Add($"{i + 1}. Simple message {DateTime.Now}");
 }
@@ -29,12 +33,18 @@ await AzStorageQueueHelper.InsertMessages(queueClient, messages);
 await AzStorageQueueHelper.PeekMessage(queueClient);
 
 if (updateMessage)
-    {
+{
+    Console.ForegroundColor = ConsoleColor.Yellow;
     await AzStorageQueueHelper.UpdateMessage(queueClient);
 }
 
-await AzStorageQueueHelper.DequeueMessages(queueClient);
+if (deleteMessages)
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    await AzStorageQueueHelper.DequeueMessages(queueClient);
+}
 
 WriteLine("\n\nPress any key ...");
 
+ResetColor();
 

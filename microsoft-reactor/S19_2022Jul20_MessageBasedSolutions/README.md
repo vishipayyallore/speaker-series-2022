@@ -78,8 +78,11 @@
 > 1. Discussion and Demo
 
 **References:**
+
 > 1. [https://docs.microsoft.com/en-us/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet](https://docs.microsoft.com/en-us/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet)
 > 1. [https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/storage/queues/storage-quickstart-queues-dotnet.md](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/storage/queues/storage-quickstart-queues-dotnet.md)
+
+## ![Azure Storage Getting Started .NET 6 | 100x100](./Documentation/Images/AzureStorageGettingStarted.PNG)
 
 ## Explore Azure Service Bus
 
