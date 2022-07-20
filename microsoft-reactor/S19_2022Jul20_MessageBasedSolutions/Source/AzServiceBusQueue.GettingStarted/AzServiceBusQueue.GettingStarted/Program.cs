@@ -1,4 +1,4 @@
-﻿using AzServiceBusQueue.GettingStarted.Data;
+﻿using AzServiceBusQueue.MsgSender.Data;
 using Azure.Messaging.ServiceBus;
 using Microsoft.Extensions.Configuration;
 using System.Text.Json;
@@ -11,40 +11,20 @@ IConfiguration _configuration = new ConfigurationBuilder()
 
 string connectionString = _configuration["AzServiceBus:ConnectionString"];
 string queueName = _configuration["AzServiceBus:QueueName"];
-string[] Importance = new string[] { "High", "Medium", "Low" };
-int i = 0;
+bool receiveMessages = true;
 
 // since ServiceBusClient implements IAsyncDisposable we create it with "await using"
-await using var client = new ServiceBusClient(connectionString);
-ServiceBusSender serviceBusSender = client.CreateSender(queueName);
+await using var serviceBusClient = new ServiceBusClient(connectionString);
+ServiceBusSender serviceBusSender = serviceBusClient.CreateSender(queueName);
 
-WriteLine("Sending Single String Message");
-ServiceBusMessage message = new($"Hello world! {DateTime.Now}");
-await serviceBusSender.SendMessageAsync(message);
+await SendSingleMessage(serviceBusSender);
 
-WriteLine("Sending Single Order Message");
-ServiceBusMessage orderMessage = new(JsonSerializer.Serialize(new Order() { Quantity = 100, UnitPrice = 9.99F }));
-await serviceBusSender.SendMessageAsync(orderMessage);
+await SendBatchMessages(serviceBusSender);
 
-List<Order> orders = GetOrders();
-
-WriteLine("Creating Service Bus Batch Messages");
-ServiceBusMessageBatch serviceBusMessageBatch = await serviceBusSender.CreateMessageBatchAsync();
-
-foreach (Order order in orders)
+if (receiveMessages)
 {
-    ServiceBusMessage serviceBusMessage = new(JsonSerializer.Serialize(order))
-    {
-        ContentType = "application/json"
-    };
-    serviceBusMessage.ApplicationProperties.Add("Importance", Importance[i++]);
-    if (!serviceBusMessageBatch.TryAddMessage(serviceBusMessage))
-    {
-        throw new Exception("Error occured");
-    }
+    await ReceiveSingleMessage(queueName, serviceBusClient);
 }
-Console.WriteLine("Sending Batch messages");
-await serviceBusSender.SendMessagesAsync(serviceBusMessageBatch);
 
 await serviceBusSender.DisposeAsync();
 WriteLine("\n\nPress any key ...");
@@ -57,4 +37,50 @@ static List<Order> GetOrders()
         new Order(){Quantity=200,UnitPrice=10.99F},
         new Order(){Quantity=300,UnitPrice=8.99F}
     };
+}
+
+static async Task SendSingleMessage(ServiceBusSender serviceBusSender)
+{
+    WriteLine("Sending Single String Message");
+    ServiceBusMessage message = new($"Hello world! {DateTime.Now}");
+    await serviceBusSender.SendMessageAsync(message);
+
+    WriteLine("Sending Single Order Message");
+    ServiceBusMessage orderMessage = new(JsonSerializer.Serialize(new Order() { Quantity = 100, UnitPrice = 9.99F }));
+    await serviceBusSender.SendMessageAsync(orderMessage);
+}
+
+static async Task SendBatchMessages(ServiceBusSender serviceBusSender)
+{
+    List<Order> orders = GetOrders();
+    int i = 0;
+    string[] Importance = new string[] { "High", "Medium", "Low" };
+
+    WriteLine("Creating Service Bus Batch Messages");
+    ServiceBusMessageBatch serviceBusMessageBatch = await serviceBusSender.CreateMessageBatchAsync();
+
+    foreach (Order order in orders)
+    {
+        ServiceBusMessage serviceBusMessage = new(JsonSerializer.Serialize(order))
+        {
+            ContentType = "application/json"
+        };
+        serviceBusMessage.ApplicationProperties.Add("Importance", Importance[i++]);
+        if (!serviceBusMessageBatch.TryAddMessage(serviceBusMessage))
+        {
+            throw new Exception("Error occured");
+        }
+    }
+    Console.WriteLine("Sending Batch messages");
+    await serviceBusSender.SendMessagesAsync(serviceBusMessageBatch);
+}
+
+static async Task ReceiveSingleMessage(string queueName, ServiceBusClient serviceBusClient)
+{
+    ServiceBusReceiver receiver = serviceBusClient.CreateReceiver(queueName);
+
+    ServiceBusReceivedMessage receivedMessage = await receiver.ReceiveMessageAsync();
+    WriteLine($"Message Received: {receivedMessage.Body.ToString()}");
+    
+    await receiver.CompleteMessageAsync(receivedMessage);
 }
