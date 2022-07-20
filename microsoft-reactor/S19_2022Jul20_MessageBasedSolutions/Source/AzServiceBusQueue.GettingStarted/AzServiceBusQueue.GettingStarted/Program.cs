@@ -80,7 +80,17 @@ static async Task ReceiveSingleMessage(string queueName, ServiceBusClient servic
     ServiceBusReceiver receiver = serviceBusClient.CreateReceiver(queueName);
 
     ServiceBusReceivedMessage receivedMessage = await receiver.ReceiveMessageAsync();
-    WriteLine($"Message Received: {receivedMessage.Body.ToString()}");
-    
-    await receiver.CompleteMessageAsync(receivedMessage);
+    WriteLine($"Message Received: {receivedMessage.Body}");
+
+    // dead-letter the message, thereby preventing the message from being received again without receiving from the dead letter queue.
+    await receiver.DeadLetterMessageAsync(receivedMessage);
+
+    // receive the dead lettered message with receiver scoped to the dead letter queue.
+    ServiceBusReceiver dlqReceiver = serviceBusClient.CreateReceiver(queueName, new ServiceBusReceiverOptions
+    {
+        SubQueue = SubQueue.DeadLetter
+    });
+    ServiceBusReceivedMessage dlqMessage = await dlqReceiver.ReceiveMessageAsync();
+
+    // await receiver.CompleteMessageAsync(receivedMessage);
 }
