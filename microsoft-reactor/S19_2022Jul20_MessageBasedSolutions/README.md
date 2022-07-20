@@ -122,6 +122,8 @@ az servicebus queue create --resource-group $rgName --namespace-name $sbSpaceNam
 
 > 1. [https://docs.microsoft.com/en-us/dotnet/api/overview/azure/messaging.servicebus-readme-pre](https://docs.microsoft.com/en-us/dotnet/api/overview/azure/messaging.servicebus-readme-pre)
 
+![Service Bus Explorer | 100x100](./Documentation/Images/ServiceBus_Send_Receive.PNG)
+
 ---
 
 ## X. SUMMARY / RECAP / Q&A
