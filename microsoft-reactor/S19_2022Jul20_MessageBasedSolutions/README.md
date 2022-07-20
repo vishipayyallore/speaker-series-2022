@@ -121,6 +121,9 @@ az servicebus queue create --resource-group $rgName --namespace-name $sbSpaceNam
 **References:**
 
 > 1. [https://docs.microsoft.com/en-us/dotnet/api/overview/azure/messaging.servicebus-readme-pre](https://docs.microsoft.com/en-us/dotnet/api/overview/azure/messaging.servicebus-readme-pre)
+> 1. [https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/service-bus-messaging/service-bus-dotnet-get-started-with-queues.md](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/service-bus-messaging/service-bus-dotnet-get-started-with-queues.md)
+> 1. [https://docs.microsoft.com/en-us/dotnet/api/overview/azure/messaging.servicebus-readme-pre#dead-letter-a-message](https://docs.microsoft.com/en-us/dotnet/api/overview/azure/messaging.servicebus-readme-pre#dead-letter-a-message)
+> 1. [https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues)
 
 ![Service Bus Explorer | 100x100](./Documentation/Images/ServiceBus_Send_Receive.PNG)
 
