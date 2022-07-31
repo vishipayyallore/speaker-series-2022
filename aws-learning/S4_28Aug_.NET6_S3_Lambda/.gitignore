@@ -351,3 +351,8 @@ MigrationBackup/
 
 # Working Directory
 Working/
+
+.terraform/
+**/.terraform/
+**/terraform.tfstate
+**/terraform.tfstate.backup
