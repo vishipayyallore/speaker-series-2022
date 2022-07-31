@@ -40,6 +40,12 @@
 
 > 1. Demo and Discussion
 
+![S3 Bucket and Static Website using Terraform | 100x100](./documentation/images/TF_S3_Static_WebSite.PNG)
+
+![S3 Bucket and Static Website using Terraform | 100x100](./documentation/images/TF_S3_Static_WebSite_1.PNG)
+
+![S3 Bucket and Static Website using Terraform | 100x100](./documentation/images/TF_S3_Static_WebSite_2.PNG)
+
 ## 3. Updating the Static Website with Angular 14 App
 
 > 1. Demo and Discussion
