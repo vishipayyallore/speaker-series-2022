@@ -69,33 +69,82 @@
 
 ---
 
-## Explore Azure Cosmos DB
+## Introduction to PowerShell and Az Module (3 Minutes)
 
 > 1. Discussion and Demo
-> 1. Key Benefits of Azure Cosmos DB
-> 1. Resource Hierarchy
-> 1. Consistency Levels
-> 1. APIs supported in Azure Cosmos DB
-> 1. Request Units (RUs)
+
+**Reference:**
+
+> https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-8.2.0
+
+## Introduction to Azure CLI (3 Minutes)
+
+> 1. Discussion and Demo
 
 **Reference(s):**
 
-[https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels](https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels)
+> 1. https://docs.microsoft.com/en-us/cli/azure/
 
-## Implement partitioning in Azure Cosmos DB
-
-> 1. Discussion and Demo
-> 1. Explore partitions
-
-## Work with Azure Cosmos DB
+## Introduction to Azure Cloud Shell (4 Minutes)
 
 > 1. Discussion and Demo
 
-## Mini Project(s)
+**Reference(s):**
+
+> 1. https://docs.microsoft.com/en-us/azure/cloud-shell/overview
+
+## Creating Ubuntu VM and installing Nginx using PowerShell. Accessing the default page. (6 Minutes)
 
 > 1. Discussion and Demo
 
----
+## Creating Windows VM and installing IIS using PowerShell. Accessing the default page. (6 Minutes)
+
+> 1. Discussion and Demo
+
+## Creating Ubuntu VM and installing LAMP Server using Azure CLI. Accessing the default page. (6 Minutes)
+
+> 1. Discussion and Demo
+
+## Creating Windows VM and installing IIS using Azure CLI. Accessing the default page. (6 Minutes)
+
+> 1. Discussion and Demo
+
+## What is Infrastructure as a Code? (5 Minutes)
+
+> 1. Discussion and Demo
+
+**Reference(s):**
+
+> 1. https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/infrastructure-as-code
+> 1. https://docs.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code
+
+## Introduction to ARM (5 Minutes)
+
+> 1. Discussion and Demo
+
+**Reference(s):**
+
+> 1. https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview
+
+## Creating a Storage Account using an ARM template and Azure CLI. (5 Minutes)
+
+> 1. Discussion and Demo
+
+## Deploy SQL Server, Database using ARM + Azure CLI (5 Minutes)
+
+> 1. Discussion and Demo
+
+## Deplopy App Service, Web App using ARM + AZ CLI (5 Minutes)
+
+> 1. Discussion and Demo
+
+## Creating Azure Key Vault using an ARM template and Azure CLI. (5 Minutes)
+
+> 1. Discussion and Demo
+
+## Creating Ubuntu VM using an ARM template and Azure CLI. Accessing the default page. (6 Minutes)
+
+> 1. Discussion and Demo
 
 ## SUMMARY / RECAP / Q&A
 
