@@ -49,6 +49,7 @@ mstsc /v:publicIpAddress
 # From within the newly created VM
 # PS:> 
 Install-WindowsFeature -name Web-Server -IncludeManagementTools
+
 # From within the newly created VM
 
 # From your Laptop/PC visit the URL

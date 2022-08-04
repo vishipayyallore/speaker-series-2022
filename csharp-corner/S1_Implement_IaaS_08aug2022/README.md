@@ -61,7 +61,7 @@
 
 ### Please refer [MS Learn Module](https://docs.microsoft.com/en-gb/learn/paths/az-204-implement-iaas-solutions) for more details.
 
-### [Source code for today's session](https://github.com/vishipayyallore/speaker-series-2022/tree/main/microsoft-reactor/S17_2022Jun22_AzureCosmosDB)
+### [Source code for today's session](https://github.com/vishipayyallore/speaker-series-2022/tree/main/csharp-corner/S1_Implement_IaaS_08aug2022)
 
 ---
 
@@ -101,10 +101,13 @@
 
 ![Ubuntu VM Using PowerShell |150x150](./Documentation/Images/UbuntuVMUsingPowerShell_1.PNG)
 
-
 ## Creating Windows VM and installing IIS using PowerShell. (6 Minutes)
 
 > 1. Discussion and Demo
+
+![Ubuntu VM Using PowerShell |150x150](./Documentation/Images/WindowsVMUsingPowerShell.PNG)
+
+![Ubuntu VM Using PowerShell |150x150](./Documentation/Images/WindowsVMUsingPowerShell_1.PNG)
 
 ## Creating Ubuntu VM and installing LAMP Server using Azure CLI. (6 Minutes)
 
