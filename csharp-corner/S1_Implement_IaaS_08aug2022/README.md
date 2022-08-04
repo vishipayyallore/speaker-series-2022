@@ -97,6 +97,11 @@
 
 > 1. Discussion and Demo
 
+![Ubuntu VM Using PowerShell |150x150](./Documentation/Images/UbuntuVMUsingPowerShell.PNG)
+
+![Ubuntu VM Using PowerShell |150x150](./Documentation/Images/UbuntuVMUsingPowerShell_1.PNG)
+
+
 ## Creating Windows VM and installing IIS using PowerShell. (6 Minutes)
 
 > 1. Discussion and Demo
