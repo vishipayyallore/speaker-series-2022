@@ -44,17 +44,17 @@
 > 1. Introduction to PowerShell and Az Module (3 Minutes)
 > 1. Introduction to Azure CLI (3 Minutes)
 > 1. Introduction to Azure Cloud Shell (4 Minutes)
-> 1. Creating Ubuntu VM and installing Nginx using PowerShell. Accessing the default page. (6 Minutes)
-> 1. Creating Windows VM and installing IIS using PowerShell. Accessing the default page. (6 Minutes)
-> 1. Creating Ubuntu VM and installing LAMP Server using Azure CLI. Accessing the default page. (6 Minutes)
-> 1. Creating Windows VM and installing IIS using Azure CLI. Accessing the default page. (6 Minutes)
+> 1. Creating Ubuntu VM and installing Nginx using PowerShell. (6 Minutes)
+> 1. Creating Windows VM and installing IIS using PowerShell. (6 Minutes)
+> 1. Creating Ubuntu VM and installing LAMP Server using Azure CLI. (6 Minutes)
+> 1. Creating Windows VM and installing IIS using Azure CLI. (6 Minutes)
 > 1. What is Infrastructure as a Code? (5 Minutes)
 > 1. Introduction to ARM (5 Minutes)
 > 1. Creating a Storage Account using an ARM template and Azure CLI. (5 Minutes)
 > 1. Deploy SQL Server, Database using ARM + Azure CLI (5 Minutes)
 > 1. Deplopy App Service, Web App using ARM + AZ CLI (5 Minutes)
 > 1. Creating Azure Key Vault using an ARM template and Azure CLI. (5 Minutes)
-> 1. Creating Ubuntu VM using an ARM template and Azure CLI. Accessing the default page. (6 Minutes)
+> 1. Creating Ubuntu VM using an ARM template and Azure CLI. (6 Minutes)
 > 1. Review/Q & A/Panel Discussion (5 Minutes)
 > 1. Q & A
 > 1. What is next in `Session 2`? (5 Minutes)
@@ -93,19 +93,19 @@
 
 > 1. https://docs.microsoft.com/en-us/azure/cloud-shell/overview
 
-## Creating Ubuntu VM and installing Nginx using PowerShell. Accessing the default page. (6 Minutes)
+## Creating Ubuntu VM and installing Nginx using PowerShell. (6 Minutes)
 
 > 1. Discussion and Demo
 
-## Creating Windows VM and installing IIS using PowerShell. Accessing the default page. (6 Minutes)
+## Creating Windows VM and installing IIS using PowerShell. (6 Minutes)
 
 > 1. Discussion and Demo
 
-## Creating Ubuntu VM and installing LAMP Server using Azure CLI. Accessing the default page. (6 Minutes)
+## Creating Ubuntu VM and installing LAMP Server using Azure CLI. (6 Minutes)
 
 > 1. Discussion and Demo
 
-## Creating Windows VM and installing IIS using Azure CLI. Accessing the default page. (6 Minutes)
+## Creating Windows VM and installing IIS using Azure CLI. (6 Minutes)
 
 > 1. Discussion and Demo
 
@@ -142,7 +142,7 @@
 
 > 1. Discussion and Demo
 
-## Creating Ubuntu VM using an ARM template and Azure CLI. Accessing the default page. (6 Minutes)
+## Creating Ubuntu VM using an ARM template and Azure CLI. (6 Minutes)
 
 > 1. Discussion and Demo
 
