@@ -2,9 +2,9 @@
 
 ## Date Time: 08-Aug-2022 at 09:00 PM IST
 
-## Event URL: [https://www.meetup.com/ToBeDone](https://www.meetup.com/ToBeDone)
+## Event URL: [https://www.c-sharpcorner.com/events/implement-iaas-solutions-az204-handson-series](https://www.c-sharpcorner.com/events/implement-iaas-solutions-az204-handson-series)
 
-![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK1.PNG)
+![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
 ---
 
@@ -41,13 +41,25 @@
 
 ## What are we doing today?
 
-> 1. Explore Azure Cosmos DB
-> 1. Implement partitioning in Azure Cosmos DB
-> 1. Work with Azure Cosmos DB
-> 1. Mini Project(s)
+> 1. Introduction to PowerShell and Az Module (3 Minutes)
+> 1. Introduction to Azure CLI (3 Minutes)
+> 1. Introduction to Azure Cloud Shell (4 Minutes)
+> 1. Creating Ubuntu VM and installing Nginx using PowerShell. Accessing the default page. (6 Minutes)
+> 1. Creating Windows VM and installing IIS using PowerShell. Accessing the default page. (6 Minutes)
+> 1. Creating Ubuntu VM and installing LAMP Server using Azure CLI. Accessing the default page. (6 Minutes)
+> 1. Creating Windows VM and installing IIS using Azure CLI. Accessing the default page. (6 Minutes)
+> 1. What is Infrastructure as a Code? (5 Minutes)
+> 1. Introduction to ARM (5 Minutes)
+> 1. Creating a Storage Account using an ARM template and Azure CLI. (5 Minutes)
+> 1. Deploy SQL Server, Database using ARM + Azure CLI (5 Minutes)
+> 1. Deplopy App Service, Web App using ARM + AZ CLI (5 Minutes)
+> 1. Creating Azure Key Vault using an ARM template and Azure CLI. (5 Minutes)
+> 1. Creating Ubuntu VM using an ARM template and Azure CLI. Accessing the default page. (6 Minutes)
+> 1. Review/Q & A/Panel Discussion (5 Minutes)
 > 1. Q & A
+> 1. What is next in `Session 2`? (5 Minutes)
 
-### [MS Learn Module](https://docs.microsoft.com/en-us/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/)
+### Please refer [MS Learn Module](https://docs.microsoft.com/en-gb/learn/paths/az-204-implement-iaas-solutions) for more details.
 
 ### [Source code for today's session](https://github.com/vishipayyallore/speaker-series-2022/tree/main/microsoft-reactor/S17_2022Jun22_AzureCosmosDB)
 
@@ -85,7 +97,7 @@
 
 ---
 
-## X. SUMMARY / RECAP / Q&A
+## SUMMARY / RECAP / Q&A
 
 ---
 
@@ -94,12 +106,6 @@
 
 ---
 
-## What is Next? Session `18` of `21` Sessions on July 06, 2022
+## What is next in `Session 2`? (5 Minutes)
 
-### AZ-204 | Develop solutions that use Blob storage
-
-> 1. Explore Azure Blob storage
-> 1. Manage the Azure Blob storage lifecycle
-> 1. Work with Azure Blob storage
-> 1. Mini Project(s)
-> 1. Q & A
+> 1. Discussion
