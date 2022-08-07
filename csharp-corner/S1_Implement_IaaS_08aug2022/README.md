@@ -44,10 +44,10 @@
 > 1. Introduction to PowerShell and Az Module (3 Minutes)
 > 1. Introduction to Azure CLI (3 Minutes)
 > 1. Introduction to Azure Cloud Shell (4 Minutes)
-> 1. Creating Ubuntu VM and installing Nginx using PowerShell. (6 Minutes)
 > 1. Creating Windows VM and installing IIS using PowerShell. (6 Minutes)
-> 1. Creating Ubuntu VM and installing LAMP Server using Azure CLI. (6 Minutes)
+> 1. Creating Ubuntu VM and installing Nginx using PowerShell. (6 Minutes)
 > 1. Creating Windows VM and installing IIS using Azure CLI. (6 Minutes)
+> 1. Creating Ubuntu VM and installing LAMP Server using Azure CLI. (6 Minutes)
 > 1. What is Infrastructure as a Code? (5 Minutes)
 > 1. Introduction to ARM (5 Minutes)
 > 1. Creating a Storage Account using an ARM template and Azure CLI. (5 Minutes)
@@ -93,6 +93,14 @@
 
 > 1. https://docs.microsoft.com/en-us/azure/cloud-shell/overview
 
+## Creating Windows VM and installing IIS using PowerShell. (6 Minutes)
+
+> 1. Discussion and Demo
+
+![Windows VM Using PowerShell |150x150](./Documentation/Images/WindowsVMUsingPowerShell.PNG)
+
+![Windows VM Using PowerShell |150x150](./Documentation/Images/WindowsVMUsingPowerShell_1.PNG)
+
 ## Creating Ubuntu VM and installing Nginx using PowerShell. (6 Minutes)
 
 > 1. Discussion and Demo
@@ -101,21 +109,21 @@
 
 ![Ubuntu VM Using PowerShell |150x150](./Documentation/Images/UbuntuVMUsingPowerShell_1.PNG)
 
-## Creating Windows VM and installing IIS using PowerShell. (6 Minutes)
+## Creating Windows VM and installing IIS using Azure CLI. (6 Minutes)
+
+> 1. Discussion and Demo
+
+![Windows VM Using PowerShell |150x150](./Documentation/Images/WindowsVMUsingAzCli.PNG)
+
+![Windows VM Using PowerShell |150x150](./Documentation/Images/WindowsVMUsingAzCli_1.PNG)
+
+## Creating Ubuntu VM and installing LAMP Server using Azure CLI. (6 Minutes)
 
 > 1. Discussion and Demo
 
 ![Ubuntu VM Using PowerShell |150x150](./Documentation/Images/WindowsVMUsingPowerShell.PNG)
 
 ![Ubuntu VM Using PowerShell |150x150](./Documentation/Images/WindowsVMUsingPowerShell_1.PNG)
-
-## Creating Ubuntu VM and installing LAMP Server using Azure CLI. (6 Minutes)
-
-> 1. Discussion and Demo
-
-## Creating Windows VM and installing IIS using Azure CLI. (6 Minutes)
-
-> 1. Discussion and Demo
 
 ## What is Infrastructure as a Code? (5 Minutes)
 
