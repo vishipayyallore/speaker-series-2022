@@ -121,9 +121,9 @@
 
 > 1. Discussion and Demo
 
-![Ubuntu VM Using PowerShell |150x150](./Documentation/Images/WindowsVMUsingPowerShell.PNG)
+![Ubuntu VM Using PowerShell |150x150](./Documentation/Images/UbuntuVMUsingAzCli.PNG)
 
-![Ubuntu VM Using PowerShell |150x150](./Documentation/Images/WindowsVMUsingPowerShell_1.PNG)
+![Ubuntu VM Using PowerShell |150x150](./Documentation/Images/UbuntuVMUsingAzCli_1.PNG)
 
 ## What is Infrastructure as a Code? (5 Minutes)
 
