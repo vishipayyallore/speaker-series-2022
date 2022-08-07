@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "serverName": {
-            "value": "sql-womd-dev-001"
+            "value": "sql-az204-series-dev-001"
         },
         "administratorLogin": {
             "value": "demouser"
