@@ -158,6 +158,14 @@ az deployment group create --resource-group rg-womd-robbie-001 --template-file s
 
 > 1. Discussion and Demo
 
+```Azure CLI
+az deployment group validate --resource-group rg-womd-robbie-001 --template-file sql-server.deploy.json --parameters sql-server.parameters.json
+
+az deployment group create --resource-group rg-womd-robbie-001 --template-file sql-server.deploy.json --parameters sql-server.parameters.json --mode Incremental
+```
+
+![Sql Server and Database using ARM Template |150x150](./Documentation/Images/ARM_SqlServer_Database.PNG)
+
 ## Deplopy App Service, Web App using ARM + AZ CLI (5 Minutes)
 
 > 1. Discussion and Demo

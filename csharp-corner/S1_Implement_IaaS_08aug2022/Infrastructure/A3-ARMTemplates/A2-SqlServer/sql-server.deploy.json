@@ -18,7 +18,7 @@
     },
     "sqlDBName": {
       "type": "string",
-      "defaultValue": "sqldb-eshop-dev-001",
+      "defaultValue": "sqldb-az204-series-dev-001",
       "metadata": {
         "description": "The name of the SQL Database."
       }
