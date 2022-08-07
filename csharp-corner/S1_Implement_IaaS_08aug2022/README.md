@@ -182,6 +182,8 @@ az deployment group create --resource-group rg-womd-robbie-001 --template-file w
 
 > 1. Discussion and Demo
 
+**Note:** Modify the ObjectId in the parameter file to match the ObjectId of the User.
+
 ```Azure CLI
 az deployment group validate --resource-group rg-womd-robbie-001 --template-file keyvault.deploy.json --parameters keyvault.parameters.json
 
