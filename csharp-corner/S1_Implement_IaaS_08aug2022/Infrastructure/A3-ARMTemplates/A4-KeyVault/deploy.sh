@@ -1,0 +1,1 @@
+az deployment group create --resource-group rg-womd-robbie-001 --template-file keyvault.deploy.json --parameters keyvault.parameters.json --mode Incremental

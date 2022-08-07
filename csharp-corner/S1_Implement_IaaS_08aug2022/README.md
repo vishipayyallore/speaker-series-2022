@@ -176,11 +176,19 @@ az deployment group validate --resource-group rg-womd-robbie-001 --template-file
 az deployment group create --resource-group rg-womd-robbie-001 --template-file webapp.deploy.json --parameters webapp.parameters.json --mode Incremental
 ```
 
-![Sql Server and Database using ARM Template |150x150](./Documentation/Images/ARM_AppServicePlan_App.PNG)
+![App Service, Web App using ARM Template |150x150](./Documentation/Images/ARM_AppServicePlan_App.PNG)
 
 ## Deploy an Azure Key Vault using an ARM template, and Azure CLI (5 Minutes)
 
 > 1. Discussion and Demo
+
+```Azure CLI
+az deployment group validate --resource-group rg-womd-robbie-001 --template-file keyvault.deploy.json --parameters keyvault.parameters.json
+
+az deployment group create --resource-group rg-womd-robbie-001 --template-file keyvault.deploy.json --parameters keyvault.parameters.json --mode Incremental
+```
+
+![Key Vault using ARM Template |150x150](./Documentation/Images/ARM_KeyVault.PNG)
 
 ## Deploy an Ubuntu VM using an ARM template, and Azure CLI (6 Minutes)
 

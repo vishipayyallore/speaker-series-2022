@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "keyVaultName": {
+            "value": "kv-az204-series-dev-0011"
+        },
+        "objectId": {
+            "value": "3dc95154-97b7-4e82-abac-9e636d451c16"
+        },
+        "secretName": {
+            "value": "hello"
+        },
+        "secretValue": {
+            "value": "world !!"
+        }
+    }
+}
