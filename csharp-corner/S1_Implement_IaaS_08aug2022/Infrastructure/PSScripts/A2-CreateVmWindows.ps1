@@ -1,6 +1,6 @@
 # Variables
 # $SubscriptionName = "YourSubscriptionName"
-$RGName = "rg-dnlh-eshop-dev-001"
+$RGName = "rg-az204-series-dev-001"
 $LocationName = "EastUS"
 $BaseName = "jul2022win"
 $VmName = "vm$($BaseName)"

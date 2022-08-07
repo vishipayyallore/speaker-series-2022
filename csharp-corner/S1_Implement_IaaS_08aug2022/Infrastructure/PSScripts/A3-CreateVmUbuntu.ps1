@@ -1,6 +1,6 @@
 # Variables
 # $SubscriptionName = "Your Subscription Name"
-$RGName = "rg-dnlh-eshop-dev-002"
+$RGName = "rg-az204-series-dev-002"
 $LocationName = "CentralUS"
 $BaseName = "jul2022ubuntu"
 $VmName = "vm$($BaseName)"
@@ -32,17 +32,6 @@ New-AzResourceGroup -Name $RGName -Location $LocationName -Tag @{environment = "
 
 $CredentialsForVm = New-Object System.Management.Automation.PSCredential ($username, $password)
 
-# Create a subnet configuration
-$subnetConfig = New-AzVirtualNetworkSubnetConfig -Name $SubNetName -AddressPrefix 192.168.1.0/24
-
-# Create a virtual network
-$vnet = New-AzVirtualNetwork -ResourceGroupName $RGName -Location $LocationName -Name $VNetName `
-  -AddressPrefix 192.168.0.0/16 -Subnet $subnetConfig
-
-# Create a public IP address and specify a DNS name
-$pip = New-AzPublicIpAddress -ResourceGroupName $RGName -Location $LocationName -AllocationMethod Static `
-  -IdleTimeoutInMinutes 4 -Name $PublicDns
-
 # Create an inbound network security group rule for port 22
 $nsgRuleSSH = New-AzNetworkSecurityRuleConfig -Name $NsgRuleForSsh -Protocol "Tcp" -Direction "Inbound" -Priority 1000 `
   -SourceAddressPrefix * -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange $PortsToOpen[1] -Access "Allow"
@@ -54,6 +43,17 @@ $nsgRuleWeb = New-AzNetworkSecurityRuleConfig -Name $NsgRuleForWeb -Protocol "Tc
 # Create a network security group
 $nsg = New-AzNetworkSecurityGroup -ResourceGroupName $RGName -Location $LocationName -Name $NsgName `
   -SecurityRules $nsgRuleSSH, $nsgRuleWeb
+
+# Create a subnet configuration
+$subnetConfig = New-AzVirtualNetworkSubnetConfig -Name $SubNetName -AddressPrefix 192.168.1.0/24 -NetworkSecurityGroup $nsg
+
+# Create a public IP address and specify a DNS name
+$pip = New-AzPublicIpAddress -ResourceGroupName $RGName -Location $LocationName -AllocationMethod Static `
+  -IdleTimeoutInMinutes 4 -Name $PublicDns
+
+# Create a virtual network
+$vnet = New-AzVirtualNetwork -ResourceGroupName $RGName -Location $LocationName -Name $VNetName `
+  -AddressPrefix 192.168.0.0/16 -Subnet $subnetConfig
 
 # Create a virtual network card and associate with public IP address and NSG
 $nic = New-AzNetworkInterface -Name $NicName -ResourceGroupName $RGName -Location $LocationName `
@@ -84,10 +84,6 @@ Get-AzPublicIpAddress -ResourceGroupName $RGName -Name $PublicDns | Select-Objec
 ##### MODIFY THE <USERNAME> AND <VmPublicIpAddress>
 ssh -i /home/<USERNAME>/.ssh/id_rsa demouser@<VmPublicIpAddress>
 
-
-curl localhost
-http://<VmPublicIpAddress>
-
 ##### Inside the Ubuntu VM
 ```
 sudo apt-get -y update
@@ -97,5 +93,6 @@ sudo apt-get -y install nginx
 
 ##### From Our Local Laptop/PC
 # visit the URL
+curl localhost
 http://<VmPublicIpAddress>
 ##### From Our Local Laptop/PC
