@@ -2,7 +2,7 @@
 # $SubscriptionName = "Your Subscription Name"
 $RGName = "rg-az204-series-dev-002"
 $LocationName = "CentralUS"
-$BaseName = "jul2022ubuntu"
+$BaseName = "aug2022ubuntu"
 $VmName = "vm$($BaseName)"
 $VNetName = "vnet$($BaseName)"
 $SubNetName = "default"
