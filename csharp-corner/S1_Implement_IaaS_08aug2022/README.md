@@ -146,6 +146,14 @@
 
 > 1. Discussion and Demo
 
+```Azure CLI
+az deployment group validate --resource-group rg-womd-robbie-001 --template-file storage-deploy.json --parameters storage-parameters.json
+
+az deployment group create --resource-group rg-womd-robbie-001 --template-file storage-deploy.json --parameters storage-parameters.json --mode Incremental
+```
+
+![Storage Acount using ARM Template |150x150](./Documentation/Images/ARM_StorageAccount.PNG)
+
 ## Deploy SQL Server, Database using ARM + Azure CLI (5 Minutes)
 
 > 1. Discussion and Demo

@@ -1,0 +1,1 @@
+az deployment group create --resource-group rg-womd-robbie-001 --template-file storage-deploy.json --parameters storage-parameters.json --mode Incremental
