@@ -1,0 +1,1 @@
+az deployment group validate --resource-group rg-womd-robbie-001 --template-file ubuntuvm.deploy.json --parameters ubuntuvm.parameters.json

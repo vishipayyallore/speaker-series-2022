@@ -185,7 +185,7 @@ az deployment group create --resource-group rg-womd-robbie-001 --template-file w
 
 > 1. Discussion and Demo
 
-**Note:** Modify the ObjectId in the parameter file to match the ObjectId of the User.
+**Note:** Modify the `ObjectId` in the parameter file to match the ObjectId of the User.
 
 ```Azure CLI
 az deployment group validate --resource-group rg-womd-robbie-001 --template-file keyvault.deploy.json --parameters keyvault.parameters.json
@@ -199,6 +199,23 @@ az deployment group create --resource-group rg-womd-robbie-001 --template-file k
 
 > 1. Discussion and Demo
 
+**Note:** Modify the `<UserName>` in the parameter file to match the logged in User.
+
+```Azure CLI
+az deployment group validate --resource-group rg-womd-robbie-001 --template-file ubuntuvm.deploy.json --parameters ubuntuvm.parameters.json
+
+sshKey=$(cat '/mnt/c/Users/<UserName>/.ssh/id_rsa.pub')
+az deployment group create --resource-group rg-womd-robbie-001 --template-file ubuntuvm.deploy.json --parameters ubuntuvm.parameters.json --parameters adminPublicKey="$sshKey" --mode Incremental
+```
+
+![Ubuntu VM using ARM Template |150x150](./Documentation/Images/ARM_UbuntuVM.PNG)
+
+```Bash
+ssh -i /mnt/c/Users/<UserName>/.ssh/id_rsa demouser@<IpAddressOfNewlyCreatedVM>
+```
+
+![Ubuntu VM using ARM Template |150x150](./Documentation/Images/ARM_UbuntuVM_1.PNG)
+
 ## SUMMARY / RECAP / Q&A
 
 ---
@@ -211,3 +228,5 @@ az deployment group create --resource-group rg-womd-robbie-001 --template-file k
 ## What is next in `Session 2`? (5 Minutes)
 
 > 1. Discussion
+> 1. `SQL Server, and Database`, and programming in .NET 6
+> 1. `Cosmos Database`, and programming in .NET 6
