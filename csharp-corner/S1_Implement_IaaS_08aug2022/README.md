@@ -59,9 +59,12 @@
 > 1. Q & A
 > 1. What is next in `Session 2`? (5 Minutes)
 
-### Please refer [MS Learn Module](https://docs.microsoft.com/en-gb/learn/paths/az-204-implement-iaas-solutions) for more details.
+### Please refer MS Learn Module(s) for more details.
 
-### [Source code for today's session](https://github.com/vishipayyallore/speaker-series-2022/tree/main/csharp-corner/S1_Implement_IaaS_08aug2022)
+> 1. [Provision virtual machines in Azure](https://docs.microsoft.com/en-gb/learn/modules/provision-virtual-machines-azure/)
+> 1. [Create and deploy Azure Resource Manager templates](https://docs.microsoft.com/en-gb/learn/modules/create-deploy-azure-resource-manager-templates/)
+
+### Please refer the [**Source code**](https://github.com/vishipayyallore/speaker-series-2022/tree/main/csharp-corner/S1_Implement_IaaS_08aug2022) for today's session
 
 ---
 
