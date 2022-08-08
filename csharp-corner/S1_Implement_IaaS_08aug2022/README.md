@@ -228,5 +228,9 @@ ssh -i /mnt/c/Users/<UserName>/.ssh/id_rsa demouser@<IpAddressOfNewlyCreatedVM>
 ## What is next in `Session 2`? (5 Minutes)
 
 > 1. Discussion
-> 1. `SQL Server, and Database`, and programming in .NET 6
-> 1. `Cosmos Database`, and programming in .NET 6
+> 1. Introduction to `SQL Server, and Database`, and programming in .NET 6
+> 1. Introduction to `Cosmos Database`, and programming in .NET 6
+> 1. `Web API`, and programming in .NET 6
+> 1. `Web App Razor`, and programming in .NET 6
+> 1. Web App `Blazor WebAssembly`, and programming in .NET 6
+> 1. Deploy SQL Project Dacpac .sqlproj to Azure SQL Database
