@@ -21,4 +21,4 @@ Get-AzVMImageOffer -Location CentralUS -PublisherName Canonical | Select Offer
 
 Get-AzVMImageSku -Location CentralUS -PublisherName Canonical -Offer UbuntuServer | Select Skus
 
-Get-AzVMImage -PublisherName "Canonical" -Offer "UbuntuServer" -Skus "18.04-LTS"
+Get-AzVMImage -Location CentralUS -PublisherName "Canonical" -Offer "UbuntuServer" -Skus "18.04-LTS"
