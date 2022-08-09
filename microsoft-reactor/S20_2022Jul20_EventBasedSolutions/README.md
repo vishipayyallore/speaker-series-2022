@@ -69,9 +69,9 @@
 
 > 1. Discussion and Demo
 
-## Explore Azure Event Grid
+**Reference(s):**
 
-> 1. Discussion and Demo
+> 1. [https://docs.microsoft.com/en-us/azure/event-grid/overview](https://docs.microsoft.com/en-us/azure/event-grid/overview)
 
 ## Discover event schemas
 
@@ -88,6 +88,12 @@
 ## Receive events by using webhooks
 
 > 1. Discussion and Demo
+
+**Azure Resources for Storage EventGrid WebHook**
+![Azure Resources for Storage EventGrid WebHook | 100x100](./Documentation/Images/AzResources_Storage_EventGrid_WebHook.PNG)
+
+**Storage Events passed to EventGrid which sends to WebHook**
+![Storage EventGrid WebHook | 100x100](./Documentation/Images/Storage_EventGrid_WebHook.PNG)
 
 ## Filter events
 
