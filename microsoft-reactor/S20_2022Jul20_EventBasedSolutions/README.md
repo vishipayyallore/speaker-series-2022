@@ -73,6 +73,16 @@
 
 > 1. [https://docs.microsoft.com/en-us/azure/event-grid/overview](https://docs.microsoft.com/en-us/azure/event-grid/overview)
 
+## Hands on with Azure Event Grid using Portal
+
+> 1. Discussion and Demo
+
+**Azure Resources for Storage EventGrid WebHook**
+![Azure Resources for Storage EventGrid WebHook | 100x100](./Documentation/Images/AzResources_Storage_EventGrid_WebHook.PNG)
+
+**Storage Events passed to EventGrid which sends to WebHook**
+![Storage EventGrid WebHook | 100x100](./Documentation/Images/Storage_EventGrid_WebHook.PNG)
+
 ## Discover event schemas
 
 > 1. Discussion and Demo
@@ -88,12 +98,6 @@
 ## Receive events by using webhooks
 
 > 1. Discussion and Demo
-
-**Azure Resources for Storage EventGrid WebHook**
-![Azure Resources for Storage EventGrid WebHook | 100x100](./Documentation/Images/AzResources_Storage_EventGrid_WebHook.PNG)
-
-**Storage Events passed to EventGrid which sends to WebHook**
-![Storage EventGrid WebHook | 100x100](./Documentation/Images/Storage_EventGrid_WebHook.PNG)
 
 ## Filter events
 
