@@ -127,9 +127,11 @@ curl -X POST -H "aeg-sas-key: $key" -d "$event" $endpoint
 
 > 1. Discussion and Demo
 
+![Filtering Events | 100x100](./Documentation/Images/Filter_Demo.PNG)
+
 ## Exercise: Route custom events to web endpoint by using Azure CLI
 
-> 1. Discussion and Demo
+> 1. Discussion and `LIVE Demo`
 
 ## Discover Azure Event Hubs
 
