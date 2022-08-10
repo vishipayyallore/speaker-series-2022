@@ -87,9 +87,31 @@
 
 > 1. Discussion and Demo
 
+![Event Schema | 100x100](./Documentation/Images/Event_Schema.PNG)
+
+![Event Schema | 100x100](./Documentation/Images/Event_Schema_1.PNG)
+
 ## Explore event delivery durability
 
 > 1. Discussion and Demo
+
+```AzureCLI
+eventgridname=egt-for-az-funcs
+rgname=rg-az204-eventbased-dev-001
+event='[ {"id": "'"$RANDOM"'", "eventType": "recordInserted", "subject": "myapp/vehicles/motorcycles", "eventTime": "'`date +%Y-%m-%dT%H:%M:%S%z`'", "data":{ "make": "Ducati", "model": "Monster V1"},"dataVersion": "1.0"} ]'
+
+endpoint=$(az eventgrid topic show --name $eventgridname -g $rgname --query "endpoint" --output tsv)
+
+key=$(az eventgrid topic key list --name $eventgridname -g $rgname --query "key1" --output tsv)
+
+curl -X POST -H "aeg-sas-key: $key" -d "$event" $endpoint
+```
+
+![Event Delivery Durability | 100x100](./Documentation/Images/Event_DeliveryDurability.PNG)
+
+![Azure Func Processing the Events | 100x100](./Documentation/Images/Event_T0_AzureFunc.PNG)
+
+![Azure Func Processing the Events | 100x100](./Documentation/Images/Azure_Func_Logs.PNG)
 
 ## Control access to events
 
@@ -98,6 +120,8 @@
 ## Receive events by using webhooks
 
 > 1. Discussion and Demo
+
+![Subscription Validation | 100x100](./Documentation/Images/SubscriptionValidation.PNG)
 
 ## Filter events
 
