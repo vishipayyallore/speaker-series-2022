@@ -42,9 +42,10 @@
 ## What are we doing today?
 
 > 1. Explore the Microsoft identity platform
-> 1. Implement authentication by using the Microsoft Authentication Library
 > 1. Implement shared access signatures
+> 1. Explore Microsoft Graph API
 > 1. Mini Project(s)
+> 1. Implement authentication by using the Microsoft Authentication Library - **`Stretch Goal`**
 > 1. Q & A
 
 ### Please refer AZ-204 [**MS Learn Module**](https://aka.ms/AZ-204-Authentication) for more details.
@@ -59,15 +60,29 @@
 
 > 1. Discussion and Demo
 
-## Implement authentication by using the Microsoft Authentication Library
-
+### Creating Azure AD Tenant
 > 1. Discussion and Demo
+
+### Creating User inside Azure AD Tenant
+> 1. Discussion and Demo
+
+### RBAC to newly created  inside Azure AD Tenant
+> 1. Discussion and Demo
+
 
 ## Implement shared access signatures
 
 > 1. Discussion and Demo
 
+## Explore Microsoft Graph API
+
+> 1. Discussion and Demo
+
 ## Mini Project(s)
+
+> 1. Discussion and Demo
+
+## Implement authentication by using the Microsoft Authentication Library - **`Stretch Goal`**
 
 > 1. Discussion and Demo
 
