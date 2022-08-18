@@ -61,14 +61,28 @@
 > 1. Discussion and Demo
 
 ### Creating Azure AD Tenant
+
 > 1. Discussion and Demo
 
 ### Creating User inside Azure AD Tenant
+
 > 1. Discussion and Demo
 
-### RBAC to newly created  inside Azure AD Tenant
+### RBAC to newly created inside Azure AD Tenant
+
 > 1. Discussion and Demo
 
+### Web Application with Azure AD
+
+> 1. Discussion and Demo
+
+### Web API with Azure AD
+
+> 1. Discussion and Demo
+
+### Azure Function with Azure AD
+
+> 1. Discussion and Demo
 
 ## Implement shared access signatures
 
