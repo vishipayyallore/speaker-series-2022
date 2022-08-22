@@ -60,9 +60,20 @@
 
 > 1. Discussion and Demo
 
-### Creating Azure AD Tenant
+### Reference(s):
+
+> 1. [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)
+> 1. [https://docs.microsoft.com/en-gb/azure/active-directory/develop/v2-overview](https://docs.microsoft.com/en-gb/azure/active-directory/develop/v2-overview)
+
+### Creating Azure AD Tenant - (5 minutes)
 
 > 1. Discussion and Demo
+
+### Reference(s):
+
+> 1. [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
+
+![Information | 100x100](./Documentation/Images/CreateNewTenant.PNG)
 
 ### Creating User inside Azure AD Tenant
 
