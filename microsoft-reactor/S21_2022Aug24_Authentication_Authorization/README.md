@@ -58,18 +58,20 @@
 
 ## Explore the Microsoft identity platform
 
+### Introduction to Azure AD, and Microsoft identity platform - (`5 minutes`)
+
 > 1. Discussion and Demo
 
-### Reference(s):
+#### Reference(s):
 
 > 1. [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)
 > 1. [https://docs.microsoft.com/en-gb/azure/active-directory/develop/v2-overview](https://docs.microsoft.com/en-gb/azure/active-directory/develop/v2-overview)
 
-### Creating Azure AD Tenant - (5 minutes)
+### Creating Azure AD Tenant - (`5 minutes`)
 
 > 1. Discussion and Demo
 
-### Reference(s):
+#### Reference(s):
 
 > 1. [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
 
