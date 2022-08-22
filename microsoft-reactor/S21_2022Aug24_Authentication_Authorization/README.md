@@ -56,31 +56,67 @@
 
 ---
 
+## Explore the Azure Active Directory
+
+### Introduction to Azure AD - (`5 minutes`)
+
+> 1. Discussion and Demo
+
+#### Reference(s):
+
+> 1. [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)
+
+### Creating Azure AD Tenant - (`5 minutes`)
+
+> 1. Discussion and Demo
+
+#### Reference(s):
+
+> 1. [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
+
+![Create New Tenant in Azure AD | 100x100](./Documentation/Images/CreateNewTenant.PNG)
+
+### Creating User inside Azure AD Tenant - (`5 minutes`)
+
+> 1. Discussion and Demo
+> 1. Create a new user in Azure AD
+> 1. Login to Azure Portal
+> 1. Change the password of the user
+
+![Create New User in Azure AD | 100x100](./Documentation/Images/CreateNewTenant.PNG)
+
+![New User Without Subscription | 100x100](./Documentation/Images/NewUser_WithoutSubscription.PNG)
+
+### RBAC to newly created inside Azure AD Tenant - (`5 minutes`)
+
+> 1. Discussion and Demo
+
+![New User Without Subscription | 100x100](./Documentation/Images/RABCForNewUser.PNG)
+
 ## Explore the Microsoft identity platform
 
-> 1. Discussion and Demo
-
-### Creating Azure AD Tenant
+### Introduction to Microsoft identity platform - (`5 minutes`)
 
 > 1. Discussion and Demo
 
-### Creating User inside Azure AD Tenant
+#### Reference(s):
+
+> 1. [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)
+> 1. [https://docs.microsoft.com/en-gb/azure/active-directory/develop/v2-overview](https://docs.microsoft.com/en-gb/azure/active-directory/develop/v2-overview)
+
+### Web Application
 
 > 1. Discussion and Demo
 
-### RBAC to newly created inside Azure AD Tenant
+### Web API
 
 > 1. Discussion and Demo
 
-### Web Application with Azure AD
+### Azure Function
 
 > 1. Discussion and Demo
 
-### Web API with Azure AD
-
-> 1. Discussion and Demo
-
-### Azure Function with Azure AD
+### Console Application / Worker Process
 
 > 1. Discussion and Demo
 
