@@ -128,6 +128,8 @@
 
 > 1. Discussion and Demo
 
+![Web Application with Azure AD | 100x100](./Documentation/Images/WebAppWithAAD.PNG)
+
 ### Web API - (`10 minutes`)
 
 > 1. Discussion and Demo
