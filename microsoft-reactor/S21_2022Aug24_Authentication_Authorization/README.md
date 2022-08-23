@@ -120,15 +120,21 @@ image.png
 > 1. [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)
 > 1. [https://docs.microsoft.com/en-gb/azure/active-directory/develop/v2-overview](https://docs.microsoft.com/en-gb/azure/active-directory/develop/v2-overview)
 
-### Web Application
+### Console Application with RBAC to Storage - (`10 minutes`)
 
 > 1. Discussion and Demo
 
-### Web API
+![Console Application with App and RBAC | 100x100](./Documentation/Images/ADAppWithRBACInConsoleApp.PNG)
+
+### Web Application - (`10 minutes`)
 
 > 1. Discussion and Demo
 
-### Azure Function
+### Web API - (`10 minutes`)
+
+> 1. Discussion and Demo
+
+### Azure Function - (`10 minutes`)
 
 > 1. Discussion and Demo
 
@@ -154,10 +160,6 @@ image.png
 
 ![Graph API Console Application | 100x100](./Documentation/Images/GraphAPI_ConsoleApp.PNG)
 
-## Mini Project(s)
-
-> 1. Discussion and Demo
-
 ## Implement authentication by using the Microsoft Authentication Library - **`Session 23`**
 
 > 1. Discussion and Demo
@@ -165,7 +167,6 @@ image.png
 ## Implement shared access signatures - **`Session 23`**
 
 > 1. Discussion and Demo
-
 
 ---
 
