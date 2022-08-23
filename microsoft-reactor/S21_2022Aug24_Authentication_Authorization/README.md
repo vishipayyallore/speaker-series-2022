@@ -160,15 +160,15 @@ image.png
 
 ![Graph API Console Application | 100x100](./Documentation/Images/GraphAPI_ConsoleApp.PNG)
 
-## Implement authentication by using the Microsoft Authentication Library - **`Session 23`**
+### Graph API using Postman - (`10 minutes`)
 
-> 1. Discussion and Demo
+#### Reference(s):
 
-## Implement shared access signatures - **`Session 23`**
+> 1. [https://docs.microsoft.com/en-us/graph/auth-v2-service](https://docs.microsoft.com/en-us/graph/auth-v2-service)
 
-> 1. Discussion and Demo
+#### Graph API using Postman
 
----
+![Graph API Console Application | 100x100](./Documentation/Images/GraphAPI_Postman.PNG)
 
 ## SUMMARY / RECAP / Q&A
 
@@ -179,10 +179,14 @@ image.png
 
 ---
 
-## What is Next? Session `22` of `22` Sessions on Sep 07, 2022
+## What is Next? Session `22` of `23` Sessions on Oct, 2022 (Along with our 3 hours AZ-204 Labs)
 
-### AZ-204 | To be done
-
-> 1. To be done
+> 1. Event Hubs
 > 1. Mini Project(s)
+> 1. Q & A
+
+## What is Next? Session `23` of `23` Sessions on Nov, 2022 (Along with our 3 hours AZ-204 Labs)
+
+> 1. Implement authentication by using the Microsoft Authentication Library - **`Session 23`**
+> 1. Implement shared access signatures - **`Session 23`**
 > 1. Q & A
