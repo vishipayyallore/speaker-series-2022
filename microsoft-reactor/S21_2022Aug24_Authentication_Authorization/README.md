@@ -97,8 +97,6 @@
 
 ![New User Invitation Email | 100x100](./Documentation/Images/ExternalUserInvitation.PNG)
 
-image.png
-
 #### New User Without Subscription
 
 ![New User Without Subscription | 100x100](./Documentation/Images/NewUser_WithoutSubscription.PNG)
