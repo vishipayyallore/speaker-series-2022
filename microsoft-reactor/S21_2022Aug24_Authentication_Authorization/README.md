@@ -1,4 +1,4 @@
-# AZ-204 |Implement user authentication and authorization
+# AZ-204 | Implement user authentication and authorization
 
 ## Date Time: 24-Aug-2022 at 09:00 AM IST
 
@@ -93,11 +93,17 @@
 
 ![Create New User in Azure AD | 100x100](./Documentation/Images/CreateNewUser_1.PNG)
 
+#### New User Invitation Email
+
+![New User Invitation Email | 100x100](./Documentation/Images/ExternalUserInvitation.PNG)
+
+image.png
+
 #### New User Without Subscription
 
 ![New User Without Subscription | 100x100](./Documentation/Images/NewUser_WithoutSubscription.PNG)
 
-### RBAC to newly created inside Azure AD Tenant - (`5 minutes`)
+### RBAC to newly created User to Resource Group Azure AD Tenant - (`5 minutes`)
 
 > 1. Discussion and Demo
 
@@ -130,11 +136,11 @@
 
 > 1. Discussion and Demo
 
-### Graph Explorer
+### Graph Explorer - (`5 minutes`)
 
 ![Graph Explorer | 100x100](./Documentation/Images/GraphExplorer.PNG)
 
-### Console Application
+### Console Application - (`10 minutes`)
 
 #### Reference(s):
 
@@ -156,7 +162,7 @@
 
 > 1. Discussion and Demo
 
-## Implement authentication by using the Microsoft Authentication Library - **`Stretch Goal`**
+## Implement authentication by using the Microsoft Authentication Library - **`Session 23`**
 
 > 1. Discussion and Demo
 
