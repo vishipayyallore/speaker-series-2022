@@ -154,10 +154,6 @@ image.png
 
 ![Graph API Console Application | 100x100](./Documentation/Images/GraphAPI_ConsoleApp.PNG)
 
-## Implement shared access signatures
-
-> 1. Discussion and Demo
-
 ## Mini Project(s)
 
 > 1. Discussion and Demo
@@ -165,6 +161,11 @@ image.png
 ## Implement authentication by using the Microsoft Authentication Library - **`Session 23`**
 
 > 1. Discussion and Demo
+
+## Implement shared access signatures - **`Session 23`**
+
+> 1. Discussion and Demo
+
 
 ---
 
