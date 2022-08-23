@@ -126,15 +126,29 @@
 
 > 1. Discussion and Demo
 
-### Console Application / Worker Process
+## Explore Microsoft Graph API
 
 > 1. Discussion and Demo
+
+### Graph Explorer
+
+![Graph Explorer | 100x100](./Documentation/Images/GraphExplorer.PNG)
+
+### Console Application
+
+#### Reference(s):
+
+> 1. [https://docs.microsoft.com/en-us/graph/sdks/choose-authentication-providers?tabs=CS](https://docs.microsoft.com/en-us/graph/sdks/choose-authentication-providers?tabs=CS)
+
+#### App Resigration and Permissions
+
+![App Resigration and Permissions | 100x100](./Documentation/Images/AppRegistration_And_Permissions.PNG)
+
+#### Graph API Console Application
+
+![Graph API Console Application | 100x100](./Documentation/Images/GraphAPI_ConsoleApp.PNG)
 
 ## Implement shared access signatures
-
-> 1. Discussion and Demo
-
-## Explore Microsoft Graph API
 
 > 1. Discussion and Demo
 
