@@ -74,6 +74,8 @@
 
 > 1. [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
 
+#### Create New Tenant in Azure AD
+
 ![Create New Tenant in Azure AD | 100x100](./Documentation/Images/CreateNewTenant.PNG)
 
 ### Creating User inside Azure AD Tenant - (`5 minutes`)
@@ -83,7 +85,15 @@
 > 1. Login to Azure Portal
 > 1. Change the password of the user
 
-![Create New User in Azure AD | 100x100](./Documentation/Images/CreateNewTenant.PNG)
+#### Create New User in Azure AD
+
+![Create New User in Azure AD | 100x100](./Documentation/Images/CreateNewUser.PNG)
+
+#### Create New User in Azure AD using Invitation
+
+![Create New User in Azure AD | 100x100](./Documentation/Images/CreateNewUser_1.PNG)
+
+#### New User Without Subscription
 
 ![New User Without Subscription | 100x100](./Documentation/Images/NewUser_WithoutSubscription.PNG)
 
