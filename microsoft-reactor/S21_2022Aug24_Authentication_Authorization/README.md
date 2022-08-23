@@ -97,8 +97,6 @@
 
 ![New User Invitation Email | 100x100](./Documentation/Images/ExternalUserInvitation.PNG)
 
-image.png
-
 #### New User Without Subscription
 
 ![New User Without Subscription | 100x100](./Documentation/Images/NewUser_WithoutSubscription.PNG)
@@ -130,13 +128,13 @@ image.png
 
 > 1. Discussion and Demo
 
+![Web Application with Azure AD | 100x100](./Documentation/Images/WebAppWithAAD.PNG)
+
 ### Web API - (`10 minutes`)
 
 > 1. Discussion and Demo
 
-### Azure Function - (`10 minutes`)
-
-> 1. Discussion and Demo
+![Web API Protected with Azure AD | 100x100](./Documentation/Images/WebAPIProtected.PNG)
 
 ## Explore Microsoft Graph API
 
@@ -189,4 +187,5 @@ image.png
 
 > 1. Implement authentication by using the Microsoft Authentication Library - **`Session 23`**
 > 1. Implement shared access signatures - **`Session 23`**
+> 1. Azure Function - (`10 minutes`)
 > 1. Q & A
