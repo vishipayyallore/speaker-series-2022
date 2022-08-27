@@ -50,6 +50,10 @@
 
 ### Please refer AZ-204 [**MS Learn Module**](https://aka.ms/AZ-204-Authentication) for more details.
 
+### Please refer to the [**Source Code**](https://github.com/vishipayyallore/learn-azure-in-2022) of today's session for more details.
+
+
+
 ---
 
 ![Information | 100x100](./Documentation/Images/SeatBelt.PNG)
