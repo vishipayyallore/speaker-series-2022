@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 1.2.8"
+  required_version = ">= 1.2.6"
 
   cloud {
     organization = "swamy-the-tf-learner"

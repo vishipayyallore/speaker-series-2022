@@ -49,6 +49,12 @@
 
 > 1. Demo and Discussion
 
+### Angular `ng build`
+![S3 Bucket and Static Website using Terraform | 100x100](./documentation/images/TF_S3_Static_WebSite_BuildNg.PNG)
+
+### Static Site Updated with Angular artifacts
+![S3 Bucket and Static Website using Terraform | 100x100](./documentation/images/TF_S3_Static_WebSite_Ng.PNG)
+
 ## Introduction to AWS Lambda
 
 > 1. Demo and Discussion
