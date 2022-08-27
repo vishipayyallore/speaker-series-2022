@@ -41,12 +41,13 @@
 
 ## What are we doing today?
 
+> 1. Explore the Azure Active Directory
 > 1. Explore the Microsoft identity platform
-> 1. Implement shared access signatures
 > 1. Explore Microsoft Graph API
 > 1. Mini Project(s)
-> 1. Implement authentication by using the Microsoft Authentication Library - **`Stretch Goal`**
 > 1. Q & A
+> 1. Implement authentication by using the Microsoft Authentication Library - **`Stretch Goal`**
+> 1. Implement shared access signatures - **`Stretch Goal`**
 
 ### Please refer AZ-204 [**MS Learn Module**](https://aka.ms/AZ-204-Authentication) for more details.
 
