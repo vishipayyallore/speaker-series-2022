@@ -20,7 +20,8 @@
 > 1. Creating S3 Bucket & Static Website inside S3 using Terraform
 > 1. Updating the Static Website with Angular 14 App
 > 1. Introduction to AWS Lambda
-> 1. Mini Project in AWS Lambda using .NET 6
+> 1. AWS Lambda Function using AWS Console (Mini Project)
+> 1. AWS Lambda using .NET 6 in VS 2022 (Mini Project)
 > 1. SUMMARY / RECAP / Q&A
 
 ![Seat Belt | 100x100](./documentation/images/SeatBelt.PNG)
@@ -59,9 +60,25 @@
 
 > 1. Demo and Discussion
 
-## Mini Project in AWS Lambda using .NET 6
+## AWS Lambda Function using AWS Console (Mini Project)
 
 > 1. Demo and Discussion
+
+### Lambda Function in Console
+![Lambda Function in Console | 100x100](./documentation/images/LambdaFunc_InConsole.PNG)
+
+### Testing Lambda Function in Console
+![Lambda Function in Console | 100x100](./documentation/images/LambdaFunc_InConsole_1.PNG)
+
+## AWS Lambda using .NET 6 in VS 2022 (Mini Project)
+
+> 1. Demo and Discussion
+
+### Testing Lambda Function in VS 2022
+![Lambda Function in VS 2022 | 100x100](./documentation/images/Lambda_InVS2022.PNG)
+
+### Testing Deployed Lambda Function in VS 2022
+![Lambda Function in VS 2022 | 100x100](./documentation/images/Lambda_InVS2022_1.PNG)
 
 ---
 
@@ -78,6 +95,6 @@
 
 **URL:** [https://www.meetup.com/dot-net-learners-house-hyderabad/events/ToBeDone](https://www.meetup.com/dot-net-learners-house-hyderabad/events/ToBeDone)
 
-**Date:** `24-Jul-2022` at `10:00 AM IST`
+**Date:** `XX-Sep-2022` at `10:00 AM IST`
 
 > 1. To be done
