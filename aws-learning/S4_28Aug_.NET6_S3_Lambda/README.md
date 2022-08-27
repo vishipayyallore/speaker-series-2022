@@ -19,7 +19,6 @@
 > 1. Creating S3 Bucket & Object using Terraform
 > 1. Creating S3 Bucket & Static Website inside S3 using Terraform
 > 1. Updating the Static Website with Angular 14 App
-> 1. Updating the Static Website with Blazor WASM
 > 1. Introduction to AWS Lambda
 > 1. Mini Project in AWS Lambda using .NET 6
 > 1. SUMMARY / RECAP / Q&A
@@ -28,7 +27,7 @@
 
 ---
 
-## 1. Creating S3 Bucket & Object using Terraform
+## Creating S3 Bucket & Object using Terraform
 
 > 1. Demo and Discussion
 
@@ -36,7 +35,7 @@
 
 ![S3 Bucket and Object using Terraform | 100x100](./documentation/images/TF_S3_Bucket_Object_1.PNG)
 
-## 2. Creating S3 Bucket & Static Website inside S3 using Terraform
+## Creating S3 Bucket & Static Website inside S3 using Terraform
 
 > 1. Demo and Discussion
 
@@ -46,25 +45,27 @@
 
 ![S3 Bucket and Static Website using Terraform | 100x100](./documentation/images/TF_S3_Static_WebSite_2.PNG)
 
-## 3. Updating the Static Website with Angular 14 App
+## Updating the Static Website with Angular 14 App
 
 > 1. Demo and Discussion
 
-## 4. Updating the Static Website with Blazor WASM
+### Angular `ng build`
+![S3 Bucket and Static Website using Terraform | 100x100](./documentation/images/TF_S3_Static_WebSite_BuildNg.PNG)
+
+### Static Site Updated with Angular artifacts
+![S3 Bucket and Static Website using Terraform | 100x100](./documentation/images/TF_S3_Static_WebSite_Ng.PNG)
+
+## Introduction to AWS Lambda
 
 > 1. Demo and Discussion
 
-## 5. Introduction to AWS Lambda
-
-> 1. Demo and Discussion
-
-## 6. Mini Project in AWS Lambda using .NET 6
+## Mini Project in AWS Lambda using .NET 6
 
 > 1. Demo and Discussion
 
 ---
 
-## 7. SUMMARY / RECAP / Q&A
+## SUMMARY / RECAP / Q&A
 
 ---
 
