@@ -4,11 +4,13 @@
 
 ## Event URL: [https://www.c-sharpcorner.com/events/net-web-api-web-apps-with-sql-server-cosmosdb-az204-handson](https://www.c-sharpcorner.com/events/net-web-api-web-apps-with-sql-server-cosmosdb-az204-handson)
 
-## Current Session's YouTube URL: [https://www.youtube.com/watch?v=33KvxeuG_U4](https://www.youtube.com/watch?v=33KvxeuG_U4)
-
 ## Please watch the `previous sessions` on YouTube
 
 >1. ### [Session 1](https://www.youtube.com/watch?v=33KvxeuG_U4)
+
+## Current Session's YouTube URL: [https://www.youtube.com/watch?v=33KvxeuG_U4](https://www.youtube.com/watch?v=33KvxeuG_U4)
+
+---
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
