@@ -1,0 +1,1 @@
+az deployment group validate --resource-group rg-womd-robbie-001 --template-file cosmos-sql.deploy.json --parameters cosmos-sql.parameters.json
