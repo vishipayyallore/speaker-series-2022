@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "accountName": {
-            "value": "[format('cosmos-sql-{0}', uniqueString(resourceGroup().id))]"
+            "value": "cosmos-sql-az204-dev-001"
         },
         "location": {
-            "value": "[resourceGroup().location]"
+            "value": "eastus"
         },
         "primaryRegion": {
             "value": "eastus"

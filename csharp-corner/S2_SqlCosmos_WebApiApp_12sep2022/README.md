@@ -77,7 +77,7 @@
 
 > 1. Discussion and Demo
 
-### Reference(s)
+**Reference(s):**
 
 > 1. [https://docs.microsoft.com/en-in/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql](https://docs.microsoft.com/en-in/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql)
 
@@ -101,9 +101,23 @@ az deployment group create --resource-group rg-womd-robbie-001 --template-file s
 
 > 1. Discussion and Demo
 
+**Reference(s):**
+
+> 1. <https://docs.microsoft.com/en-us/azure/cosmos-db/introduction>
+
 ## 5. Provision Cosmos Db using ARM Template (5 Minutes)
 
 > 1. Discussion and Demo
+
+```azurecli
+az deployment group validate --resource-group rg-womd-robbie-001 --template-file cosmos-sql.deploy.json --parameters cosmos-sql.parameters.json
+
+az deployment group create --resource-group rg-womd-robbie-001 --template-file cosmos-sql.deploy.json --parameters cosmos-sql.parameters.json --mode Incremental
+```
+
+![Commos Db with Core SQL API using ARM Template |150x150](./Documentation/Images/ARM_CosmosDb_CoreSql.PNG)
+
+![Commos Db with Core SQL API using ARM Template |150x150](./Documentation/Images/ARM_CosmosDb_CoreSql_1.PNG)
 
 ## 6. Create Web API in .NET 6, interacting with SQL Server Database. Only List Functionality. (15 Minutes)
 
