@@ -4,6 +4,8 @@
 
 ## Event URL: [https://www.c-sharpcorner.com/events/implement-iaas-solutions-az204-handson-series](https://www.c-sharpcorner.com/events/implement-iaas-solutions-az204-handson-series)
 
+## Current Session's YouTube URL: [https://www.youtube.com/watch?v=33KvxeuG_U4](https://www.youtube.com/watch?v=33KvxeuG_U4)
+
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
 ---
@@ -59,12 +61,12 @@
 > 1. Q & A
 > 1. What is next in `Session 2`? (5 Minutes)
 
-### Please refer MS Learn Module(s) for more details.
+### Please refer MS Learn Module(s) for more details
 
 > 1. [Provision virtual machines in Azure](https://docs.microsoft.com/en-gb/learn/modules/provision-virtual-machines-azure/)
 > 1. [Create and deploy Azure Resource Manager templates](https://docs.microsoft.com/en-gb/learn/modules/create-deploy-azure-resource-manager-templates/)
 
-### Please refer the [**Source code**](https://github.com/vishipayyallore/speaker-series-2022/tree/main/csharp-corner/S1_Implement_IaaS_08aug2022) for today's session
+### Please refer the [**Source code**](https://github.com/vishipayyallore/speaker-series-2022/tree/main/csharp-corner) for today's session
 
 ---
 
@@ -78,7 +80,7 @@
 
 **Reference:**
 
-> https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-8.2.0
+> <https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-8.2.0>
 
 ## Introduction to Azure CLI (3 Minutes)
 
@@ -86,7 +88,7 @@
 
 **Reference(s):**
 
-> 1. https://docs.microsoft.com/en-us/cli/azure/
+> 1. <https://docs.microsoft.com/en-us/cli/azure/>
 
 ## Introduction to Azure Cloud Shell (4 Minutes)
 
@@ -94,7 +96,7 @@
 
 **Reference(s):**
 
-> 1. https://docs.microsoft.com/en-us/azure/cloud-shell/overview
+> 1. <https://docs.microsoft.com/en-us/azure/cloud-shell/overview>
 
 ## Creating Windows VM and installing IIS using PowerShell. (6 Minutes)
 
@@ -134,8 +136,8 @@
 
 **Reference(s):**
 
-> 1. https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/infrastructure-as-code
-> 1. https://docs.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code
+> 1. <https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/infrastructure-as-code>
+> 1. <https://docs.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code>
 
 ## Introduction to ARM (5 Minutes)
 
@@ -143,7 +145,7 @@
 
 **Reference(s):**
 
-> 1. https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview
+> 1. <https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview>
 
 ## Deploy a Storage Account using an ARM template, and Azure CLI (5 Minutes)
 
