@@ -99,6 +99,12 @@ az deployment group create --resource-group rg-womd-robbie-001 --template-file s
 
 > 1. Discussion and Demo
 
+![Sql Server and Database Access |150x150](./Documentation/Images/SQLServer_Access.PNG)
+
+![VS 2022 SQL Server Connection for Deployment |150x150](./Documentation/Images/VS2022_SQLServerConnection.PNG)
+
+![VS 2022 SQL Server Deployment |150x150](./Documentation/Images/VS2022_SQLServer_Deployment.PNG)
+
 ## 4. Introduction to Cosmos Db from 30,000 feet (5 Minutes)
 
 > 1. Discussion and Demo
