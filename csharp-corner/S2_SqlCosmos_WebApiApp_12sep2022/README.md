@@ -99,6 +99,12 @@ az deployment group create --resource-group rg-womd-robbie-001 --template-file s
 
 > 1. Discussion and Demo
 
+![Sql Server and Database Access |150x150](./Documentation/Images/SQLServer_Access.PNG)
+
+![VS 2022 SQL Server Connection for Deployment |150x150](./Documentation/Images/VS2022_SQLServerConnection.PNG)
+
+![VS 2022 SQL Server Deployment |150x150](./Documentation/Images/VS2022_SQLServer_Deployment.PNG)
+
 ## 4. Introduction to Cosmos Db from 30,000 feet (5 Minutes)
 
 > 1. Discussion and Demo
@@ -125,6 +131,8 @@ az deployment group create --resource-group rg-womd-robbie-001 --template-file c
 
 > 1. Discussion and Demo
 
+![Web API Accessing SQL Server data |150x150](./Documentation/Images/WebAPI_Accessing_SQLServer.PNG)
+
 ## 7. Create Web API in .NET 6, interacting with Cosmos Database. Only List Functionality. (15 Minutes)
 
 > 1. Discussion and Demo
@@ -140,6 +148,8 @@ az deployment group create --resource-group rg-womd-robbie-001 --template-file c
 ## 10. Create Asp.NET 6 Blazor WASM App. Integrate with Local Web API. (15 Minutes)
 
 > 1. Discussion and Demo
+
+![Blazor WASM integrated With Web API |150x150](./Documentation/Images/BlazorWASM_WithWebAPI.PNG)
 
 ---
 

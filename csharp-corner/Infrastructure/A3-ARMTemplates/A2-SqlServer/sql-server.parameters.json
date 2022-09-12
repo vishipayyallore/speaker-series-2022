@@ -3,13 +3,16 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "serverName": {
-            "value": "sql-az204-series-dev-001"
+            "value": "sql-books-store-dev-001"
         },
         "administratorLogin": {
             "value": "demouser"
         },
         "administratorLoginPassword": {
             "value": "Password@123$$"
+        },
+        "sqlDBName": {
+            "value": "sqldb-books-store-dev-001"
         }
     }
 }
