@@ -1,4 +1,37 @@
+************************************************************************************************************************************************
+Session 3
+************************************************************************************************************************************************
+
+Title: Deploying .NET Web Api, Web Apps inside VM (IaaS), and App Service (PaaS) - AZ-204 Hands-On Series
+Date: 03-Oct-2022 | Time: 9:00 PM To 10:30 PM IST
+
+Pre-configured in Session 2:
+1. Provisioned SQL Server, and Database using ARM Template
+2. Deployed SQL Server Project (.sqlproj) to SQL Azure using VS 2022
+
+Topics:
+1. Creating Windows VM using an ARM template and Azure CLI (5 Minutes)
+2. Configure Windows VM with IIS, and other required software (5 Minutes)
+3. Create a Website inside IIS, and deploy Web API using VS 2022 (5 Minutes)
+4. Create a Website inside IIS, and deploy Web App (Razor Pages) using VS 2022 (5 Minutes)
+5. Create a Website inside IIS, and deploy Web App (Blazor WASM) using VS 2022 (5 Minutes)
+6. Create a static HTML web app by using Azure Cloud Shell (5 Minutes)
+7. Deplopy App Service, Web App using ARM + AZ CLI (5 Minutes)
+8. Deploy Web API to App Service using VS 2022 (5 Minutes)
+9. Deploy Web App (Razor Pages) to App Service using VS 2022 (5 Minutes)
+10. Deploy Web App (Blazor WASM) to App Service using VS 2022 (5 Minutes)
+11. Review/Q & A/Panel Discussion (5 Minutes)
+12. What is next in Session 3? (5 Minutes)
+
+MS Learn Modules:
+1. https://docs.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/
+2. https://docs.microsoft.com/en-us/training/modules/configure-web-app-settings/
+
+
+************************************************************************************************************************************************
 Session 2
+************************************************************************************************************************************************
+
 Title: .NET Web Api, Web Apps with SQL Server, and Cosmos Db - AZ-204 Hands-On Series
 Date: 12-Sep-2022 | Time: 9:00 PM To 10:30 PM IST
 Topics:
@@ -18,6 +51,7 @@ Topics:
 
 ************************************************************************************************************************************************
 Session 1
+************************************************************************************************************************************************
 Title: Implement IaaS solutions - AZ-204 Hands-On Series
 Date: 08-Aug-2022 | Time: 9:00 PM To 10:30 PM IST
 Topics:
