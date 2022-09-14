@@ -8,7 +8,7 @@
 
 >1. ### [Session 1](https://www.youtube.com/watch?v=33KvxeuG_U4)
 
-## Current Session's YouTube URL: [https://www.youtube.com/watch?v=33KvxeuG_U4](https://www.youtube.com/watch?v=33KvxeuG_U4)
+## Current Session's YouTube URL: [https://www.youtube.com/watch?v=1-y8KKurkBw](https://www.youtube.com/watch?v=1-y8KKurkBw)
 
 ---
 
