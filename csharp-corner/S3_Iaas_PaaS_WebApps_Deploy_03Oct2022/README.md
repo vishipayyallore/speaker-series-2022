@@ -1,6 +1,6 @@
 # AZ-204 | .NET Web API, Web Apps with SQL Server & CosmosDB - Session 2
 
-## Date Time: 12-Sep-2022 at 09:00 PM IST
+## Date Time: 03-Oct-2022 at 09:00 PM IST
 
 ## Event URL: [https://www.c-sharpcorner.com/events/net-web-api-web-apps-with-sql-server-cosmosdb-az204-handson](https://www.c-sharpcorner.com/events/net-web-api-web-apps-with-sql-server-cosmosdb-az204-handson)
 
@@ -8,7 +8,9 @@
 
 >1. ### [Session 1](https://www.youtube.com/watch?v=33KvxeuG_U4)
 
-## Current Session's YouTube URL: [https://www.youtube.com/watch?v=33KvxeuG_U4](https://www.youtube.com/watch?v=33KvxeuG_U4)
+>1. ### [Session 2](https://www.youtube.com/watch?v=1-y8KKurkBw)
+
+## Current Session's YouTube URL: [https://www.youtube.com/watch?v=1-y8KKurkBw](https://www.youtube.com/watch?v=1-y8KKurkBw)
 
 ---
 
