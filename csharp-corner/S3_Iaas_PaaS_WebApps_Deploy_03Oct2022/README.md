@@ -1,14 +1,13 @@
-# AZ-204 | .NET Web API, Web Apps with SQL Server & CosmosDB - Session 2
+# AZ-204 | .NET Web API, Web Apps inside VM (IaaS), and App Service (PaaS) - Session 3
 
 ## Date Time: 03-Oct-2022 at 09:00 PM IST
 
-## Event URL: [https://www.c-sharpcorner.com/events/net-web-api-web-apps-with-sql-server-cosmosdb-az204-handson](https://www.c-sharpcorner.com/events/net-web-api-web-apps-with-sql-server-cosmosdb-az204-handson)
+## Event URL: [https://www.c-sharpcorner.com/events/deploying-net-web-api-web-apps-inside-vm-and-app-service-ep-3](https://www.c-sharpcorner.com/events/deploying-net-web-api-web-apps-inside-vm-and-app-service-ep-3)
 
-## Please watch the `previous sessions` on YouTube
+## Please watch the previous `2 sessions` on YouTube
 
->1. ### [Session 1](https://www.youtube.com/watch?v=33KvxeuG_U4)
-
->1. ### [Session 2](https://www.youtube.com/watch?v=1-y8KKurkBw)
+>1. [Session 1](https://www.youtube.com/watch?v=33KvxeuG_U4)
+>1. [Session 2](https://www.youtube.com/watch?v=1-y8KKurkBw)
 
 ## Current Session's YouTube URL: [https://www.youtube.com/watch?v=1-y8KKurkBw](https://www.youtube.com/watch?v=1-y8KKurkBw)
 
@@ -51,18 +50,18 @@
 
 ## What are we doing today?
 
-> 1. Introduction to SQL Server from 30,000 feet (5 Minutes)
-> 1. Provision SQL Server, and Database using ARM Template (5 Minutes)
-> 1. Deploy SQL Server Project (.sqlproj) to SQL Azure using VS 2022 (5 Minutes)
-> 1. Introduction to Cosmos Db from 30,000 feet (5 Minutes)
-> 1. Provision Cosmos Db using ARM Template (5 Minutes)
-> 1. Create Web API in .NET 6, interacting with SQL Server Database. Only List Functionality. (15 Minutes)
-> 1. Create Web API in .NET 6, interacting with Cosmos Database. Only List Functionality. (15 Minutes)
-> 1. Web APIs using Dependency Injection, AppSettings.json, Secrets.json, and Layered Architecture. (Part of items 6, and 7)
-> 1. Create Asp.NET 6 Web App with Razor pages. Integrate with Local Web API. (15 Minutes)
-> 1. Create Asp.NET 6 Blazor WASM App. Integrate with Local Web API. (15 Minutes)
-> 1. Summary/Review/Q & A/Panel Discussion (5 Minutes)
-> 1. What is next in Session 3? (5 Minutes)
+> 1. Creating Windows VM using an ARM template and Azure CLI (5 Minutes)
+> 1. Configure Windows VM with IIS, and other required software (5 Minutes)
+> 1. Create a Website inside IIS, and deploy Web API using VS 2022 (5 Minutes)
+> 1. Create a Website inside IIS, and deploy a Web App (Razor Pages) using VS 2022 (5 Minutes)
+> 1. Create a Website inside IIS, and deploy a Web App (Blazor WASM) using VS 2022 (5 Minutes)
+> 1. Create a static HTML web app by using Azure Cloud Shell (5 Minutes)
+> 1. Deploy App Service, Web App using ARM + AZ CLI (5 Minutes)
+> 1. Deploy Web API to App Service using VS 2022 (5 Minutes)
+> 1. Deploy Web App (Razor Pages) to App Service using VS 2022 (5 Minutes)
+> 1. Deploy Web App (Blazor WASM) to App Service using VS 2022 (5 Minutes)
+> 1. Review/Q & A/Panel Discussion (5 Minutes)
+> 1. What is next in Session 4? (5 Minutes)
 
 ### Please refer MS Learn Module(s) for more details
 
