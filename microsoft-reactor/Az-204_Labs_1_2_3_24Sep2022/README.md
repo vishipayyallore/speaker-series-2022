@@ -79,6 +79,14 @@
 
 ![Install Web Deploy | 100x100](./Documentation/Images/WebDeploy.PNG)
 
+### Install URL Rewrite on Azure VM
+
+![URL Rewrite | 100x100](./Documentation/Images/URLReWrite.PNG)
+
+### Update the VM DNS Name on Azure VM
+
+![VM DNS Name | 100x100](./Documentation/Images/VMDNSName.PNG)
+
 ## Deploy Web App(s) on App Service on Azure (PaaS)
 
 > 1. Discussion and Demo
