@@ -41,19 +41,13 @@
 
 ## What are we doing today?
 
-> 1. Explore the Azure Active Directory
-> 1. Explore the Microsoft identity platform
-> 1. Explore Microsoft Graph API
-> 1. Mini Project(s)
+> 1. Deploy Web App(s) inside IIS on Azure VM (IaaS)
+> 1. Deploy Web App(s) on App Service on Azure (PaaS)
 > 1. Q & A
-> 1. Implement authentication by using the Microsoft Authentication Library - **`Stretch Goal`**
-> 1. Implement shared access signatures - **`Stretch Goal`**
 
-### Please refer AZ-204 [**MS Learn Module**](https://aka.ms/AZ-204-Authentication) for more details.
+### Please refer AZ-204 [**MS Learn Module**](https://aka.ms/AZ-204-Authentication) for more details
 
-### Please refer to the [**Source Code**](https://github.com/vishipayyallore/learn-azure-in-2022) of today's session for more details.
-
-
+### Please refer to the [**Source Code**](https://github.com/vishipayyallore/learn-azure-in-2022) of today's session for more details
 
 ---
 
@@ -61,136 +55,51 @@
 
 ---
 
-## Explore the Azure Active Directory
-
-### Introduction to Azure AD - (`5 minutes`)
+## Deploy Web App(s) inside IIS on Azure VM (IaaS)
 
 > 1. Discussion and Demo
 
-#### Reference(s):
+### Install IIS on Azure VM
 
-> 1. [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)
+![Install IIS | 100x100](./Documentation/Images/IISRole_1.PNG)
 
-### Creating Azure AD Tenant - (`5 minutes`)
+### Install Brave Browser on Azure VM
 
-> 1. Discussion and Demo
+![Install Brave Browser | 100x100](./Documentation/Images/BraveBrowser.PNG)
 
-#### Reference(s):
+### Enable Remote Connections and Start Management Service inside IIS
 
-> 1. [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
+![Enable Remote Connections and Start Management Service | 100x100](./Documentation/Images/IISManagementService.PNG)
 
-#### Create New Tenant in Azure AD
+### Install .NET 6 Hosting Bundle on Azure VM
 
-![Create New Tenant in Azure AD | 100x100](./Documentation/Images/CreateNewTenant.PNG)
+![.NET 6 Hosting Bundle | 100x100](./Documentation/Images/DotNet6Hosting.PNG)
 
-### Creating User inside Azure AD Tenant - (`5 minutes`)
+### Install Web Deploy on Azure VM
 
-> 1. Discussion and Demo
-> 1. Create a new user in Azure AD
-> 1. Login to Azure Portal
-> 1. Change the password of the user
+![Install Web Deploy | 100x100](./Documentation/Images/WebDeploy.PNG)
 
-#### Create New User in Azure AD
+### Install URL Rewrite on Azure VM
 
-![Create New User in Azure AD | 100x100](./Documentation/Images/CreateNewUser.PNG)
+![URL Rewrite | 100x100](./Documentation/Images/URLReWrite.PNG)
 
-#### Create New User in Azure AD using Invitation
+### Update the VM DNS Name on Azure VM
 
-![Create New User in Azure AD | 100x100](./Documentation/Images/CreateNewUser_1.PNG)
+![VM DNS Name | 100x100](./Documentation/Images/VMDNSName.PNG)
 
-#### New User Invitation Email
-
-![New User Invitation Email | 100x100](./Documentation/Images/ExternalUserInvitation.PNG)
-
-#### New User Without Subscription
-
-![New User Without Subscription | 100x100](./Documentation/Images/NewUser_WithoutSubscription.PNG)
-
-### RBAC to newly created User to Resource Group Azure AD Tenant - (`5 minutes`)
+## Deploy Web App(s) on App Service on Azure (PaaS)
 
 > 1. Discussion and Demo
-
-![New User Without Subscription | 100x100](./Documentation/Images/RABCForNewUser.PNG)
-
-## Explore the Microsoft identity platform
-
-### Introduction to Microsoft identity platform - (`5 minutes`)
-
-> 1. Discussion and Demo
-
-#### Reference(s):
-
-> 1. [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)
-> 1. [https://docs.microsoft.com/en-gb/azure/active-directory/develop/v2-overview](https://docs.microsoft.com/en-gb/azure/active-directory/develop/v2-overview)
-
-### Console Application with RBAC to Storage - (`10 minutes`)
-
-> 1. Discussion and Demo
-
-![Console Application with App and RBAC | 100x100](./Documentation/Images/ADAppWithRBACInConsoleApp.PNG)
-
-### Web Application - (`10 minutes`)
-
-> 1. Discussion and Demo
-
-![Web Application with Azure AD | 100x100](./Documentation/Images/WebAppWithAAD.PNG)
-
-### Web API - (`10 minutes`)
-
-> 1. Discussion and Demo
-
-![Web API Protected with Azure AD | 100x100](./Documentation/Images/WebAPIProtected.PNG)
-
-## Explore Microsoft Graph API
-
-> 1. Discussion and Demo
-
-### Graph Explorer - (`5 minutes`)
-
-![Graph Explorer | 100x100](./Documentation/Images/GraphExplorer.PNG)
-
-### Console Application - (`10 minutes`)
-
-#### Reference(s):
-
-> 1. [https://docs.microsoft.com/en-us/graph/sdks/choose-authentication-providers?tabs=CS](https://docs.microsoft.com/en-us/graph/sdks/choose-authentication-providers?tabs=CS)
-
-#### App Resigration and Permissions
-
-![App Resigration and Permissions | 100x100](./Documentation/Images/AppRegistration_And_Permissions.PNG)
-
-#### Graph API Console Application
-
-![Graph API Console Application | 100x100](./Documentation/Images/GraphAPI_ConsoleApp.PNG)
-
-### Graph API using Postman - (`10 minutes`)
-
-#### Reference(s):
-
-> 1. [https://docs.microsoft.com/en-us/graph/auth-v2-service](https://docs.microsoft.com/en-us/graph/auth-v2-service)
-
-#### Graph API using Postman
-
-![Graph API Console Application | 100x100](./Documentation/Images/GraphAPI_Postman.PNG)
 
 ## SUMMARY / RECAP / Q&A
-
----
 
 > 1. SUMMARY / RECAP / Q&A
 > 2. Any open queries, I will get back through meetup chat/twitter.
 
 ---
 
-## What is Next? Session `22` of `23` Sessions on Oct, 2022 (Along with our 3 hours AZ-204 Labs)
+## What is Next? Workshop `2` of `4` Sessions on Oct, 2022
 
-> 1. Event Hubs
-> 1. Mini Project(s)
-> 1. Q & A
-
-## What is Next? Session `23` of `23` Sessions on Nov, 2022 (Along with our 3 hours AZ-204 Labs)
-
-> 1. Implement authentication by using the Microsoft Authentication Library - **`Session 23`**
-> 1. Implement shared access signatures - **`Session 23`**
-> 1. Azure Function - (`10 minutes`)
-> 1. Q & A
+> 1. To be done
+> 1. To be done
+> 1. To be done
