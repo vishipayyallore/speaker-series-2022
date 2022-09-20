@@ -1,8 +1,8 @@
-# AZ-204 | Implement user authentication and authorization
+# Az-204 Labs - Web Apps, Azure Functions, and Blob Storage | Workshop
 
-## Date Time: 24-Aug-2022 at 09:00 AM IST
+## Date Time: 24-Sep-2022 at 10:00 AM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/287116842](https://www.meetup.com/microsoft-reactor-bengaluru/events/287116842)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/287635867](https://www.meetup.com/microsoft-reactor-bengaluru/events/287635867)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
