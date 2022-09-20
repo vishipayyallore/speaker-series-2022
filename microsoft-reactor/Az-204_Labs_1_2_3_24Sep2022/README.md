@@ -59,7 +59,27 @@
 
 > 1. Discussion and Demo
 
-## Explore the Microsoft identity platform
+### Install IIS on Azure VM
+
+![Install IIS | 100x100](./Documentation/Images/IISRole_1.PNG)
+
+### Install Brave Browser on Azure VM
+
+![Install Brave Browser | 100x100](./Documentation/Images/BraveBrowser.PNG)
+
+### Enable Remote Connections and Start Management Service inside IIS
+
+![Enable Remote Connections and Start Management Service | 100x100](./Documentation/Images/IISManagementService.PNG)
+
+### Install .NET 6 Hosting Bundle on Azure VM
+
+![.NET 6 Hosting Bundle | 100x100](./Documentation/Images/DotNet6Hosting.PNG)
+
+### Install Web Deploy on Azure VM
+
+![Install Web Deploy | 100x100](./Documentation/Images/WebDeploy.PNG)
+
+## Deploy Web App(s) on App Service on Azure (PaaS)
 
 > 1. Discussion and Demo
 
