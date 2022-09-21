@@ -87,6 +87,22 @@
 
 ![VM DNS Name | 100x100](./Documentation/Images/VMDNSName.PNG)
 
+### Without 8172 Port Enabled on Azure VM
+
+![Without 8172 Port Enabled | 100x100](./Documentation/Images/Without8172Port.PNG)
+
+### Enable 8172 Port on Azure VM
+
+![Enable 8172 Port | 100x100](./Documentation/Images/Enable8172Port.PNG)
+
+### Security Certificate Error/Validation
+
+![Security Certificate Error | 100x100](./Documentation/Images/VMCertificate.PNG)
+
+### VM Connection Validated
+
+![VM Connection Validated | 100x100](./Documentation/Images/VMConnectionValidated.PNG)
+
 ## Deploy Web App(s) on App Service on Azure (PaaS)
 
 > 1. Discussion and Demo
