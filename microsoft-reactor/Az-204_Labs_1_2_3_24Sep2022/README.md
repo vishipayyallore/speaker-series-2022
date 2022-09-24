@@ -43,9 +43,15 @@
 
 > 1. Deploy Web App(s) inside IIS on Azure VM (IaaS)
 > 1. Deploy Web App(s) on App Service on Azure (PaaS)
+> 1. Implement task processing logic by using Azure Functions
+> 1. Retrieve Azure Storage resources and metadata by using the Azure Storage
 > 1. Q & A
 
-### Please refer AZ-204 [**MS Learn Module**](https://aka.ms/AZ-204-Authentication) for more details
+### Please refer AZ-204 MS Learn Module(s) for more details
+
+> 1. [https://aka.ms/AZ-204-AzureApp](https://aka.ms/AZ-204-AzureApp)
+> 1. [https://aka.ms/AZ-204-AzureFunctions](https://aka.ms/AZ-204-AzureFunctions)
+> 1. [https://aka.ms/AZ-204-Blobstorage-24/9](https://aka.ms/AZ-204-Blobstorage-24/9)
 
 ### Please refer to the [**Source Code**](https://github.com/vishipayyallore/learn-azure-in-2022) of today's session for more details
 
@@ -55,7 +61,7 @@
 
 ---
 
-## Deploy Web App(s) inside IIS on Azure VM (IaaS)
+## 1. Deploy Web App(s) inside IIS on Azure VM (IaaS)
 
 > 1. Discussion and Demo
 
@@ -103,7 +109,15 @@
 
 ![VM Connection Validated | 100x100](./Documentation/Images/VMConnectionValidated.PNG)
 
-## Deploy Web App(s) on App Service on Azure (PaaS)
+## 2. Deploy Web App(s) on App Service on Azure (PaaS)
+
+> 1. Discussion and Demo
+
+## 3. Implement task processing logic by using Azure Functions
+
+> 1. Discussion and Demo
+
+## 4. Retrieve Azure Storage resources and metadata by using the Azure Storage
 
 > 1. Discussion and Demo
 
