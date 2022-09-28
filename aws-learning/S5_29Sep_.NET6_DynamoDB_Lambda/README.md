@@ -45,43 +45,19 @@
 
 > 1. Demo and Discussion
 
-![Verifying AWS Lambda locally | 100x100](./documentation/images/AWSLambda_LocalVerification.PNG)
+![Publish and Validate AWS Lambda | 100x100](./documentation/images/PublishAndValidateLambda.PNG)
 
 ## Watching Logs in Cloud Watch
 
 > 1. Demo and Discussion
 
+![Cloud Watch Logs | 100x100](./documentation/images/CloudWatch_Log_1.PNG)
+
+![Cloud Watch Logs Insights | 100x100](./documentation/images/CloudWatch_Log_2.PNG)
+
 ## REST API with Lambda proxy integration (API Gateway)
 
 > 1. Demo and Discussion
-
-## Introduction to AWS Lambda
-
-> 1. Demo and Discussion
-
-## AWS Lambda Function using AWS Console (Mini Project)
-
-> 1. Demo and Discussion
-
-### Lambda Function in Console
-
-![Lambda Function in Console | 100x100](./documentation/images/LambdaFunc_InConsole.PNG)
-
-### Testing Lambda Function in Console
-
-![Lambda Function in Console | 100x100](./documentation/images/LambdaFunc_InConsole_1.PNG)
-
-## AWS Lambda using .NET 6 in VS 2022 (Mini Project)
-
-> 1. Demo and Discussion
-
-### Testing Lambda Function in VS 2022
-
-![Lambda Function in VS 2022 | 100x100](./documentation/images/Lambda_InVS2022.PNG)
-
-### Testing Deployed Lambda Function in VS 2022
-
-![Lambda Function in VS 2022 | 100x100](./documentation/images/Lambda_InVS2022_1.PNG)
 
 ---
 
