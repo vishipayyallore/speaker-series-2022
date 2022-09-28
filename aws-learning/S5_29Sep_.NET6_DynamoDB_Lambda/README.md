@@ -30,6 +30,8 @@
 
 > 1. Demo and Discussion
 
+![DynamoDB, Table with multiple rows | 100x100](./documentation/images/DyanmoDB_Terraform.PNG)
+
 ## Creating AWS Lambda to read data from DynamoDB, and Publishing it
 
 > 1. Demo and Discussion
