@@ -13,7 +13,7 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_dynamodb_table" "example" {
+resource "aws_dynamodb_table" "employees" {
   name           = var.dynamodb_table_name
   read_capacity  = var.dynamodb_table_read_capacity
   write_capacity = var.dynamodb_table_write_capacity
@@ -24,26 +24,17 @@ resource "aws_dynamodb_table" "example" {
     type = "S"
   }
 
+  tags = {
+    environment = "dev"
+  }
+
 }
 
-resource "aws_dynamodb_table_item" "example" {
-  table_name = aws_dynamodb_table.example.name
-  hash_key   = aws_dynamodb_table.example.hash_key
+resource "aws_dynamodb_table_item" "employeesdata" {
+  table_name = aws_dynamodb_table.employees.name
+  hash_key   = aws_dynamodb_table.employees.hash_key
 
-  item = <<ITEM
-            {
-            "employeeId": {"S": "E101"},
-            "name": {"S": "Sri Varu"},
-            "age": {"N": "18"},
-            "salary": {"N": "1234.5678"},
-            "designation": {"S": "CEO"}
-            },
-            {
-            "employeeId": {"S": "E102"},
-            "name": {"S": "Scott Rudy"},
-            "age": {"N": "18"},
-            "salary": {"N": "2345.6789"},
-            "designation": {"S": "Architect"}
-            }
-        ITEM
+  for_each = local.employee_rows
+
+  item = jsonencode(each.value)
 }

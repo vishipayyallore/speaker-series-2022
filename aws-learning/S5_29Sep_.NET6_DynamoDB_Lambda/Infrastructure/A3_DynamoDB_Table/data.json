@@ -1,0 +1,53 @@
+{
+    "Item1": {
+        "employeeId": {
+            "S": "E101"
+        },
+        "name": {
+            "S": "Sri Varu"
+        },
+        "age": {
+            "N": "18"
+        },
+        "salary": {
+            "N": "1234.5678"
+        },
+        "designation": {
+            "S": "CEO"
+        }
+    },
+    "Item2": {
+        "employeeId": {
+            "S": "E102"
+        },
+        "name": {
+            "S": "Scott Rudy"
+        },
+        "age": {
+            "N": "18"
+        },
+        "salary": {
+            "N": "2345.6789"
+        },
+        "designation": {
+            "S": "Architect"
+        }
+    },
+    "Item3": {
+        "employeeId": {
+            "S": "E103"
+        },
+        "name": {
+            "S": "Jagadesh Julapali"
+        },
+        "age": {
+            "N": "18"
+        },
+        "salary": {
+            "N": "3456.7890"
+        },
+        "designation": {
+            "S": "Architect"
+        }
+    }
+}
