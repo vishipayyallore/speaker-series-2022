@@ -32,6 +32,8 @@
 
 ![DynamoDB, Table with multiple rows | 100x100](./documentation/images/DyanmoDB_Terraform.PNG)
 
+![Table with multiple rows inside AWS Console | 100x100](./documentation/images/DyanmoDB_Table.PNG)
+
 ## Creating AWS Lambda to read data from DynamoDB, and Publishing it
 
 > 1. Demo and Discussion
