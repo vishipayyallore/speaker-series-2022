@@ -17,7 +17,8 @@
 ## What are we doing today?
 
 > 1. Provisioning DynamoDB, and Table(s) in AWS using Terraform
-> 1. Creating AWS Lambda to read data from DynamoDB, and Publishing it
+> 1. Creating AWS Lambda to read data from DynamoDB, and verifying it locally
+> 1. Publishing AWS Lambda using VS 2022, and verifying it
 > 1. Watching Logs in Cloud Watch
 > 1. REST API with Lambda proxy integration (API Gateway)
 > 1. SUMMARY / RECAP / Q&A
@@ -34,9 +35,17 @@
 
 ![Table with multiple rows inside AWS Console | 100x100](./documentation/images/DyanmoDB_Table.PNG)
 
-## Creating AWS Lambda to read data from DynamoDB, and Publishing it
+## Creating AWS Lambda to read data from DynamoDB, and verifying it locally
 
 > 1. Demo and Discussion
+
+![Verifying AWS Lambda locally | 100x100](./documentation/images/AWSLambda_LocalVerification.PNG)
+
+## Publishing AWS Lambda using VS 2022, and verifying it
+
+> 1. Demo and Discussion
+
+![Verifying AWS Lambda locally | 100x100](./documentation/images/AWSLambda_LocalVerification.PNG)
 
 ## Watching Logs in Cloud Watch
 
