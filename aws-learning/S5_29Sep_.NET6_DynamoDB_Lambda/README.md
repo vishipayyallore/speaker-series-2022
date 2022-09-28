@@ -26,23 +26,21 @@
 
 ---
 
-## Creating S3 Bucket & Object using Terraform
+## Provisioning DynamoDB, and Table(s) in AWS using Terraform
 
 > 1. Demo and Discussion
 
-![S3 Bucket and Object using Terraform | 100x100](./documentation/images/TF_S3_Bucket_Object.PNG)
-
-## Creating S3 Bucket & Static Website inside S3 using Terraform
+## Creating AWS Lambda to read data from DynamoDB, and Publishing it
 
 > 1. Demo and Discussion
 
-![S3 Bucket and Static Website using Terraform | 100x100](./documentation/images/TF_S3_Static_WebSite.PNG)
-
-## Updating the Static Website with Angular 14 App
+## Watching Logs in Cloud Watch
 
 > 1. Demo and Discussion
 
-![S3 Bucket and Static Website using Terraform | 100x100](./documentation/images/TF_S3_Static_WebSite_Ng.PNG)
+## REST API with Lambda proxy integration (API Gateway)
+
+> 1. Demo and Discussion
 
 ## Introduction to AWS Lambda
 
@@ -87,6 +85,6 @@
 
 **URL:** [https://www.meetup.com/dot-net-learners-house-hyderabad/events/ToBeDone](https://www.meetup.com/dot-net-learners-house-hyderabad/events/ToBeDone)
 
-**Date:** `XX-Sep-2022` at `10:00 AM IST`
+**Date:** `16-Oct-2022` at `10:00 AM IST`
 
 > 1. To be done
