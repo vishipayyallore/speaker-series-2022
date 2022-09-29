@@ -49,5 +49,22 @@
         "designation": {
             "S": "Architect"
         }
+    },
+    "Item4": {
+        "employeeId": {
+            "S": "E104"
+        },
+        "name": {
+            "S": "Kiran Kumar"
+        },
+        "age": {
+            "N": "18"
+        },
+        "salary": {
+            "N": "22222.1111"
+        },
+        "designation": {
+            "S": "Associate Architect"
+        }
     }
 }
