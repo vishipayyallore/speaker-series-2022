@@ -146,6 +146,8 @@
 
 > 1. Discussion and Demo
 
+![App Service, and Web App using ARM | 100x100](./Documentation/Images/ARM_WebApp.PNG)
+
 ## 8. Deploy Web API to App Service using VS 2022 (5 Minutes)
 
 > 1. Discussion and Demo
