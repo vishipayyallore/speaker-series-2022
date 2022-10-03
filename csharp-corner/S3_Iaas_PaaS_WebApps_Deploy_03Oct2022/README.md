@@ -80,6 +80,8 @@
 
 > 1. Discussion and Demo
 
+![Windows VM using ARM | 100x100](./Documentation/Images/ARM_WindowsVM.PNG)
+
 ## 2. Configure Windows VM with IIS, and other required software (5 Minutes)
 
 > 1. Discussion and Demo
