@@ -155,7 +155,8 @@ az account show -o table
 
 az webapp list-runtimes
 
-az webapp up --location EastUs --name hellohtml03102022 --resource-group rg-womd-robbie-001 --html
+az webapp up --location EastUs --name app-hellohtml03102022 --resource-group rg-womd-robbie-001 --html
+az webapp up --location EastUs --name app-hellohtml03102022 --resource-group rg-womd-robbie-001 --runtime "dotnet:6"
 ```
 
 ![az webapp up | 100x100](./documentation/images/WebAppUp_Html.PNG)
