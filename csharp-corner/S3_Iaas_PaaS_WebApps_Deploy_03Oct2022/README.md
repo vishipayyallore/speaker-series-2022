@@ -141,10 +141,31 @@
 ## 6. Create a static HTML web app by using Azure Cloud Shell (5 Minutes)
 
 > 1. Discussion and Demo
+> 1. Walk through of the Html App
+> 1. Login using `az login`
+> 1. Verify the account `az account show -o table`
+> 1. Execute the `az webapp up`
+
+URL: [https://docs.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest#az_webapp_up](https://docs.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest#az_webapp_up)
+
+```bash
+az login
+
+az account show -o table
+
+az webapp list-runtimes
+
+az webapp up --location EastUs --name app-hellohtml03102022 --resource-group rg-womd-robbie-001 --html
+az webapp up --location EastUs --name app-hellohtml03102022 --resource-group rg-womd-robbie-001 --runtime "dotnet:6"
+```
+
+![az webapp up | 100x100](./documentation/images/WebAppUp_Html.PNG)
 
 ## 7. Deploy App Service, Web App using ARM + AZ CLI (5 Minutes)
 
 > 1. Discussion and Demo
+
+![App Service, and Web App using ARM | 100x100](./Documentation/Images/ARM_WebApp.PNG)
 
 ## 8. Deploy Web API to App Service using VS 2022 (5 Minutes)
 
