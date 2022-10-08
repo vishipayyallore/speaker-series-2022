@@ -1,15 +1,12 @@
-# AZ-204 | .NET Web API, Web Apps inside VM (IaaS), and App Service (PaaS) - Session 3
+# Your First .NET 6 Microservice Journey from Kestrel, Docker to AKS in 90 minutes
 
-## Date Time: 03-Oct-2022 at 09:00 PM IST
+## Date Time: 10-Oct-2022 at 10:16 AM IST
 
-## Event URL: [https://www.c-sharpcorner.com/events/deploying-net-web-api-web-apps-inside-vm-and-app-service-ep-3](https://www.c-sharpcorner.com/events/deploying-net-web-api-web-apps-inside-vm-and-app-service-ep-3)
+## Event URLs
 
-## Please watch the previous `2 sessions` on YouTube
-
->1. [Session 1](https://www.youtube.com/watch?v=33KvxeuG_U4)
->1. [Session 2](https://www.youtube.com/watch?v=1-y8KKurkBw)
-
-## Current Session's YouTube URL: [https://www.youtube.com/watch?v=1-y8KKurkBw](https://www.youtube.com/watch?v=1-y8KKurkBw)
+> 1. [https://www.c-sharpcorner.com/events/c-sharp-corner-annual-conference-2022-hyderabad](https://www.c-sharpcorner.com/events/c-sharp-corner-annual-conference-2022-hyderabad)
+> 1. [https://twitter.com/CsharpCorner/status/1577958704653406214](https://twitter.com/CsharpCorner/status/1577958704653406214)
+> 1. [https://www.linkedin.com/feed/update/urn:li:activity:6983725338660900864/](https://www.linkedin.com/feed/update/urn:li:activity:6983725338660900864/)
 
 ---
 
@@ -27,13 +24,14 @@
 > 1. OS: win32 x64
 > 1. Node: **v14.17.5**
 > 1. Visual Studio Code
-> 1. Visual Studio 2019/2022
+> 1. Visual Studio 2022
 
 ### Prior Knowledge
 
 > 1. C#, Node JS
-> 1. Application Insights
-> 1. Azure Key Vault
+> 1. Docker
+> 1. Azure
+> 1. Kubernetes
 > 1. .NET Razor/Blazor WASM
 
 ### Assumptions
@@ -47,6 +45,14 @@
 ## Information
 
 ## ![Information | 100x100](./Documentation/Images/Information.PNG)
+
+## Duration: 90 minutes
+
+## Mode: Workshop styles Hands-On
+
+## Event Description
+
+In this session, we will work on .NET 6 microservice. Learn how to Design, Architect, and deploy to AKS. In this session, we will speak about Code, Unit Testing, DevOps, Static Code Analysis, and GitHub Actions. It will be hands-on, and a summary of my 9 sessions on Products Micro Service.
 
 ## What are we doing today?
 
