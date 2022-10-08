@@ -52,29 +52,26 @@
 
 ## Event Description
 
-In this session, we will work on .NET 6 microservice. Learn how to Design, Architect, and deploy to AKS. In this session, we will speak about Code, Unit Testing, DevOps, Static Code Analysis, and GitHub Actions. It will be hands-on, and a summary of my 9 sessions on Products Micro Service.
+In this session, we will work on .NET 6 microservice. Learn how to Design, Architect, and deploy to AKS. In this session, we will speak about Code, Unit Testing, DevOps, Static Code Analysis, and GitHub Actions. It will be hands-on, and a summary of my 9 sessions on Products Microservice.
 
 ## What are we doing today?
 
-> 1. Creating Windows VM using an ARM template and Azure CLI (5 Minutes)
-> 1. Configure Windows VM with IIS, and other required software (5 Minutes)
-> 1. Create a Website inside IIS, and deploy Web API using VS 2022 (5 Minutes)
-> 1. Create a Website inside IIS, and deploy a Web App (Razor Pages) using VS 2022 (5 Minutes)
-> 1. Create a Website inside IIS, and deploy a Web App (Blazor WASM) using VS 2022 (5 Minutes)
-> 1. Create a static HTML web app by using Azure Cloud Shell (5 Minutes)
-> 1. Deploy App Service, Web App using ARM + AZ CLI (5 Minutes)
-> 1. Deploy Web API to App Service using VS 2022 (5 Minutes)
-> 1. Deploy Web App (Razor Pages) to App Service using VS 2022 (5 Minutes)
-> 1. Deploy Web App (Blazor WASM) to App Service using VS 2022 (5 Minutes)
-> 1. Review/Q & A/Panel Discussion (5 Minutes)
-> 1. What is next in Session 4? (5 Minutes)
+> 1. .NET 6 Web API (`5 Minutes`)
+> 1. Dependency Injection, AppSettings.json, Secrets.json, and Layered Architecture (`5 Minutes`)
+> 1. DTO, Auto-Mapper, Strongly typed Configuration, Repository Pattern, and Serilog (`5 Minutes`)
+> 1. Executing it locally on IIS Express, Kestrel, Docker, and Docker Compose (`5 Minutes`)
+> 1. Terraform to deploy resources into AWS, and Azure (Cloud Agnostic) (`10 Minutes`)
+> 1. DevOps from 30,000 feet, Pull Request Process, Gated Build, and Continuous Integration Build (`5 Minutes`)
+> 1. Unit Testing, Static Code Analysis, Software Composition Analysis (`5 Minutes`)
+> 1. Deploy AKS Infrastructure using GitHub Actions (`10 Minutes`)
+> 1. Create Products.API's docker image and push it to Docker Hub using GitHub Actions (`5 Minutes`)
+> 1. Deploy Products Microservice docker image from Docker Hub into AKS using GitHub Actions (`10 Minutes`)
+> 1. CRUD Operations on the Deployed Products microservice into AKS using Postman (`5 Minutes`)
+> 1. Hands of Azure Kubernetes Service using Portal / VS Code Extension / Azure Cloud Shell (`5 Minutes`)
+> 1. Hands of Azure Kubernetes Service using Imperative way (`5 Minutes`)
+> 1. Review/Q & A/Panel Discussion (`5 Minutes`)
 
-### Please refer MS Learn Module(s) for more details
-
-> 1. [Provision virtual machines in Azure](https://docs.microsoft.com/en-gb/learn/modules/provision-virtual-machines-azure/)
-> 1. [Create and deploy Azure Resource Manager templates](https://docs.microsoft.com/en-gb/learn/modules/create-deploy-azure-resource-manager-templates/)
-
-### Please refer the [**Source code**](https://github.com/vishipayyallore/speaker-series-2022/tree/main/csharp-corner) for today's session
+### Please refer the [**Products Microservice**](https://github.com/vishipayyallore/eshop-services-products) Source code for today's session
 
 ---
 
