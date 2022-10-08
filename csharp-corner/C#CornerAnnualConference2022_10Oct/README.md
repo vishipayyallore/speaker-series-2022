@@ -46,9 +46,9 @@
 
 ## ![Information | 100x100](./Documentation/Images/Information.PNG)
 
-## Duration: 90 minutes
+## Duration: `90 minutes`
 
-## Mode: Workshop styles Hands-On
+## Mode: `Demo Style` Workshop/Hands-On
 
 ## Event Description
 
@@ -56,7 +56,7 @@ In this session, we will work on .NET 6 microservice. Learn how to Design, Archi
 
 ## What are we doing today?
 
-> 1. .NET 6 Web API (`5 Minutes`)
+> 1. Introduction to `Products` .NET 6 Web API (`5 Minutes`)
 > 1. Dependency Injection, AppSettings.json, Secrets.json, and Layered Architecture (`5 Minutes`)
 > 1. DTO, Auto-Mapper, Strongly typed Configuration, Repository Pattern, and Serilog (`5 Minutes`)
 > 1. Executing it locally on IIS Express, Kestrel, Docker, and Docker Compose (`5 Minutes`)
@@ -67,9 +67,9 @@ In this session, we will work on .NET 6 microservice. Learn how to Design, Archi
 > 1. Create Products.API's docker image and push it to Docker Hub using GitHub Actions (`5 Minutes`)
 > 1. Deploy Products Microservice docker image from Docker Hub into AKS using GitHub Actions (`10 Minutes`)
 > 1. CRUD Operations on the Deployed Products microservice into AKS using Postman (`5 Minutes`)
-> 1. Hands of Azure Kubernetes Service using Portal / VS Code Extension / Azure Cloud Shell (`5 Minutes`)
-> 1. Hands of Azure Kubernetes Service using Imperative way (`5 Minutes`)
-> 1. Review/Q & A/Panel Discussion (`5 Minutes`)
+> 1. Hands of Azure Kubernetes Service using Portal / VS Code Extension (`10 Minutes`)
+> 1. Hands of Azure Kubernetes Service using Imperative way in Azure Cloud Shell (`10 Minutes`)
+> 1. Summary/Review/Q & A/Panel Discussion (5 Minutes)
 
 ### Please refer the [**Products Microservice**](https://github.com/vishipayyallore/eshop-services-products) Source code for today's session
 
@@ -79,116 +79,59 @@ In this session, we will work on .NET 6 microservice. Learn how to Design, Archi
 
 ---
 
-## 1. Creating Windows VM using an ARM template and Azure CLI (5 Minutes)
+## 1. Introduction to `Products` .NET 6 Web API (`5 Minutes`)
 
 > 1. Discussion and Demo
 
-![Windows VM using ARM | 100x100](./Documentation/Images/ARM_WindowsVM.PNG)
-
-## 2. Configure Windows VM with IIS, and other required software (5 Minutes)
+## 2. Dependency Injection, AppSettings.json, Secrets.json, and Layered Architecture (`5 Minutes`)
 
 > 1. Discussion and Demo
 
-### Install IIS on Azure VM
-
-![Install IIS | 100x100](./Documentation/Images/IISRole_1.PNG)
-
-### Install Brave Browser on Azure VM
-
-![Install Brave Browser | 100x100](./Documentation/Images/BraveBrowser.PNG)
-
-### Enable Remote Connections and Start Management Service inside IIS
-
-![Enable Remote Connections and Start Management Service | 100x100](./Documentation/Images/IISManagementService.PNG)
-
-### Install .NET 6 Hosting Bundle on Azure VM
-
-![.NET 6 Hosting Bundle | 100x100](./Documentation/Images/DotNet6Hosting.PNG)
-
-### Install Web Deploy on Azure VM
-
-![Install Web Deploy | 100x100](./Documentation/Images/WebDeploy.PNG)
-
-### Install URL Rewrite on Azure VM
-
-![URL Rewrite | 100x100](./Documentation/Images/URLReWrite.PNG)
-
-### Update the VM DNS Name on Azure VM
-
-![VM DNS Name | 100x100](./Documentation/Images/VMDNSName.PNG)
-
-### Without 8172 Port Enabled on Azure VM
-
-![Without 8172 Port Enabled | 100x100](./Documentation/Images/Without8172Port.PNG)
-
-### Enable 8172 Port on Azure VM
-
-![Enable 8172 Port | 100x100](./Documentation/Images/Enable8172Port.PNG)
-
-### Security Certificate Error/Validation
-
-![Security Certificate Error | 100x100](./Documentation/Images/VMCertificate.PNG)
-
-## 3. Create a Website inside IIS, and deploy Web API using VS 2022 (5 Minutes)
+## 3. DTO, Auto-Mapper, Strongly typed Configuration, Repository Pattern, and Serilog (`5 Minutes`)
 
 > 1. Discussion and Demo
 
-## 4. Create a Website inside IIS, and deploy a Web App (Razor Pages) using VS 2022 (5 Minutes)
+## 4. Executing it locally on IIS Express, Kestrel, Docker, and Docker Compose (`5 Minutes`)
 
 > 1. Discussion and Demo
 
-## 5. Create a Website inside IIS, and deploy a Web App (Blazor WASM) using VS 2022 (5 Minutes)
+## 5. Terraform to deploy resources into AWS, and Azure (Cloud Agnostic) (`10 Minutes`)
 
 > 1. Discussion and Demo
 
-## 6. Create a static HTML web app by using Azure Cloud Shell (5 Minutes)
-
-> 1. Discussion and Demo
-> 1. Walk through of the Html App
-> 1. Login using `az login`
-> 1. Verify the account `az account show -o table`
-> 1. Execute the `az webapp up`
-
-URL: [https://docs.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest#az_webapp_up](https://docs.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest#az_webapp_up)
-
-```bash
-az login
-
-az account show -o table
-
-az webapp list-runtimes
-
-az webapp up --location EastUs --name app-hellohtml03102022 --resource-group rg-womd-robbie-001 --html
-az webapp up --location EastUs --name app-hellohtml03102022 --resource-group rg-womd-robbie-001 --runtime "dotnet:6"
-```
-
-![az webapp up | 100x100](./documentation/images/WebAppUp_Html.PNG)
-
-## 7. Deploy App Service, Web App using ARM + AZ CLI (5 Minutes)
+## 6. DevOps from 30,000 feet, Pull Request Process, Gated Build, and Continuous Integration Build (`5 Minutes`)
 
 > 1. Discussion and Demo
 
-![App Service, and Web App using ARM | 100x100](./Documentation/Images/ARM_WebApp.PNG)
-
-## 8. Deploy Web API to App Service using VS 2022 (5 Minutes)
+## 7. Unit Testing, Static Code Analysis, Software Composition Analysis (`5 Minutes`)
 
 > 1. Discussion and Demo
 
-## 9. Deploy Web App (Razor Pages) to App Service using VS 2022 (5 Minutes)
+## 8. Deploy AKS Infrastructure using GitHub Actions (`10 Minutes`)
 
 > 1. Discussion and Demo
 
-## 10. Deploy Web App (Blazor WASM) to App Service using VS 2022 (5 Minutes)
+## 9. Create Products.API's docker image and push it to Docker Hub using GitHub Actions (`5 Minutes`)
 
 > 1. Discussion and Demo
 
-## 11. Summary/Review/Q & A/Panel Discussion (5 Minutes)
+## 10. Deploy Products Microservice docker image from Docker Hub into AKS using GitHub Actions (`10 Minutes`)
 
-> 1. SUMMARY / RECAP / Q&A
+> 1. Discussion and Demo
+
+## 11. CRUD Operations on the Deployed Products microservice into AKS using Postman (`5 Minutes`)
+
+> 1. Discussion and Demo
+
+## 12. Hands of Azure Kubernetes Service using Portal / VS Code Extension (`10 Minutes`)
+
+> 1. Discussion and Demo
+
+## 13. Hands of Azure Kubernetes Service using Imperative way in Azure Cloud Shell (`10 Minutes`)
+
+> 1. Discussion and Demo
+
+## 14. Summary/Review/Q & A/Panel Discussion (5 Minutes)
+
+> 1. Summary/Review/Q & A/Panel Discussion
 > 2. Any open queries, I will get back through meetup chat/twitter.
-
----
-
-## What is next in `Session 4`? (5 Minutes)
-
-> 1. To be done
