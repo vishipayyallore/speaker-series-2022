@@ -69,7 +69,7 @@ In this session, we will work on .NET 6 microservice. Learn how to Design, Archi
 > 1. CRUD Operations on the Deployed Products microservice into AKS using Postman (`5 Minutes`)
 > 1. Hands of Azure Kubernetes Service using Portal / VS Code Extension (`10 Minutes`)
 > 1. Hands of Azure Kubernetes Service using Imperative way in Azure Cloud Shell (`10 Minutes`)
-> 1. Summary/Review/Q & A/Panel Discussion (5 Minutes)
+> 1. Summary/Review/Q & A/Panel Discussion (`5 Minutes`)
 
 ### Please refer the [**Products Microservice**](https://github.com/vishipayyallore/eshop-services-products) Source code for today's session
 
@@ -95,47 +95,71 @@ In this session, we will work on .NET 6 microservice. Learn how to Design, Archi
 
 ![Products API | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S2/Serilog_Logging.PNG)
 
-[![name](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S2/Serilog_Logging.PNG)]
-
 ## 4. Executing it locally on IIS Express, Kestrel, Docker, and Docker Compose (`5 Minutes`)
 
 > 1. Discussion and Demo
+
+![Products API in IIS Express | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S1/ExecuteWithIISExpress.PNG)
+
+![Products API in Kestrel | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S1/ExecuteWithKestrel.PNG)
+
+![Products API in Docker | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S1/ExecuteWithDocker.PNG)
+
+![Products API in Docker Compose | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S1/ExecuteWithDockerCompose.PNG)
 
 ## 5. Terraform to deploy resources into AWS, and Azure (Cloud Agnostic) (`10 Minutes`)
 
 > 1. Discussion and Demo
 
+![AWS S3 with Static Web Site | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S8/TF_AWS_S3_StaticWebSite.PNG)
+
 ## 6. DevOps from 30,000 feet, Pull Request Process, Gated Build, and Continuous Integration Build (`5 Minutes`)
 
 > 1. Discussion and Demo
+
+![Pull Request Process | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S7/PullRequest_Process.PNG)
 
 ## 7. Unit Testing, Static Code Analysis, Software Composition Analysis (`5 Minutes`)
 
 > 1. Discussion and Demo
 
+![Static Code Analysis | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S8/StaticCodeAnalysis.PNG)
+
 ## 8. Deploy AKS Infrastructure using GitHub Actions (`10 Minutes`)
 
 > 1. Discussion and Demo
+
+![Deploy AKS using GitHub Actions | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S9/GitHubActions_AKS_Infra.PNG)
 
 ## 9. Create Products.API's docker image and push it to Docker Hub using GitHub Actions (`5 Minutes`)
 
 > 1. Discussion and Demo
 
+![Build And Push Docker Image To Hub using GitHub Actions | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S9/BuildAndPushDockerImageToHub.PNG)
+
 ## 10. Deploy Products Microservice docker image from Docker Hub into AKS using GitHub Actions (`10 Minutes`)
 
 > 1. Discussion and Demo
+
+![Deploy Docker Image To AKS using GitHub Actions | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S9/DeploymentToAKS.PNG)
 
 ## 11. CRUD Operations on the Deployed Products microservice into AKS using Postman (`5 Minutes`)
 
 > 1. Discussion and Demo
 
+![Postman Collection to verify Products API deployed in AKS | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S5/Postman_Collections.PNG)
+
 ## 12. Hands of Azure Kubernetes Service using Portal / VS Code Extension (`10 Minutes`)
 
 > 1. Discussion and Demo
 
+![Azure Kubernetes Service in Portal | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S10/AKS_1.PNG)
+
 ## 13. Hands of Azure Kubernetes Service using Imperative way in Azure Cloud Shell (`10 Minutes`)
 
 > 1. Discussion and Demo
+
+![Azure Kubernetes Service in Cloud Shell | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S10/K8sFromCloudShell_1.PNG)
 
 ## 14. Summary/Review/Q & A/Panel Discussion (5 Minutes)
 
