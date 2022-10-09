@@ -87,9 +87,15 @@ In this session, we will work on .NET 6 microservice. Learn how to Design, Archi
 
 > 1. Discussion and Demo
 
+![Products API | 100x100](./Documentation/Images/Products.API.PNG)
+
 ## 3. DTO, Auto-Mapper, Strongly typed Configuration, Repository Pattern, and Serilog (`5 Minutes`)
 
 > 1. Discussion and Demo
+
+![Products API | 100x100](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S2/Serilog_Logging.PNG)
+
+[![name](https://github.com/vishipayyallore/eshop-services-products/blob/main/Documentation/Images/S2/Serilog_Logging.PNG)]
 
 ## 4. Executing it locally on IIS Express, Kestrel, Docker, and Docker Compose (`5 Minutes`)
 
