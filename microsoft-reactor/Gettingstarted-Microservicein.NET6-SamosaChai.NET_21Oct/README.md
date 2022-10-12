@@ -46,7 +46,7 @@
 
 ## Duration: `90 minutes`
 
-## Mode: `Demo Style` Workshop/Hands-On
+## Mode: Discussion and Demo based
 
 ## Event Description
 
