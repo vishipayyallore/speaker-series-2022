@@ -1,12 +1,10 @@
-# Your First .NET 6 Microservice Journey from Kestrel, Docker to AKS in 90 minutes
+# Getting started with your first Microservice in .NET 6 | #SamosaChai.NET
 
-## Date Time: 10-Oct-2022 at 10:16 AM IST
+## Date Time: 21-Oct-2022 at 06:00 PM IST
 
 ## Event URLs
 
-> 1. [https://www.c-sharpcorner.com/events/c-sharp-corner-annual-conference-2022-hyderabad](https://www.c-sharpcorner.com/events/c-sharp-corner-annual-conference-2022-hyderabad)
-> 1. [https://twitter.com/CsharpCorner/status/1577958704653406214](https://twitter.com/CsharpCorner/status/1577958704653406214)
-> 1. [https://www.linkedin.com/feed/update/urn:li:activity:6983725338660900864/](https://www.linkedin.com/feed/update/urn:li:activity:6983725338660900864/)
+> 1. [https://www.meetup.com/microsoft-reactor-bengaluru/events/288768482](https://www.meetup.com/microsoft-reactor-bengaluru/events/288768482/)
 
 ---
 
