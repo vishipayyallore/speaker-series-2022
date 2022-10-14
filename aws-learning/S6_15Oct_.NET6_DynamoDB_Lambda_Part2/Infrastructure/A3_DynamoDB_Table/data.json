@@ -66,5 +66,22 @@
         "designation": {
             "S": "Associate Architect"
         }
+    },
+    "Item5": {
+        "employeeId": {
+            "S": "E105"
+        },
+        "name": {
+            "S": "Mohd Ali"
+        },
+        "age": {
+            "N": "18"
+        },
+        "salary": {
+            "N": "22222.33445"
+        },
+        "designation": {
+            "S": "Technical Lead"
+        }
     }
 }
