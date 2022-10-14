@@ -1,10 +1,10 @@
 # Terraform, DynamoDB, API Gateway, Cloud Watch, AWS Lambda in C# (.NET 6)
 
-## Date Time: 29-Sep-2022 at 09:00 AM IST
+## Date Time: 15-Oct-2022 at 10:00 AM IST
 
-## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/287732502](https://www.meetup.com/dot-net-learners-house-hyderabad/events/287732502)
+## Event URL: [https://www.meetup.com/dot-net-learners-house-hyderabad/events/288853992](https://www.meetup.com/dot-net-learners-house-hyderabad/events/288853992)
 
-## Youtube URL: [https://www.youtube.com/watch?v=5rBhiI9e2B0](https://www.youtube.com/watch?v=5rBhiI9e2B0)
+## Youtube URL: [https://www.youtube.com/watch?v=jtFv--BcKfA](https://www.youtube.com/watch?v=jtFv--BcKfA)
 
 ![Viswanatha Swamy P K |150x150](./documentation/images/ViswanathaSwamyPK.PNG)
 
