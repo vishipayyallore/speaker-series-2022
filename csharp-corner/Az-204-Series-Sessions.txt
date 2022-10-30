@@ -1,4 +1,45 @@
 ************************************************************************************************************************************************
+Session 5
+************************************************************************************************************************************************
+
+1. Custom Domains
+2. Configure security certificates
+
+************************************************************************************************************************************************
+Session 4
+************************************************************************************************************************************************
+
+Title: Deploying Java Spring Boot Apps, MEAN & MERN Stack App, .NET 6 Apps, ACR, Containers in App Service (PaaS) - AZ-204 Hands-On Series
+Date: 14-Nov-2022 | Time: 9:00 PM To 10:30 PM IST
+
+Pre-configured in Session 2:
+1. Provisioned SQL Server, and Database using ARM Template
+2. Deployed SQL Server Project (.sqlproj) to SQL Azure using VS 2022
+
+Topics:
+1. Create a Website inside IIS, and deploy Web App (Blazor WASM) using VS 2022 (5 Minutes)
+2. Create a static HTML web app by using Azure Cloud Shell (5 Minutes)
+3. Deploy Web App (Blazor WASM) to App Service using VS 2022, and Intigrate with Web API (10 Minutes)
+4. Configure application settings, Enable diagnostic logging (5 Minutes)
+5. Deploy Web App (Razor Pages) to App Service using VS 2022 (5 Minutes)
+6. Deploy Node JS Web API to App Service (10 Minutes)
+7. Deploy Angular 10 App (MEAN Stack) to App Service (10 Minutes)
+8. Deploy ReactJS App (MERN Stack) to App Service (10 Minutes)
+9. Explore elements of a Dockerfile (5 Minutes)
+10. Discover the Azure Container Registry (5 Minutes)
+11. Build and run a container image by using Azure Container Registry Tasks (5 Minutes)
+12. Build and Containerize Simple Spring Boot Java Application (5 Minutes)
+13. Deploy the Docker Image of Sprint Boot Java Application into App Serivce (10 Minutes)
+14. Review/Q & A/Panel Discussion (5 Minutes)
+15. What is next in Session 3? (5 Minutes)
+
+
+MS Learn Modules:
+https://docs.microsoft.com/en-us/training/modules/configure-web-app-settings/
+https://docs.microsoft.com/en-us/training/modules/publish-container-image-to-azure-container-registry/
+
+
+************************************************************************************************************************************************
 Session 3
 ************************************************************************************************************************************************
 
@@ -21,7 +62,7 @@ Topics:
 9. Deploy Web App (Razor Pages) to App Service using VS 2022 (5 Minutes)
 10. Deploy Web App (Blazor WASM) to App Service using VS 2022 (5 Minutes)
 11. Review/Q & A/Panel Discussion (5 Minutes)
-12. What is next in Session 3? (5 Minutes)
+12. What is next in Session 4? (5 Minutes)
 
 MS Learn Modules:
 1. https://docs.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/
