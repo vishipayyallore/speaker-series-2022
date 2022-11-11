@@ -1,0 +1,35 @@
+﻿@page
+@using AdventureWorks.Web.Configuration;
+@using Microsoft.Extensions.Options;
+@model IndexModel
+
+@inject IOptions<Settings> Settings
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<article class="card-columns">
+    @foreach (var item in Model.Models)
+    {
+        <div class="card">
+            <img src="@Flurl.Url.Combine(Settings.Value?.BlobContainerUrl, item.Photo)" class="card-img-top" alt="@item.Name">
+            <div class="card-body">
+                <h5 class="card-title">
+                    @item.Name
+                </h5>
+                <p class="card-text">
+                    <small class="text-muted">
+                        @item.Description
+                        @item.id
+                    </small>
+                </p>
+            </div>
+            <div class="card-footer">
+                <a asp-page="/details" asp-route-id="@item.id" class="card-link">
+                    View Details
+                </a>
+            </div>
+        </div>
+    }
+</article>
