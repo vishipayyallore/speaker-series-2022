@@ -1,8 +1,8 @@
-# Az-204 Labs - Web Apps, Azure Functions, and Blob Storage | Workshop
+# Az-204 Labs - Polyglot Data, Images/Containers, and Secure Resources | Workshop
 
-## Date Time: 24-Sep-2022 at 10:00 AM IST
+## Date Time: 12-Nov-2022 at 10:00 AM IST
 
-## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/287635867](https://www.meetup.com/microsoft-reactor-bengaluru/events/287635867)
+## Event URL: [https://www.meetup.com/microsoft-reactor-bengaluru/events/288303316](https://www.meetup.com/microsoft-reactor-bengaluru/events/288303316)
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
@@ -41,17 +41,16 @@
 
 ## What are we doing today?
 
-> 1. Deploy Web App(s) inside IIS on Azure VM (IaaS)
-> 1. Deploy Web App(s) on App Service on Azure (PaaS)
-> 1. Implement task processing logic by using Azure Functions
-> 1. Retrieve Azure Storage resources and metadata by using the Azure Storage
-> 1. Q & A
+> 1. Lab 04: Construct a polyglot data solution
+> 1. Lab 05: Deploy compute workloads by using images and containers
+> 1. Lab 07: Access resource secrets more securely across services.
+> 1. SUMMARY / RECAP / Q&A
 
 ### Please refer AZ-204 MS Learn Module(s) for more details
 
-> 1. [https://aka.ms/AZ-204-AzureApp](https://aka.ms/AZ-204-AzureApp)
-> 1. [https://aka.ms/AZ-204-AzureFunctions](https://aka.ms/AZ-204-AzureFunctions)
-> 1. [https://aka.ms/AZ-204-Blobstorage-24/9](https://aka.ms/AZ-204-Blobstorage-24/9)
+> 1. [https://aka.ms/AZ-204-cloudsolutions](https://aka.ms/AZ-204-cloudsolutions)
+> 1. [https://aka.ms/AZ-204-servicesolutions](https://aka.ms/AZ-204-servicesolutions)
+> 1. [https://aka.ms/AZ-204-CosmosDB](https://aka.ms/AZ-204-CosmosDB)
 
 ### Please refer to the [**Source Code**](https://github.com/vishipayyallore/learn-azure-in-2022) of today's session for more details
 
@@ -128,7 +127,7 @@
 
 ---
 
-## What is Next? Workshop `2` of `4` Sessions on Oct, 2022
+## What is Next? Workshop `3` of `5` Sessions on Dec, 2022
 
 > 1. To be done
 > 1. To be done
