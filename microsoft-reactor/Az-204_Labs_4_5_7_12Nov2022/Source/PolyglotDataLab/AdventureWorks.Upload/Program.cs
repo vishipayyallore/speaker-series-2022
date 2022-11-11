@@ -1,12 +1,19 @@
 ﻿using AdventureWorks.Upload.Models;
 using Microsoft.Azure.Cosmos;
+using Microsoft.Extensions.Configuration;
 using System.Diagnostics;
 using System.Reflection;
 using System.Text.Json;
+
 using static System.Console;
 
-const string EndpointUrl = "https://polycosmos12nov2022dev.documents.azure.com:443/";
-const string AuthorizationKey = "wv9Rb51Urre6KO3NnzFsj7KhBkXPNykYaz7taInxecEkpPqhqaej7mDvpKiYifj4pZ4TTjjGo4qmACDbsRO0ow==";
+IConfiguration _configuration = new ConfigurationBuilder()
+    .AddJsonFile("appsettings.json")
+    .AddUserSecrets("749e7980-4b51-Az204-Lab2")
+    .Build();
+
+string EndpointUrl = _configuration["CosmosDbConnectionStrings:AccountEndpoint"];
+string AuthorizationKey = _configuration["CosmosDbConnectionStrings:AccountKey"];
 const string DatabaseName = "Retail";
 const string ContainerName = "Online";
 const string _partitionKey = "/Category";
