@@ -14,10 +14,10 @@ IConfiguration _configuration = new ConfigurationBuilder()
 
 string EndpointUrl = _configuration["CosmosDbConnectionStrings:AccountEndpoint"];
 string AuthorizationKey = _configuration["CosmosDbConnectionStrings:AccountKey"];
-const string DatabaseName = "Retail";
-const string ContainerName = "Online";
+const string _databaseName = "Retail";
+const string _containerName = "Online";
 const string _partitionKey = "/Category";
-const string JsonFilePath = "./DataStore/models.json";
+const string _jsonFilePath = "./DataStore/models.json";
 
 int amountToInsert;
 List<Model> models = new();
@@ -27,15 +27,15 @@ try
     using CosmosClient cosmosClient = new(EndpointUrl, AuthorizationKey, new CosmosClientOptions() { AllowBulkExecution = true });
 
     WriteLine($"Creating a database if not already exists...");
-    Database cosmosDatabase = await cosmosClient.CreateDatabaseIfNotExistsAsync(DatabaseName);
+    Database cosmosDatabase = await cosmosClient.CreateDatabaseIfNotExistsAsync(_databaseName);
 
     // Configure indexing policy to exclude all attributes to maximize RU/s usage
     WriteLine($"Creating a container if not already exists...");
 
-    var onlineContainerResponse = await cosmosDatabase?.CreateContainerIfNotExistsAsync(ContainerName, _partitionKey)!;
+    var onlineContainerResponse = await cosmosDatabase?.CreateContainerIfNotExistsAsync(_containerName, _partitionKey)!;
     var onlineContainer = onlineContainerResponse.Container;
 
-    using (StreamReader reader = new(File.OpenRead(JsonFilePath)))
+    using (StreamReader reader = new(File.OpenRead(_jsonFilePath)))
     {
         string? json = await reader.ReadToEndAsync();
         models = JsonSerializer.Deserialize<List<Model>>(json);
