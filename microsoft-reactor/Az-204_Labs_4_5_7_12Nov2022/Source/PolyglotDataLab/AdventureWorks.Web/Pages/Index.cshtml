@@ -21,11 +21,12 @@
                 <p class="card-text">
                     <small class="text-muted">
                         @item.Description
+                        @item.id
                     </small>
                 </p>
             </div>
             <div class="card-footer">
-                <a asp-page="@nameof(DetailsModel)" asp-route-id="@item.id" class="card-link">
+                <a asp-page="/details" asp-route-id="@item.id" class="card-link">
                     View Details
                 </a>
             </div>
