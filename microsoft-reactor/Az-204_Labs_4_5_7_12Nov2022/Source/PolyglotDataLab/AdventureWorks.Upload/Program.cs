@@ -2,7 +2,6 @@
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Configuration;
 using System.Diagnostics;
-using System.Reflection;
 using System.Text.Json;
 
 using static System.Console;
