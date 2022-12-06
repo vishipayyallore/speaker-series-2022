@@ -20,12 +20,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.Core", "Source\Hospital.Core\Hospital.Core.csproj", "{526EDCBC-E48D-49B8-8363-5B186D3C1244}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{526EDCBC-E48D-49B8-8363-5B186D3C1244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526EDCBC-E48D-49B8-8363-5B186D3C1244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526EDCBC-E48D-49B8-8363-5B186D3C1244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526EDCBC-E48D-49B8-8363-5B186D3C1244}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{03C3D437-DECD-4506-BAE1-714AAB046C25} = {922B7041-5211-44B6-BA84-48B52B26AE2F}
+		{526EDCBC-E48D-49B8-8363-5B186D3C1244} = {9136C5CC-CA1F-47DF-B1AE-032319FA50F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDA7CFF3-0D1F-4D8E-9E59-EDDD7223FD46}
