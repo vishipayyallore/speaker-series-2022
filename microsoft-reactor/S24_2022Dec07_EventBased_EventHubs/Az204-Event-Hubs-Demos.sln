@@ -3,9 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{9136C5CC-CA1F-47DF-B1AE-032319FA50F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{922B7041-5211-44B6-BA84-48B52B26AE2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{03C3D437-DECD-4506-BAE1-714AAB046C25}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\Images\Information.PNG = Documentation\Images\Information.PNG
+		Documentation\Images\SeatBelt.PNG = Documentation\Images\SeatBelt.PNG
+		Documentation\Images\ViswanathaSwamyPK.PNG = Documentation\Images\ViswanathaSwamyPK.PNG
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D40C551E-46CD-495B-AC33-9C8F9B745AE8}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{03C3D437-DECD-4506-BAE1-714AAB046C25} = {922B7041-5211-44B6-BA84-48B52B26AE2F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDA7CFF3-0D1F-4D8E-9E59-EDDD7223FD46}
