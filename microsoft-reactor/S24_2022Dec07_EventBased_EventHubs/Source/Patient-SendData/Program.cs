@@ -21,7 +21,12 @@ async Task SendPatientData(Device patientData)
 {
     await using var producer = new EventHubProducerClient(connectionString, eventHubName);
 
-    using EventDataBatch eventBatch = await producer.CreateBatchAsync();
+    var batchOptions = new CreateBatchOptions
+    {
+        PartitionKey = patientData.deviceId
+    };
+
+    using EventDataBatch eventBatch = await producer.CreateBatchAsync(batchOptions);
 
     EventData eventData = new(Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(patientData)));
 
@@ -31,4 +36,6 @@ async Task SendPatientData(Device patientData)
     }
 
     await producer.SendAsync(eventBatch);
+
+    Console.WriteLine($"Sent data of {patientData.patientName}");
 }

@@ -6,6 +6,9 @@
 
 ![Viswanatha Swamy P K |150x150](./Documentation/Images/ViswanathaSwamyPK.PNG)
 
+
+https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-enable-through-portal
+
 ---
 
 ## Pre-Requisites

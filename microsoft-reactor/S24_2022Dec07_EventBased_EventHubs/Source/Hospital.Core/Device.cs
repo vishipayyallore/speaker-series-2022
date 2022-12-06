@@ -10,6 +10,8 @@
         public string heartBeat { get; set; } = "72";
 
         public string bloodPresure { get; set; } = "120/80";
+
+        public DateTime sendAt => DateTime.UtcNow;
     }
 
 }
