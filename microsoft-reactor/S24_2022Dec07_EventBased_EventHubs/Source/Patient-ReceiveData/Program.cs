@@ -1,11 +1,5 @@
-﻿using Azure.Messaging.EventHubs;
-using Azure.Messaging.EventHubs.Consumer;
-using Azure.Messaging.EventHubs.Producer;
-using Hospital.Core;
-using Microsoft.Azure.Amqp;
+﻿using Azure.Messaging.EventHubs.Consumer;
 using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
-using System.Diagnostics;
 using System.Text;
 
 IConfiguration _configuration = new ConfigurationBuilder()
