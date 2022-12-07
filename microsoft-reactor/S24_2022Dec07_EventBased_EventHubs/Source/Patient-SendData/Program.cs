@@ -12,7 +12,7 @@ IConfiguration _configuration = new ConfigurationBuilder()
 var connectionString = _configuration["ConnectionString"];
 var eventHubName = _configuration["EventHubName"];
 
-foreach(var patient in DataHelper.GetDummyData())
+foreach (var patient in DataHelper.GetDummyData())
 {
     await SendPatientData(patient);
 }
@@ -21,6 +21,8 @@ async Task SendPatientData(Device patientData)
 {
     await using var producer = new EventHubProducerClient(connectionString, eventHubName);
 
+    string[] partitionIds = await producer.GetPartitionIdsAsync();
+
     var batchOptions = new CreateBatchOptions
     {
         PartitionKey = patientData.deviceId
@@ -28,7 +30,10 @@ async Task SendPatientData(Device patientData)
 
     using EventDataBatch eventBatch = await producer.CreateBatchAsync(batchOptions);
 
-    EventData eventData = new(Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(patientData)));
+    var patientDataToDisplay = JsonConvert.SerializeObject(patientData);
+    Console.WriteLine($"Patient Data: {patientDataToDisplay}");
+
+    EventData eventData = new(Encoding.UTF8.GetBytes(patientDataToDisplay));
 
     if (!eventBatch.TryAdd(eventData))
     {
