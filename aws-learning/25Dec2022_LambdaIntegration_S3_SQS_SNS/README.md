@@ -16,8 +16,8 @@
 
 ## What are we doing today?
 
-> 1. Quick Recap of AWS Lambda and API Integration
 > 1. Lambda Triggers
+> 1. Quick Recap of AWS Lambda and API Integration
 > 1. Lambda Integration with S3
 > 1. Lambda Integration with SNS
 > 1. Lambda Integration with SQS
@@ -27,13 +27,15 @@
 
 ---
 
-## Quick Recap of AWS Lambda and API Integration
+## Lambda Triggers
 
 > 1. Demo and Discussion
 
-![DynamoDB, Table with multiple rows | 100x100](./documentation/images/DyanmoDB_Terraform.PNG)
+![Lambda Function Triggers | 100x100](./documentation/images/LambdaFunction_Triggers.PNG)
 
-## Lambda Triggers
+Reference: [https://aws.amazon.com/blogs/architecture/understanding-the-different-ways-to-invoke-lambda-functions/](https://aws.amazon.com/blogs/architecture/understanding-the-different-ways-to-invoke-lambda-functions/)
+
+## Quick Recap of AWS Lambda and API Integration
 
 > 1. Demo and Discussion
 
