@@ -41,6 +41,8 @@ Reference: [https://aws.amazon.com/blogs/architecture/understanding-the-differen
 
 > 1. Demo and Discussion
 
+![APIG to Lambda Function Synchronous Trigger | 100x100](./documentation/images/APIG_Synchronous.PNG)
+
 ## Lambda Integration with S3
 
 > 1. Demo and Discussion
