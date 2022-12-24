@@ -47,6 +47,10 @@ Reference: [https://aws.amazon.com/blogs/architecture/understanding-the-differen
 
 > 1. Demo and Discussion
 
+![S3 to Lambda Function Asynchronous Trigger | 100x100](./documentation/images/S3_Asynchronous_1.PNG)
+
+![S3 to Lambda Function Asynchronous Trigger | 100x100](./documentation/images/S3_Asynchronous_2.PNG)
+
 ## Lambda Integration with SNS
 
 > 1. Demo and Discussion
