@@ -61,6 +61,10 @@
 
 > 1. Demo and Discussion
 
+![SQS to Lambda Function Polling Trigger | 100x100](./documentation/images/SQS_Polling_1.PNG)
+
+![SQS to Lambda Function Polling Trigger | 100x100](./documentation/images/SQS_Polling_2.PNG)
+
 ---
 
 ## SUMMARY / RECAP / Q&A
