@@ -33,9 +33,11 @@
 
 ![Lambda Function Triggers | 100x100](./documentation/images/LambdaFunction_Triggers.PNG)
 
-Reference: [https://aws.amazon.com/blogs/architecture/understanding-the-different-ways-to-invoke-lambda-functions/](https://aws.amazon.com/blogs/architecture/understanding-the-different-ways-to-invoke-lambda-functions/)
+**Reference:**
 
-[https://medium.com/aws-serverless-microservices-with-patterns-best/aws-lambda-invocation-types-e279ef136347](https://medium.com/aws-serverless-microservices-with-patterns-best/aws-lambda-invocation-types-e279ef136347)
+> 1. [https://aws.amazon.com/blogs/architecture/understanding-the-different-ways-to-invoke-lambda-functions/](https://aws.amazon.com/blogs/architecture/understanding-the-different-ways-to-invoke-lambda-functions/)
+> 1. [https://docs.aws.amazon.com/lambda/latest/operatorguide/invocation-modes.html](https://docs.aws.amazon.com/lambda/latest/operatorguide/invocation-modes.html)
+> 1. [https://medium.com/aws-serverless-microservices-with-patterns-best/aws-lambda-invocation-types-e279ef136347](https://medium.com/aws-serverless-microservices-with-patterns-best/aws-lambda-invocation-types-e279ef136347)
 
 ## AWS API Gateway and Lambda Integration  - Synchronous invocation
 
