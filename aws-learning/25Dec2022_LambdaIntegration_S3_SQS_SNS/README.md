@@ -35,13 +35,21 @@
 
 Reference: [https://aws.amazon.com/blogs/architecture/understanding-the-different-ways-to-invoke-lambda-functions/](https://aws.amazon.com/blogs/architecture/understanding-the-different-ways-to-invoke-lambda-functions/)
 
+[https://medium.com/aws-serverless-microservices-with-patterns-best/aws-lambda-invocation-types-e279ef136347](https://medium.com/aws-serverless-microservices-with-patterns-best/aws-lambda-invocation-types-e279ef136347)
+
 ## Quick Recap of AWS Lambda and API Integration
 
 > 1. Demo and Discussion
 
+![APIG to Lambda Function Synchronous Trigger | 100x100](./documentation/images/APIG_Synchronous.PNG)
+
 ## Lambda Integration with S3
 
 > 1. Demo and Discussion
+
+![S3 to Lambda Function Asynchronous Trigger | 100x100](./documentation/images/S3_Asynchronous_1.PNG)
+
+![S3 to Lambda Function Asynchronous Trigger | 100x100](./documentation/images/S3_Asynchronous_2.PNG)
 
 ## Lambda Integration with SNS
 
