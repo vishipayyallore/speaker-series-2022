@@ -5,6 +5,18 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Platforms>AnyCPU</Platforms>
+    <PackageId>Demo-ABCD</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>NoName</Authors>
+    <Company>Home</Company>
+    <Product>Learning New</Product>
+    <Description>This package provides ....</Description>
+    <Copyright>© 2023 Home</Copyright>
+    <PackageTags>hello-world</PackageTags>
+    <PackageReleaseNotes>Initial version 1.0.1</PackageReleaseNotes>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
