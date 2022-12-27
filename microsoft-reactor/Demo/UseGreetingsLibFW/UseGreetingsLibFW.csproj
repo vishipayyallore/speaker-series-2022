@@ -49,11 +49,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GreetingsLib\GreetingsLib.csproj">
-      <Project>{0be4fc58-1bf6-4aba-a1ef-a68ca8c912a4}</Project>
-      <Name>GreetingsLib</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
